@@ -59,7 +59,7 @@ class AdminController extends Controller{
 
     public function blogs(){
         $categories = Category::all();
-        $blogs = Blog::paginate(2);
+        $blogs = Blog::paginate(10);
         
         return view('admin.blogs')->with([
             'blogs' => $blogs , 
