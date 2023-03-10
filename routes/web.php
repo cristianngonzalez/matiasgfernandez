@@ -55,3 +55,6 @@ Route::post('/admin/comment/delete' , [App\Http\Controllers\CommentController::c
 
 //Admin socialnetworks
 Route::post('/admin/socialnetworks' , [App\Http\Controllers\SocialnetworkController::class, 'update'])->name('admin.socialnetworks.update');
+
+//Admin galery routes
+Route::get('/admin/galery/new' , [App\Http\Controllers\GaleryController::class, 'new'])->name('admin.galery.new');

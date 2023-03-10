@@ -50,7 +50,7 @@
                     
                     {{$galeries->links()}}
 
-                    <a href="{{route('admin.blogs.new')}}" class="btn btn-success mt-4">Upload a new photo to galery</a>
+                    <a href="{{route('admin.galery.new')}}" class="btn btn-success mt-4">Upload a new photo to galery</a>
                 </div>
 
             </div>
