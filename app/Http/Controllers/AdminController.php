@@ -12,6 +12,7 @@ use App\Models\Blog;
 use App\Models\Category;
 use App\Models\Comments;
 use App\Models\Socialnetwork;
+use App\Models\Galery;
 
 class AdminController extends Controller{
 
@@ -67,9 +68,10 @@ class AdminController extends Controller{
     }
 
     public function galery(){
-        
+        $galeries = Galery::paginate(6);
 
-        return view('admin.galery');
+
+        return view('admin.galery')->with(['galeries' => $galeries]);
     }
 
 }

@@ -28,9 +28,29 @@
                     <h1>Galery</h1>
                     <hr>
 
+                    <div class="row">
+
+                        @foreach ($galeries as $galery)
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img src="{{url('/')}}/storage/{{$galery->picture}}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5>Tag: {{$galery->taggaleries->name}}</h5>
+                                        <h6 class="card-title">{{$galery->crated_at}}</h6>
+                                        <p class="card-text">{{$galery->comment}}</p>
+                                        <a href="#" class="btn btn-primary">Edit</a>
+                                        <a href="" class="btn btn-danger">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+
+                    </div>
+
                     
-                    
-                    <a href="{{route('admin.blogs.new')}}" class="btn btn-success mt-4">Create a new blog</a>
+                    {{$galeries->links()}}
+
+                    <a href="{{route('admin.blogs.new')}}" class="btn btn-success mt-4">Upload a new photo to galery</a>
                 </div>
 
             </div>

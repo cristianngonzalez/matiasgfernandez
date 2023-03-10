@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
+use App\Models\Taggalery;
+
 class taggalery_seed extends Seeder{
     /**
      * Run the database seeds.
@@ -12,6 +14,12 @@ class taggalery_seed extends Seeder{
      */
     public function run(){
         //
-        
+        Taggalery::create([
+            'name' => 'Viajes'
+        ]);
+
+        Taggalery::create([
+            'name' => 'Familia'
+        ]);
     }
 }

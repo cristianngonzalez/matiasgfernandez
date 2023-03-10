@@ -21,7 +21,8 @@ class DatabaseSeeder extends Seeder{
                 user_seed::class,
                 blog_seed::class,
                 socialnetwork_seed::class,
-                galery_seed::class
+                galery_seed::class,
+                taggalery_seed::class
             ]);
         }
 

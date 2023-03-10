@@ -16,4 +16,8 @@ class Galery extends Model{
     ];
 
     protected $table = 'galeries';
+
+    public function taggaleries(){
+        return $this->belongsTo(Taggalery::class , 'taggalery_id');
+    }
 }
