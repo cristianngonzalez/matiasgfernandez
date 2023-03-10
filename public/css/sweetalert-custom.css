@@ -1,0 +1,30 @@
+.swal2-styled.swal2-confirm{
+    background: #f75023;
+    border-radius: 32px;
+    min-width: 100px;
+}
+.swal2-styled.swal2-cancel{
+    background: none;
+    color: black;
+    border-radius: 32px;
+    border: 2px solid black;
+}
+
+.swal2-container input[type="text"], 
+.swal2-container input[type="password"], 
+.swal2-container input[type="datetime"], 
+.swal2-container input[type="datetime-local"], 
+.swal2-container input[type="date"], 
+.swal2-container input[type="month"], 
+.swal2-container input[type="time"], 
+.swal2-container input[type="week"], 
+.swal2-container input[type="number"], 
+.swal2-container input[type="email"], 
+.swal2-container input[type="url"], 
+.swal2-container input[type="search"], 
+.swal2-container input[type="tel"], 
+.swal2-container input[type="color"], 
+.swal2-container .uneditable-input,
+.swal2-container textarea{
+    border-radius: 33px;
+}
