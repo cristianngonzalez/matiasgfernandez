@@ -75,4 +75,9 @@ class AdminController extends Controller{
         return view('admin.galery')->with(['galeries' => $galeries , 'taggaleries' => $taggaleries]);
     }
 
+    public function taggalery(){
+        $taggaleries = Taggalery::all();
+
+        return view('admin.taggalery')->with(['taggaleries' => $taggaleries]);
+    }
 }

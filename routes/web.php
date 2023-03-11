@@ -26,6 +26,7 @@ Route::get('/admin/timeline', [App\Http\Controllers\AdminController::class, 'tim
 Route::get('/admin/testimonials', [App\Http\Controllers\AdminController::class, 'testimonial'])->name('admin.testimonials');
 Route::get('/admin/blogs', [App\Http\Controllers\AdminController::class, 'blogs'])->name('admin.blogs');
 Route::get('/admin/galery', [App\Http\Controllers\AdminController::class, 'galery'])->name('admin.galery');
+Route::get('/admin/taggalery' , [App\Http\Controllers\AdminController::class, 'taggalery'])->name('admin.taggalery');
 
 //Admin User routes
 Route::post('/admin/users/remove', [App\Http\Controllers\Auth\UserController::class, 'remove'])->name('admin.users.remove');
@@ -61,3 +62,5 @@ Route::get('/admin/galery/new' , [App\Http\Controllers\GaleryController::class, 
 Route::post('/admin/galery/set' , [App\Http\Controllers\GaleryController::class, 'set'])->name('admin.galery.set');
 Route::post('/admin/galery/delete' , [App\Http\Controllers\GaleryController::class, 'delete'])->name('admin.galery.delete');
 Route::post('/admin/galery/update' , [App\Http\Controllers\GaleryController::class, 'update'])->name('admin.galery.update');
+
+//Admin taggaleries

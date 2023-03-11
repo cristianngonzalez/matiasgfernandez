@@ -11,8 +11,16 @@
                     @include('admin.partials.alerts')
                 </div>
 
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <h1>Galery</h1>
+                    </div>
+                    <div class="col-auto">
+                        <a href="{{route('admin.taggalery')}}" class="btn btn-success"><i class="bi bi-tags-fill"></i> Tags manager</a>
+                    </div>
+                </div>
+
                 <div class="col-md-12">
-                    <h1>Galery</h1>
                     <hr>
 
                     <div class="row">
