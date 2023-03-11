@@ -55,7 +55,7 @@
         company: 'Wimet' , 
         description: 'Wimet is the first platform that allows access to an ecosystem of spaces to work under a subscription system. Thanks to Wimet any company or person can access a menu of places prepared for work or meetings, on the most convenient day and place. Developing and owning the strategy for performance marketing campaigns across FB, display, social, lead generation platforms and SEM Developing content strategy and implementation across paid channels Manage performance marketing P&L and optimize daily media spend Drive quantitative and qualitative insights, including key inputs and reporting; monitoring growth trends and measure all marketing campaigns Build multi-channel marketing campaigns to drive brand sentiment and user growth. Communicate performance, strategy, and vision.', 
         category: 'consultancy' , 
-        icon: "{{env('ASSETS_URL')}}img/partners/wimet.jpeg",
+        icon: "{{env('ASSETS_URL')}}img/partners/wimet.png",
         date: 'Mar 2020 - Sep 2021',
       },
       {
@@ -64,7 +64,7 @@
         company: 'Molinos Rio de la Plata' , 
         description: "Responsible for Snacks, Infusions, Dry Mixes and Rice Businesses Lead the design and implementation of the three-year strategic plans to meet the purpose and results of the Company. Directly responsible for Marketing and Trade Mktg, and leading Commercial Planning, Market Research, and R&D. Co-responsible for the Stage & Gate processes, and S&OP of 5 production sites. Member of the Diversity Committee, and of the Molinos Innova Program to promote entrepreneurs. Main brands: Gallo Snacks, Chocoarroz, Cruz de Malta, Nobleza Gaucha, Arlistan, Exqusita and Gallo", 
         category: 'company' , 
-        icon: "{{env('ASSETS_URL')}}img/partners/molinos.svg",
+        icon: "{{env('ASSETS_URL')}}img/partners/molinos.png",
         date: '',
       },
       {
@@ -73,7 +73,7 @@
         company: 'Molinos Rio de la Plata' , 
         description: 'Responsible for Vienas, Coffee, Confectionery, Dry Mixes, and Rice Businesses Development and implementation of the marketing and communication plan for overseen brands. Main Brands: Vienissima, Arlistan, Exquisita, Gallo, Nugaton & Billiken', 
         category: 'company' , 
-        icon: "{{env('ASSETS_URL')}}img/partners/molinos.svg",
+        icon: "{{env('ASSETS_URL')}}img/partners/molinos.png",
         date: 'Ene 2008 - Ene 2014',
       },
       {
@@ -109,7 +109,7 @@
         company: 'Fundacion Andina, Social and Economic Studies' , 
         description: 'Fundación de estudios Sociales y Económicos.', 
         category: '' , 
-        icon: "{{env('ASSETS_URL')}}img/partners/dark/fundacion-andina.svg",
+        icon: "{{env('ASSETS_URL')}}img/partners/fundacion-andina.png",
         date: 'Mar 1994 - Jun 1997',
       }
     ];
