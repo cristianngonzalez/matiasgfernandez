@@ -60,3 +60,4 @@ Route::post('/admin/socialnetworks' , [App\Http\Controllers\SocialnetworkControl
 Route::get('/admin/galery/new' , [App\Http\Controllers\GaleryController::class, 'new'])->name('admin.galery.new');
 Route::post('/admin/galery/set' , [App\Http\Controllers\GaleryController::class, 'set'])->name('admin.galery.set');
 Route::post('/admin/galery/delete' , [App\Http\Controllers\GaleryController::class, 'delete'])->name('admin.galery.delete');
+Route::post('/admin/galery/update' , [App\Http\Controllers\GaleryController::class, 'update'])->name('admin.galery.update');

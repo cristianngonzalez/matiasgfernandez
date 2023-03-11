@@ -39,4 +39,8 @@ class GaleryController extends Controller{
 
         return redirect('/admin/galery?success=A photo has been delete');
     }
+
+    public function update(Request $req){
+
+    }
 }
