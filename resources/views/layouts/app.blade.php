@@ -18,7 +18,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{env('ASSETS_URL')}}/css/app.css" rel="stylesheet">
 
 
     <script src="https://cdn.tiny.cloud/1/88bud7jvrhlmy3a7i6la3er0y0b6kb4b1vy29mksvcckz0q7/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
