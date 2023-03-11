@@ -4,6 +4,7 @@
         <div class="container">
             <div class="dizme_tm_main_title" data-align="center">
                 <h3>Mis estudios</h3>
+                <a href="{{$socialnetworks[0]->link}}" target="_blank" style="text-decoration: none; color:coral;">Conocer mas <i class="{{$socialnetworks[0]->icon}}"></i> click aquí!</a>
             </div>
             <div class="service_list">
                 <ul>

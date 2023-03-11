@@ -9,7 +9,7 @@
       <div class="dizme_tm_main_title" data-align="center" style="margin-bottom: 50px;">
         <span>Mi experiencia Profesional</span>
         <p>Me forme en empresas de diferentes culturas y estructuras, con responsabilidad sobre distintos negocios, categorias y marcas que han ampliado mi mirada de consumidores y mercados de Argentina y de Latam.</p>
-        <a href="{{$socialnetworks[0]->link}}" target="_blank" style="text-decoration: none; color:coral;">Conocer mas <i class="icon-linkedin-1"></i> click aquí!</a>
+        <a href="{{$socialnetworks[0]->link}}" target="_blank" style="text-decoration: none; color:coral;">Conocer mas <i class="{{$socialnetworks[0]->icon}}"></i> click aquí!</a>
       </div>
 
       <div class="timeline_filter">

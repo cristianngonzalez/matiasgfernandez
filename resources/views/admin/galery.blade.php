@@ -24,6 +24,11 @@
                                     <div class="card-body">
                                         <h5>Tag: {{$galery->taggaleries->name}}</h5>
                                         <h6 class="card-title">{{$galery->crated_at}}</h6>
+                                        <form action="">
+                                            
+                                        </form>
+                                        
+
                                         <p class="card-text">{{$galery->comment}}</p>
 
                                         <form action="{{route('admin.galery.delete')}}" method="POST">

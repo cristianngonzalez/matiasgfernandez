@@ -18,7 +18,8 @@
             <div class="container">
                 <div class="dizme_tm_main_title" data-align="center">
                     <span>Mi Blog</span>
-                    <h3>Mis mas recientes aportes</h3>
+                    <h3>Todos mis aportes</h3>
+                    <p>Aquí verás contenido relacionado al marketing asociado al emprendimiento digital y tecnológico.</p>
                 </div>
                 <div class="news_list">
                     <ul>

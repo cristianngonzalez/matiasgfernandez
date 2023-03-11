@@ -7,7 +7,7 @@ Route::get('/', [App\Http\Controllers\SiteController::class, 'home'] );
 Route::get('/home', [App\Http\Controllers\SiteController::class, 'home'] );
 
 
-Route::get('/blogs', [App\Http\Controllers\SiteController::class, 'blogs'] );
+Route::get('/blogs', [App\Http\Controllers\SiteController::class, 'blogs'] )->name('site.blogs');
 Route::get('/blog',  [App\Http\Controllers\SiteController::class, 'blog'] )->name('site.blog');
 Route::post('/comment/post',  [App\Http\Controllers\CommentController::class, 'post'] )->name('site.comment.post');
 
