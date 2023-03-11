@@ -24,12 +24,27 @@
                                     <div class="card-body">
                                         <h5>Tag: {{$galery->taggaleries->name}}</h5>
                                         <h6 class="card-title">{{$galery->crated_at}}</h6>
-                                        <form action="">
-                                            
-                                        </form>
-                                        
 
-                                        <p class="card-text">{{$galery->comment}}</p>
+                                        <form action="{{route('admin.galery.update')}}" method="POST">
+                                            @csrf
+                                            @method('POST')
+                                            <input type="text" value="{{$galery->id}}" name="id" hidden>
+                                            <div class="form-floating mb-2">
+                                                <select class="form-select" id="taggalery" name="taggalery">
+                                                    @foreach ($taggaleries as $taggalery)
+                                                        <option value="{{$taggalery->id}}" @if ($taggalery->id == $galery->taggaleries->id) selected @endif>
+                                                            {{$taggalery->name}}
+                                                        </option>
+                                                    @endforeach
+                                                </select>
+                                                <label for="taggalery">Tag</label>
+                                            </div>
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="comment" name="comment" value="{{$galery->comment}}">
+                                                <label for="comment">Comment</label>
+                                            </div>
+                                            <input type="submit" value="Update" class="btn btn-primary" style="float: left; margin-right: 10px;">
+                                        </form>
 
                                         <form action="{{route('admin.galery.delete')}}" method="POST">
                                             @csrf

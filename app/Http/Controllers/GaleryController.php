@@ -41,6 +41,11 @@ class GaleryController extends Controller{
     }
 
     public function update(Request $req){
+        $galery = Galery::find( $req->input('id') );
+        $galery->comment = $req->input('comment');
+        $galery->taggalery_id = $req->input('taggalery');
+        $galery->save();
 
+        return redirect('admin/galery?success=A picture has been updated');
     }
 }
