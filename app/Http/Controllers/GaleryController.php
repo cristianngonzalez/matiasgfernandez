@@ -36,5 +36,7 @@ class GaleryController extends Controller{
         $delete= Galery::where('id', $req->input('id') )->delete();
 
         Storage::disk('public')->delete($req->input('picture'));
+
+        return redirect('/admin/galery?success=A photo has been delete');
     }
 }

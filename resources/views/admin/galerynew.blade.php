@@ -8,20 +8,7 @@
             <div class="row justify-content-center">
 
                 <div class="col-md-12 mt-2">
-                    <!--Alerts------------------>
-                    @if( isset($success) )
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            {{$success}}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    @endif
-                    @if( isset($warning) )
-                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                            {{$warning}}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    @endif
-                    <!--End Alerts------------------>
+                    @include('admin.partials.alerts')
                 </div>
 
                 <div class="col-md-12">
@@ -48,7 +35,7 @@
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="file" class="form-control" name="picture-file" id="picture-file">
+                            <input type="file" class="form-control" name="picture-file" id="picture-file" required>
                             <label for="picture-file">Picture file</label>
                         </div>
 
