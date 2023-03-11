@@ -25,45 +25,41 @@
                 </div>
 
                 <div class="col-md-12">
-                    <h1>Galery</h1>
+        
+                    <h1>Upload a photo</h1>
                     <hr>
 
-                    <div class="row">
+                    <form action="{{route('admin.galery.set')}}" method="POST" enctype='multipart/form-data'>
+                        @csrf
+                        @method('POST')
 
-                        @foreach ($galeries as $galery)
-                            <div class="col-md-4 mb-3">
-                                <div class="card">
-                                    <img src="{{url('/')}}/storage/{{$galery->picture}}" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5>Tag: {{$galery->taggaleries->name}}</h5>
-                                        <h6 class="card-title">{{$galery->crated_at}}</h6>
-                                        <p class="card-text">{{$galery->comment}}</p>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="comment" id="comment" required>
+                            <label for="comment">Photo comment</label>
+                        </div>
 
-                                        <form action="{{route('admin.galery.delete')}}" method="POST">
-                                            @csrf
-                                            @method('POST')
-                                            <input type="text" name="id" value="{{$galery->id}}" hidden>
-                                            <input type="text" name="picture" value="{{$galery->picture}}" hidden>
-                                            <input type="submit" value="Delete" class="btn btn-danger">
-                                        </form>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" name="taggalery" id="taggalery" aria-label="Floating label select example" required>
+                                @foreach ($taggaleries as $taggalery)
+                                    <option value="{{$taggalery->id}}">{{$taggalery->name}}</option>
+                                @endforeach
+                            </select>
+                            <label for="taggalery">Tag</label>
+                        </div>
 
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
+                        <div class="form-floating mb-3">
+                            <input type="file" class="form-control" name="picture-file" id="picture-file">
+                            <label for="picture-file">Picture file</label>
+                        </div>
 
-                    </div>
+                        <input type="submit" value="Upload photo" class="btn btn-success mt-3">
+                    </form>
 
                     
-                    {{$galeries->links()}}
 
-                    <a href="{{route('admin.galery.new')}}" class="btn btn-success mt-4">Upload a new photo to galery</a>
                 </div>
-
             </div>
         </div>
-
-        
 
     @else
         <main class="py-4">
