@@ -16,10 +16,18 @@ class user_seed extends Seeder{
      */
     public function run(){
         
-        return User::create([
+        User::create([
             'name' => 'Cristian',
             'email' => 'contact@cristianngonzalez.com',
             'password' => Hash::make('Good777'),
+            //Default admin is false
+            'admin' => true
+        ]);
+
+        User::create([
+            'name' => 'Matías',
+            'email' => 'contacto@matiasgfernandez.com',
+            'password' => Hash::make('12345678'),
             //Default admin is false
             'admin' => true
         ]);
