@@ -12,7 +12,7 @@
                     <ul class="owl-carousel owl-theme">
                         <li>
                             <div class="icon">
-                                <img class="svg" src="{{asset('img/svg/testimonials/quote.svg')}}" alt="" />
+                                <img class="svg" src="{{env('ASSETS_URL')}}img/svg/testimonials/quote.svg" alt="" />
                             </div>
                             <div class="text">
                                 <p>Matias fue un gran jefe de equipo, siempre transmitiendo objetivos claros y generando herramientas para poder alcanzarlos. Destaco su liderazgo hacia el negocio y principalmente hacia su equipo.</p>
@@ -29,7 +29,7 @@
                         </li>
                         <li>
                             <div class="icon">
-                                <img class="svg" src="{{asset('img/svg/testimonials/quote.svg')}}" alt="" />
+                                <img class="svg" src="{{env('ASSETS_URL')}}img/svg/testimonials/quote.svg" alt="" />
                             </div>
                             <div class="text">
                                 <p>Matias es un excelente profesional con una destacable visión estratégica para los negocios, como así también es altamente destacable su empuje emprendedor para afrontar nuevos desafíos y encontrar oportunidades en los diferentes proyectos.</p>
@@ -46,7 +46,7 @@
                         </li>
                         <li>
                             <div class="icon">
-                                <img class="svg" src="{{asset('img/svg/testimonials/quote.svg')}}" alt="" />
+                                <img class="svg" src="{{env('ASSETS_URL')}}img/svg/testimonials/quote.svg" alt="" />
                             </div>
                             <div class="text">
                                 <p>Matias es un excelente profesional, con amplia trayectoria y conocimiento en varios mercados de consumo masivo. Ha sido un placer para mi poder trabajar con Matias y disfrutar de su pasión por los negocios, su orientación a resultados, su búsqueda por innovar y pensar distinto y su excelente comunicación y dedicacion al desarrollo de sus equipos.</p>
@@ -86,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <div class="brush_1 wow fadeInRight" data-wow-duration="1s"><img src="{{asset('img/brushes/testimonials/1.png')}}" alt="" /></div>
+        <div class="brush_1 wow fadeInRight" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/testimonials/1.png" alt="" /></div>
     </div>
 </div>
 <!-- /TESTIMONIALS -->

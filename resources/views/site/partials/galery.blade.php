@@ -20,9 +20,9 @@
                     <li class="youtube grid-item">
                         <div class="inner">
                             <div class="zoom" data-title="" data-category="Youtube">
-                                <a class="popup-youtube" href="{{asset('img/galery/1.jpg')}}">
-                                    <img src="{{asset('img/galery/1.jpg')}}" alt="" />
-                                    <div class="main" data-img-url="{{asset('img/galery/1.jpg')}}"></div>
+                                <a class="popup-youtube" href="{{env('ASSETS_URL')}}img/galery/1.jpg">
+                                    <img src="{{env('ASSETS_URL')}}img/galery/1.jpg" alt="" />
+                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/1.jpg"></div>
                                 </a>
                             </div>
                         </div>
@@ -30,9 +30,9 @@
                     <li class="vimeo grid-item">
                         <div class="inner">
                             <div class="entry dizme_tm_portfolio_animation_wrap" data-title="" data-category="Vimeo">
-                                <a class="zoom" href="{{asset('img/galery/2.jpg')}}">
-                                    <img src="{{asset('img/galery/2.jpg')}}" alt="" />
-                                    <div class="main" data-img-url="{{asset('img/galery/2.jpg')}}"></div>
+                                <a class="zoom" href="{{env('ASSETS_URL')}}img/galery/2.jpg">
+                                    <img src="{{env('ASSETS_URL')}}img/galery/2.jpg" alt="" />
+                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/2.jpg"></div>
                                 </a>
                             </div>
                         </div>
@@ -40,9 +40,9 @@
                     <li class="soundcloud grid-item">
                         <div class="inner">
                             <div class="entry dizme_tm_portfolio_animation_wrap" data-title="" data-category="Soundcloud">
-                                <a class="zoom" href="{{asset('img/galery/3.jpg')}}">
-                                    <img src="{{asset('img/galery/3.jpg')}}" alt="" />
-                                    <div class="main" data-img-url="{{asset('img/galery/3.jpg')}}"></div>
+                                <a class="zoom" href="{{env('ASSETS_URL')}}img/galery/3.jpg">
+                                    <img src="{{env('ASSETS_URL')}}img/galery/3.jpg" alt="" />
+                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/3.jpg"></div>
                                 </a>
                             </div>
                         </div>
@@ -50,9 +50,9 @@
                     <li class="popup grid-item">
                         <div class="inner">
                             <div class="entry dizme_tm_portfolio_animation_wrap" data-title="" data-category="Popup">
-                                <a class="zoom" href="{{asset('img/galery/5.jpg')}}">
-                                    <img src="{{asset('img/galery/5.jpg')}}" alt="" />
-                                    <div class="main" data-img-url="{{asset('img/galery/5.jpg')}}"></div>
+                                <a class="zoom" href="{{env('ASSETS_URL')}}img/galery/5.jpg">
+                                    <img src="{{env('ASSETS_URL')}}img/galery/5.jpg" alt="" />
+                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/5.jpg"></div>
                                 </a>
                             </div>
                         </div>
@@ -60,9 +60,9 @@
                     <li class="popup grid-item">
                         <div class="inner">
                             <div class="entry dizme_tm_portfolio_animation_wrap" data-title="" data-category="Popup">
-                                <a class="zoom" href="{{asset('img/galery/6.jpg')}}">
-                                    <img src="{{asset('img/galery/6.jpg')}}" alt="" />
-                                    <div class="main" data-img-url="{{asset('img/galery/6.jpg')}}"></div>
+                                <a class="zoom" href="{{env('ASSETS_URL')}}img/galery/6.jpg">
+                                    <img src="{{env('ASSETS_URL')}}img/galery/6.jpg" alt="" />
+                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/6.jpg"></div>
                                 </a>
                             </div>
                         </div>
@@ -70,9 +70,9 @@
                     <li class="popup grid-item">
                         <div class="inner">
                             <div class="entry dizme_tm_portfolio_animation_wrap" data-title="" data-category="Popup">
-                                <a class="zoom" href="{{asset('img/galery/7.jpg')}}">
-                                    <img src="{{asset('img/galery/7.jpg')}}" alt="" />
-                                    <div class="main" data-img-url="{{asset('img/galery/7.jpg')}}"></div>
+                                <a class="zoom" href="{{env('ASSETS_URL')}}img/galery/7.jpg">
+                                    <img src="{{env('ASSETS_URL')}}img/galery/7.jpg" alt="" />
+                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/7.jpg"></div>
                                 </a>
                             </div>
                         </div>
@@ -80,8 +80,8 @@
                 </ul>
             </div>
         </div>
-        <div class="brush_1 wow zoomIn" data-wow-duration="1s"><img src="{{asset('img/brushes/portfolio/1.png')}}" alt="" /></div>
-        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{{asset('img/brushes/portfolio/2.png')}}" alt="" /></div>
+        <div class="brush_1 wow zoomIn" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/portfolio/1.png" alt="" /></div>
+        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/portfolio/2.png" alt="" /></div>
     </div>
 </div>
 <!-- /galery -->

@@ -30,7 +30,7 @@
                 </ul>
             </div>
         </div>
-        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{{asset('img/brushes/service/5.png')}}" alt="" /></div>
-        <div class="brush_2 wow zoomIn" data-wow-duration="1s"><img src="{{asset('img/brushes/service/6.png')}}" alt="" /></div>
+        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/service/5.png" alt="" /></div>
+        <div class="brush_2 wow zoomIn" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/service/6.png" alt="" /></div>
     </div>
 </div>

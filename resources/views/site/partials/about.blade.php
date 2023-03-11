@@ -5,7 +5,7 @@
             <div class="wrapper">
                 <div class="left">
                     <div class="image">
-                        <img src="{{asset('img/about/2.png')}}" alt="" />
+                        <img src="{{env('ASSETS_URL')}}img/about/2.png" alt="" />
                         <div class="numbers project">
                             <div class="wrapper">
                                 <h3><span class="dizme_tm_counter" data-from="0" data-to="25" data-speed="2000"></span></h3>
@@ -28,8 +28,8 @@
                 </div>
             </div>
         </div>
-        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{{asset('img/brushes/about/1.png')}}" alt="" /></div>
-        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{{asset('img/brushes/about/2.png')}}" alt="" /></div>
+        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/about/1.png" alt="" /></div>
+        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/about/2.png" alt="" /></div>
     </div>
 </div>
 <!-- /ABOUT -->

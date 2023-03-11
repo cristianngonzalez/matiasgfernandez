@@ -29,11 +29,11 @@
                         </form>
                     </div>
                 </div>
-                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{{asset('img/brushes/contact/2.png')}}" alt="" /></div>
+                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/contact/2.png" alt="" /></div>
             </div>
             
         </div>
-        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{{asset('img/brushes/contact/1.png')}}" alt="" /></div>
+        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/contact/1.png" alt="" /></div>
     </div>
 </div>
 <!-- /CONTACT -->

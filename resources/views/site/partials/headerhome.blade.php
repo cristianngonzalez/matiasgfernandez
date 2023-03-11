@@ -3,7 +3,7 @@
     <div class="mobile_menu_inner">
         <div class="mobile_in">
             <div class="logo">
-                <a href="{{url('/')}}"><img src="{{asset('img/logo/logo.png')}}" alt="" /></a>
+                <a href="{{url('/')}}"><img src="{{env('ASSETS_URL')}}img/logo/logo.png" alt="" /></a>
             </div>
             <div class="trigger">
                 <div class="hamburger hamburger--slider">
@@ -35,7 +35,7 @@
     <div class="container">
         <div class="inner">
             <div class="logo">
-                <a href="{{url('/')}}"><img src="{{asset('img/logo/logo.png')}}" alt="" width="300"/></a>
+                <a href="{{url('/')}}"><img src="{{env('ASSETS_URL')}}img/logo/logo.png" alt="" width="300"/></a>
             </div>
             <div class="menu">
                 <ul class="anchor_nav">
