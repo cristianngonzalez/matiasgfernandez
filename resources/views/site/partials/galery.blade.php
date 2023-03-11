@@ -4,79 +4,34 @@
         <div class="container">
             <div class="dizme_tm_main_title" data-align="center">
                 <span>Mi Galeria</span>
-                <h3>My Amazing Works</h3>
-                <p>Soy apasionado de las vacaciones en familia 👩‍👩‍👦‍👦, de mi perra Tigra 🐶, de Racing ⚽ y del fitness🏋️‍♂‍.</p>
+                <h3></h3>
+                <p></p>
             </div>
             <div class="portfolio_filter">
                 <ul>
                     <li><a href="#" class="current" data-filter="*">Todas</a></li>
-                    <li><a href="#" data-filter=".youtube">Viajes</a></li>
-                    <li><a href="#" data-filter=".vimeo">Familia</a></li>
+                    @foreach ($taggaleries as $taggalery)
+                        <li><a href="#" data-filter=".{{$taggalery->name}}">{{$taggalery->name}}</a></li>
+                    @endforeach
                 </ul>
             </div>
             <div class="dizme_tm_portfolio_titles"></div>
             <div class="portfolio_list wow fadeInUp" data-wow-duration="1s">
                 <ul class="gallery_zoom grid">
-                    <li class="youtube grid-item">
-                        <div class="inner">
-                            <div class="zoom" data-title="" data-category="Youtube">
-                                <a class="popup-youtube" href="{{env('ASSETS_URL')}}img/galery/1.jpg">
-                                    <img src="{{env('ASSETS_URL')}}img/galery/1.jpg" alt="" />
-                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/1.jpg"></div>
-                                </a>
+
+                    @foreach ($galeries as $galery)
+                        <li class="{{$galery->taggaleries->name}} grid-item">
+                            <div class="inner">
+                                <div class="zoom" data-title="" data-category="{{$galery->taggaleries->name}}">
+                                    <a class="popup-youtube" href="{{env('ASSETS_URL')}}storage/{{$galery->picture}}">
+                                        <img src="{{env('ASSETS_URL')}}storage/{{$galery->picture}}" alt="{{$galery->comment}}" />
+                                        <div class="main" data-img-url="{{env('ASSETS_URL')}}storage/{{$galery->picture}}"></div>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="vimeo grid-item">
-                        <div class="inner">
-                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="" data-category="Vimeo">
-                                <a class="zoom" href="{{env('ASSETS_URL')}}img/galery/2.jpg">
-                                    <img src="{{env('ASSETS_URL')}}img/galery/2.jpg" alt="" />
-                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/2.jpg"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="soundcloud grid-item">
-                        <div class="inner">
-                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="" data-category="Soundcloud">
-                                <a class="zoom" href="{{env('ASSETS_URL')}}img/galery/3.jpg">
-                                    <img src="{{env('ASSETS_URL')}}img/galery/3.jpg" alt="" />
-                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/3.jpg"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="popup grid-item">
-                        <div class="inner">
-                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="" data-category="Popup">
-                                <a class="zoom" href="{{env('ASSETS_URL')}}img/galery/5.jpg">
-                                    <img src="{{env('ASSETS_URL')}}img/galery/5.jpg" alt="" />
-                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/5.jpg"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="popup grid-item">
-                        <div class="inner">
-                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="" data-category="Popup">
-                                <a class="zoom" href="{{env('ASSETS_URL')}}img/galery/6.jpg">
-                                    <img src="{{env('ASSETS_URL')}}img/galery/6.jpg" alt="" />
-                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/6.jpg"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="popup grid-item">
-                        <div class="inner">
-                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="" data-category="Popup">
-                                <a class="zoom" href="{{env('ASSETS_URL')}}img/galery/7.jpg">
-                                    <img src="{{env('ASSETS_URL')}}img/galery/7.jpg" alt="" />
-                                    <div class="main" data-img-url="{{env('ASSETS_URL')}}img/galery/7.jpg"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                    @endforeach
+
                 </ul>
             </div>
         </div>

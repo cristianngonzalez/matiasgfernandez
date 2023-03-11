@@ -93,7 +93,7 @@
 
                     <!---------------------------------------------------------------------------------------------------------->
                     <div class="col-md-9">
-                        <div class="blog-picture" style="background: url('{{env('ASSETS_URL')}}storage/{{$blog->picture}}');"></div>
+                        <div class="blog-picture" style="background: url('{{env('ASSETS_URL')}}clestorage/{{$blog->picture}}');"></div>
 
                         <div class="dizme_tm_main_title" data-align="left">
                             <h3>{{$blog->title}}</h3>

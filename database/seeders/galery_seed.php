@@ -23,7 +23,7 @@ class galery_seed extends Seeder{
         Galery::create([
             'comment' => '',
             'picture' => 'galery-seed-2.jpg',
-            'taggalery_id' => 1
+            'taggalery_id' => 2
         ]);
         
         Galery::create([
@@ -35,7 +35,7 @@ class galery_seed extends Seeder{
         Galery::create([
             'comment' => '',
             'picture' => 'galery-seed-4.jpg',
-            'taggalery_id' => 1
+            'taggalery_id' => 2
         ]);
         
         Galery::create([
@@ -47,7 +47,7 @@ class galery_seed extends Seeder{
         Galery::create([
             'comment' => '',
             'picture' => 'galery-seed-6.jpg',
-            'taggalery_id' => 1
+            'taggalery_id' => 2
         ]);
         
         Galery::create([
@@ -59,7 +59,7 @@ class galery_seed extends Seeder{
         Galery::create([
             'comment' => '',
             'picture' => 'galery-seed-8.jpg',
-            'taggalery_id' => 1
+            'taggalery_id' => 2
         ]);
         
         Galery::create([
@@ -71,7 +71,7 @@ class galery_seed extends Seeder{
         Galery::create([
             'comment' => '',
             'picture' => 'galery-seed-10.jpg',
-            'taggalery_id' => 1
+            'taggalery_id' => 2
         ]);
         
         Galery::create([
@@ -83,7 +83,7 @@ class galery_seed extends Seeder{
         Galery::create([
             'comment' => '',
             'picture' => 'galery-seed-12.jpg',
-            'taggalery_id' => 1
+            'taggalery_id' => 2
         ]);
         
         Galery::create([
@@ -95,7 +95,7 @@ class galery_seed extends Seeder{
         Galery::create([
             'comment' => '',
             'picture' => 'galery-seed-14.jpg',
-            'taggalery_id' => 1
+            'taggalery_id' => 2
         ]);
         
         Galery::create([
@@ -107,7 +107,7 @@ class galery_seed extends Seeder{
         Galery::create([
             'comment' => '',
             'picture' => 'galery-seed-16.jpg',
-            'taggalery_id' => 1
+            'taggalery_id' => 2
         ]);
         
         Galery::create([

@@ -2,7 +2,7 @@
     <div class="dizme_tm_services">
         <div class="container">
             <div class="dizme_tm_main_title" data-align="center">
-                <span>Comunidad</span>
+                <span>Videos</span>
                 <h3></h3>
             </div>
             <div class="service_list">

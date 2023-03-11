@@ -6,6 +6,8 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Comments;
 use App\Models\Socialnetwork;
+use App\Models\Galery;
+use App\Models\Taggalery;
 
 use Illuminate\Http\Request;
 
@@ -15,8 +17,16 @@ class SiteController extends Controller{
         //Tomamos tres blogs
         $blogs = Blog::all()->take(3);
         $socialnetworks = Socialnetwork::all();
+        $galeries = Galery::all()->take(6);
+        $taggaleries = Taggalery::all();
+
     
-        return view('site.home')->with(['blogs' => $blogs , 'socialnetworks' => $socialnetworks]);
+        return view('site.home')->with([
+            'blogs' => $blogs , 
+            'socialnetworks' => $socialnetworks , 
+            'galeries' => $galeries,
+            'taggaleries' => $taggaleries
+        ]);
     }
 
     public function solicitarCV(Request $req){

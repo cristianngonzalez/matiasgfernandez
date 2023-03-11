@@ -26,7 +26,7 @@
     
     @include('site.partials.blogs')
 
-    @include('site.partials.comunidad')
+    @include('site.partials.videos')
     
     @include('site.partials.contact')
     
