@@ -86,8 +86,8 @@
 
     
 
-    <div class="dizme_tm_section" id="blog">
-        <div class="dizme_tm_news" style="margin-bottom: 0px;">
+    <div class="dizme_tm_section" id="blog" style="">
+        <div class="dizme_tm_news" style="margin-bottom: 0px; padding-top: 0px; margin-top: 0px;">
             <div class="container">
                 <div class="row">
 
