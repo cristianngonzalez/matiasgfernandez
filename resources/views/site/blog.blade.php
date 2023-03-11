@@ -93,7 +93,7 @@
 
                     <!---------------------------------------------------------------------------------------------------------->
                     <div class="col-md-9">
-                        <div class="blog-picture" style="background: url('{{url('/')}}/storage/{{$blog->picture}}');"></div>
+                        <div class="blog-picture" style="background: url('{{env('ASSETS_URL')}}storage/{{$blog->picture}}');"></div>
 
                         <div class="dizme_tm_main_title" data-align="left">
                             <h3>{{$blog->title}}</h3>
@@ -176,7 +176,7 @@
 
                             @foreach ($blogs as $thisBlog)
                                 <div class="col-12 mb-2">
-                                    <div class="other-blogs-card-picture" style="background: url('{{url('/')}}/storage/{{$thisBlog->picture}}');"></div>
+                                    <div class="other-blogs-card-picture" style="background: url('{{env('ASSETS_URL')}}storage/{{$thisBlog->picture}}');"></div>
                                     <h5 class="other-blogs-card-title"><a href="{{route('site.blog')}}?id={{$thisBlog->id}}">{{$thisBlog->title}}</a></h5>
                                 </div>
                                 <hr>

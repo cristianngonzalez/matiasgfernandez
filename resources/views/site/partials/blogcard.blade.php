@@ -1,8 +1,8 @@
 <li class="wow fadeInUp" data-wow-duration="1s">
     <div class="list_inner">
         <div class="image">
-            <div class="card-blog-picture" style="background: {{url('/')}}/storage/{{$blog->picture}};"></div>
-            <div class="main" data-img-url="{{url('/')}}/storage/{{$blog->picture}}"></div>
+            <div class="card-blog-picture" style="background: {{env('ASSETS_URL')}}storage/{{$blog->picture}};"></div>
+            <div class="main" data-img-url="{{env('ASSETS_URL')}}storage/{{$blog->picture}}"></div>
             <div class="date">
                 <h3>{{$blog->updated_at->format('d')}}</h3>
                 <!--Print mont-->
