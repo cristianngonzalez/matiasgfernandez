@@ -27,6 +27,7 @@ Route::get('/admin/testimonials', [App\Http\Controllers\AdminController::class, 
 Route::get('/admin/blogs', [App\Http\Controllers\AdminController::class, 'blogs'])->name('admin.blogs');
 Route::get('/admin/galery', [App\Http\Controllers\AdminController::class, 'galery'])->name('admin.galery');
 Route::get('/admin/taggalery' , [App\Http\Controllers\AdminController::class, 'taggalery'])->name('admin.taggalery');
+Route::get('/admin/timeline' , [App\Http\Controllers\AdminController::class, 'timeline'])->name('admin.timeline');
 
 //Admin User routes
 Route::post('/admin/users/remove', [App\Http\Controllers\Auth\UserController::class, 'remove'])->name('admin.users.remove');
@@ -34,9 +35,11 @@ Route::post('/admin/users/removeAdmin', [App\Http\Controllers\Auth\UserControlle
 Route::post('/admin/users/setAdmin', [App\Http\Controllers\Auth\UserController::class, 'setAdmin'])->name('admin.users.setAdmin');
 
 //Admin timeline routes
+Route::get('/admin/timeline/new', [App\Http\Controllers\TimelineController::class, 'new'])->name('admin.timeline.new');
 Route::post('/admin/timeline/set', [App\Http\Controllers\TimelineController::class, 'set'])->name('admin.timeline.set');
 Route::post('/admin/timeline/update', [App\Http\Controllers\TimelineController::class, 'update'])->name('admin.timeline.update');
 Route::post('/admin/timeline/remove', [App\Http\Controllers\TimelineController::class, 'remove'])->name('admin.timeline.remove');
+Route::post('/admin/timeline/edit', [App\Http\Controllers\TimelineController::class, 'edit'])->name('admin.timeline.edit');
 
 //Admin Testimonials routes
 Route::post('/admin/testimonials/set', [App\Http\Controllers\TestimonialController::class, 'set'])->name('admin.testimonials.set');

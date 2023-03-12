@@ -80,4 +80,5 @@ class AdminController extends Controller{
 
         return view('admin.taggalery')->with(['taggaleries' => $taggaleries]);
     }
+
 }

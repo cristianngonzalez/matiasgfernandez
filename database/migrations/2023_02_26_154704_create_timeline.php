@@ -17,6 +17,7 @@ class CreateTimeline extends Migration
             $table->string('title' , 100);
             $table->string('company' , 100);
             $table->text('description');
+            $table->string('category' , 50);
             $table->string('icon' , 255);
             $table->string('date' , 100);
             $table->timestamps();

@@ -74,17 +74,17 @@
             </div>
             -->
 
-            <!--
+            
             <div class="col-md-3 mb-2">
                 <div class="card" style="width: 100%;">
                     <img src="{{env('ASSETS_URL')}}img/svg/icons/timeline.svg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <a href="{{route('admin.blogs')}}"><h5 class="card-title">Timeline</h5></a>
-                      <p class="card-text">You can admin who want to have your cv and sent it.</p>
+                        <a href="{{route('admin.timeline')}}"><h5 class="card-title">Timeline</h5></a>
+                      <p class="card-text">You can add or remove experiences of your timeline.</p>
                     </div>
                 </div>
             </div>
-            -->
+            
 
             <!--
             <div class="col-md-3 mb-2">

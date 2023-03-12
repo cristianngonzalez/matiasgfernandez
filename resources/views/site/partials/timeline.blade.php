@@ -31,8 +31,28 @@
 
   <script src="{{env('ASSETS_URL')}}timelineassets/js/main.js"></script>
 
+  <script>
+    let alltimeline = [];
+  </script>
+
+  @foreach ($timeline as $event)
+      <script>
+        alltimeline.push(
+          {
+            id: '{{$event->id}}',
+            title: '{{$event->title}}',
+            company: '{{$event->company}}',
+            description: '{{$event->description}}',
+            category: '{{$event->category}}',
+            icon: '{{$event->icon}}',
+            date: '{{$event->date}}'
+          }
+        );
+      </script>
+  @endforeach
 
   <script>
+    /*
     let alltimeline = [
       {
         id: 0, title: 'Chief Growth Officer', company: 'TGA' , 
@@ -113,7 +133,8 @@
         date: 'Mar 1994 - Jun 1997',
       }
     ];
-
+    */
+      
   
     let div_timeline_content = document.getElementById('timeline-content');
   

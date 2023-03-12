@@ -8,6 +8,7 @@ use App\Models\Comments;
 use App\Models\Socialnetwork;
 use App\Models\Galery;
 use App\Models\Taggalery;
+use App\Models\Timeline;
 
 use Illuminate\Http\Request;
 
@@ -19,13 +20,15 @@ class SiteController extends Controller{
         $socialnetworks = Socialnetwork::all();
         $galeries = Galery::all()->take(6);
         $taggaleries = Taggalery::all();
+        $timeline = Timeline::all();
 
     
         return view('site.home')->with([
             'blogs' => $blogs , 
             'socialnetworks' => $socialnetworks , 
             'galeries' => $galeries,
-            'taggaleries' => $taggaleries
+            'taggaleries' => $taggaleries,
+            'timeline' => $timeline
         ]);
     }
 
