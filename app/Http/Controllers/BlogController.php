@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 use App\Models\Blog;
 use App\Models\Category;
@@ -32,7 +33,7 @@ class BlogController extends Controller{
             'category_id' => $req->input('category')
         ]);
 
-        return redirect('/admin/blogs');
+        return redirect('/admin/blogs?success=A blog has been created');
     }
 
     public function edit(Request $req){
@@ -58,8 +59,8 @@ class BlogController extends Controller{
     }
 
     public function delete(Request $req){
-
         $delete= Blog::where('id', $req->input('id') )->delete();
+        Storage::disk('public')->delete($req->input('picture'));
 
         return redirect('/admin/blogs?success=A blog has been deleted');
     }

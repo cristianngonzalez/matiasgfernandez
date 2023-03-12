@@ -32,7 +32,7 @@
                                     <th scope="row">{{$blog->id}}</th>
                                     <td>{{$blog->title}}</td>
                                     <td>
-                                        <a href="{{route('site.blog')}}?id={{$blog->id}}" class="btn btn-sm btn-info" target="_blank">Visitar</a>
+                                        <a href="{{route('site.blog')}}?id={{$blog->id}}" class="btn btn-sm btn-info" target="_blank">Visit</a>
                                     </td>
                                     <td>
                                         <form method="POST" action="{{ route('admin.blogs.edit') }}">
@@ -48,6 +48,7 @@
                                                 @csrf
                                                 @method('post')
                                                 <input type="text" name="id" value="{{$blog->id}}" hidden>
+                                                <input type="text" name="picture" value="{{$blog->picture}}" hidden>
                                                 <input type="submit" value="Delete" class="btn btn-sm btn-danger">
                                         </form>
                                     </td>

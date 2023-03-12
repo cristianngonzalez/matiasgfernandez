@@ -49,7 +49,7 @@
         </div>
 
     @else
-    @include('admin.partials.accessdenied')
+        @include('admin.partials.accessdenied')
     @endif
 
 @endsection
