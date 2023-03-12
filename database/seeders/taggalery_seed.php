@@ -21,5 +21,9 @@ class taggalery_seed extends Seeder{
         Taggalery::create([
             'name' => 'Familia'
         ]);
+
+        Taggalery::create([
+            'name' => 'Trabajos'
+        ]);
     }
 }

@@ -36,22 +36,23 @@
                                 <tr>
                                     <th scope="row">{{$taggalery->id}}</th>
                                     <td>
-                                        <input type="text" value="{{$taggalery->name}}" class="form-control form-control-sm" id="name" name="name">
-                                    </td>
-                                    <td>
-                                        <form method="POST" action="{{ route('admin.blogs.edit') }}">
+                                        <form action="{{route('admin.taggalery.update')}}" method="POST">
                                             @csrf
-                                            @method('post')
-                                            <input type="text" name="id" value="" hidden>
-                                            <input type="submit" value="Edit" class="btn btn-sm btn-warning">
+                                            @method('POST')
+                                            <input type="text" value="{{$taggalery->id}}" name="id" hidden>
+
+                                            <div class="input-group">
+                                                <input type="text" class="form-control form-control-sm" value="{{$taggalery->name}}" name="name" >
+                                                <input type="submit" value="Update" class="btn btn-outline-secondary btn-sm">
+                                            </div>
                                         </form>
                                     </td>
 
                                     <td>
-                                        <form method="POST" action="{{ route('admin.blogs.delete') }}">
+                                        <form method="POST" action="{{ route('admin.taggalery.delete') }}">
                                                 @csrf
                                                 @method('post')
-                                                <input type="text" name="id" value="" hidden>
+                                                <input type="text" name="id" value="{{$taggalery->id}}" hidden>
                                                 <input type="submit" value="Delete" class="btn btn-sm btn-danger">
                                         </form>
                                     </td>

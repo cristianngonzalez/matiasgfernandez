@@ -64,3 +64,5 @@ Route::post('/admin/galery/delete' , [App\Http\Controllers\GaleryController::cla
 Route::post('/admin/galery/update' , [App\Http\Controllers\GaleryController::class, 'update'])->name('admin.galery.update');
 
 //Admin taggaleries
+Route::post('/admin/taggalery/update' , [App\Http\Controllers\TaggaleryController::class, 'update'])->name('admin.taggalery.update');
+Route::post('/admin/taggalery/delete' , [App\Http\Controllers\TaggaleryController::class, 'delete'])->name('admin.taggalery.delete');

@@ -61,6 +61,6 @@ class BlogController extends Controller{
 
         $delete= Blog::where('id', $req->input('id') )->delete();
 
-        return redirect('/admin/blogs');
+        return redirect('/admin/blogs?success=A blog has been deleted');
     }
 }
