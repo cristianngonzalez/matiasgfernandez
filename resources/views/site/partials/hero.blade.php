@@ -19,13 +19,11 @@
                         <div class="social">
                             <ul>
 
-                                @foreach ($socialnetworks as $socialnetwork)
                                     <li>
-                                        <a href="{{$socialnetwork->link}}" target="_blank">
-                                            <i class="{{$socialnetwork->icon}}"></i>
+                                        <a href="{{$socialnetworks[0]->link}}" target="_blank">
+                                            <i class="{{$socialnetworks[0]->icon}}"></i>
                                         </a>
                                     </li>
-                                @endforeach
 
                             </ul>
                         </div>
