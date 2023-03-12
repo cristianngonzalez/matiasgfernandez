@@ -28,7 +28,7 @@
                         @foreach ($galeries as $galery)
                             <div class="col-md-4 mb-3">
                                 <div class="card">
-                                    <img src="{{url('/')}}/storage/{{$galery->picture}}" class="card-img-top" alt="...">
+                                    <img src="{{env('ASSETS_URL')}}storage/{{$galery->picture}}" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5>Tag: {{$galery->taggaleries->name}}</h5>
                                         <h6 class="card-title">{{$galery->crated_at}}</h6>
