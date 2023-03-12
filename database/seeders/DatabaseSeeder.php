@@ -23,7 +23,8 @@ class DatabaseSeeder extends Seeder{
                 socialnetwork_seed::class,
                 galery_seed::class,
                 taggalery_seed::class,
-                timeline_seed::class
+                timeline_seed::class,
+                video_seed::class
             ]);
         }
 

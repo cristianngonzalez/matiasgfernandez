@@ -21,6 +21,7 @@
                             <div class="card-header">{{$experience->title}}</div>
                             <div class="card-body">
                                 <h5 class="card-title">{{$experience->company}}</h5>
+                                <h6 class="text-capitalize">{{$experience->category}}</h6>
                                 <p class="card-text">{{$experience->date}}</p>
                                 <p class="card-text">{{$experience->description}}</p>
 

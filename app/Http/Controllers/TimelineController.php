@@ -20,13 +20,12 @@ class TimelineController extends Controller{
             'title' => $req->input('title') , 
             'company' => $req->input('company') ,
             'description' => $req->input('description'),
-            'icon' => 'aaaaa',
             'category' => $req->input('category'),
+            'icon' => 'aaaaa',
             'date' => $req->input('date')
         ]);
 
-        $timeline = Timeline::all();
-        return view('admin.timeline')->with(['timeline' => $timeline]);
+        return redirect('/admin/timeline?success=A experience has been created');
     }
 
     public function edit(Request $req){
@@ -40,6 +39,7 @@ class TimelineController extends Controller{
             'title' => $req->input('title') , 
             'company' => $req->input('company') ,
             'description' => $req->input('description'),
+            'category' => $req->input('category'),
             'icon' => 'no tenemos todavia',
             'date' => $req->input('date')
         ]);

@@ -14,6 +14,7 @@ use App\Models\Comments;
 use App\Models\Socialnetwork;
 use App\Models\Galery;
 use App\Models\Taggalery;
+use App\Models\Video;
 
 class AdminController extends Controller{
 
@@ -79,6 +80,12 @@ class AdminController extends Controller{
         $taggaleries = Taggalery::all();
 
         return view('admin.taggalery')->with(['taggaleries' => $taggaleries]);
+    }
+
+    public function video(){
+        $videos = Video::all();
+
+        return view('admin.videos')->with(['videos' => $videos]);
     }
 
 }

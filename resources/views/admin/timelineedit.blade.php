@@ -27,6 +27,14 @@
                         <div class="mb-3">
                             <input type="text" class="form-control" name="company" required placeholder="Company name" value="{{$experience->company}}">
                         </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="category" name="category">
+                                <option value="company" @if($experience->category == "company") selected @endif >Company</option>
+                                <option value="startup" @if($experience->category == "startup") selected @endif >Startup</option>
+                                <option value="consultancy" @if($experience->category == "consultancy") selected @endif >Consultancy</option>
+                            </select>
+                            <label for="category">What type of company have you worked for?</label>
+                        </div>
                         <div class="mb-3">
                             <div class="form-floating">
                                 <textarea class="form-control" name="description" id="description" style="height: 100px" >{{$experience->description}}</textarea>

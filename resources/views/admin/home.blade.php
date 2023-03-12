@@ -38,6 +38,16 @@
                 </div>
             </div>
 
+            <div class="col-md-3 mb-2">
+                <div class="card" style="width: 100%;">
+                    <img src="{{env('ASSETS_URL')}}img/svg/icons/youtube.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="{{route('admin.video')}}"><h5 class="card-title">Youtube</h5></a>
+                      <p class="card-text">You can edit your social networks links.</p>
+                    </div>
+                </div>
+            </div>
+
             <!--
             <div class="col-md-3 mb-2">
                 <div class="card" style="width: 100%;">

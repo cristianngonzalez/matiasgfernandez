@@ -28,6 +28,7 @@ Route::get('/admin/blogs', [App\Http\Controllers\AdminController::class, 'blogs'
 Route::get('/admin/galery', [App\Http\Controllers\AdminController::class, 'galery'])->name('admin.galery');
 Route::get('/admin/taggalery' , [App\Http\Controllers\AdminController::class, 'taggalery'])->name('admin.taggalery');
 Route::get('/admin/timeline' , [App\Http\Controllers\AdminController::class, 'timeline'])->name('admin.timeline');
+Route::get('/admin/video' , [App\Http\Controllers\AdminController::class, 'video'])->name('admin.video');
 
 //Admin User routes
 Route::post('/admin/users/remove', [App\Http\Controllers\Auth\UserController::class, 'remove'])->name('admin.users.remove');
@@ -69,3 +70,8 @@ Route::post('/admin/galery/update' , [App\Http\Controllers\GaleryController::cla
 //Admin taggaleries
 Route::post('/admin/taggalery/update' , [App\Http\Controllers\TaggaleryController::class, 'update'])->name('admin.taggalery.update');
 Route::post('/admin/taggalery/delete' , [App\Http\Controllers\TaggaleryController::class, 'delete'])->name('admin.taggalery.delete');
+
+//Admin videos
+Route::get('/admin/video/new' , [App\Http\Controllers\VideoController::class, 'new'])->name('admin.video.new');
+Route::post('/admin/video/set' , [App\Http\Controllers\VideoController::class, 'set'])->name('admin.video.set');
+Route::post('/admin/video/delete' , [App\Http\Controllers\VideoController::class, 'delete'])->name('admin.video.delete');
