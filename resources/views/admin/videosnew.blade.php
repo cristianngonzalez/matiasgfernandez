@@ -20,18 +20,17 @@
                     <form action="{{route('admin.video.set')}}" method="POST" enctype='multipart/form-data'>
                         @csrf
                         @method('POST')
-
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" name="link" id="link" required>
                             <label for="link">Youtube video link</label>
                         </div>
-
-
-                        <!--End tiny script-->
                         <input type="submit" value="Share video" class="btn btn-success mt-3">
                     </form>
 
                 </div>
+                
+                
+
             </div>
         </div>
 

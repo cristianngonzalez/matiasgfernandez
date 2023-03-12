@@ -7,26 +7,13 @@
             </div>
             <div class="service_list">
                 <ul>
-                    <li class="wow fadeInLeft" data-wow-duration="1s">
-                        <div class="video_inner tilt-effect">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/T_1g9Vgk-k8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </li>
-                    <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="video_inner tilt-effect">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/KL5itCC1Sa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </li>
-                    <li class="wow fadeInLeft" data-wow-duration="1s">
-                        <div class="video_inner tilt-effect">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5oOEsMhb9QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </li>
-                    <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="video_inner tilt-effect">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5oOEsMhb9QA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </li>
+                    @foreach ($videos as $video)
+                        <li class="wow fadeInLeft" data-wow-duration="1s">
+                            <div class="video_inner tilt-effect">
+                                <iframe width="560" height="315" src="{{$video->link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
         </div>

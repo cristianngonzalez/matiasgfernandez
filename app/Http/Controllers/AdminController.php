@@ -83,7 +83,7 @@ class AdminController extends Controller{
     }
 
     public function video(){
-        $videos = Video::all();
+        $videos = Video::paginate(9);
 
         return view('admin.videos')->with(['videos' => $videos]);
     }

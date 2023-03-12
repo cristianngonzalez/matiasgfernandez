@@ -5,7 +5,7 @@
 
 
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row">
 
                 <div class="col-md-12 mt-2">
                     @include('admin.partials.alerts')
@@ -33,6 +33,8 @@
                         </div>
                     </div>
                 @endforeach
+
+                {{$videos->links()}}
 
                 <div class="col-md-12">
                     <a href="{{route('admin.video.new')}}" class="btn btn-success mt-4">Share a new video</a>
