@@ -4,6 +4,7 @@
             <div class="dizme_tm_main_title" data-align="center">
                 <span>Videos</span>
                 <h3></h3>
+                <a href="{{$socialnetworks[1]->link}}" style="text-decoration: none; color:coral;" target="_blank">¡Ver todos mis videos en mi canal <i class="{{$socialnetworks[1]->icon}}"></i> click aquí!</a>
             </div>
             <div class="service_list">
                 <ul>

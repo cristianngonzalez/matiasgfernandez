@@ -20,5 +20,11 @@ class socialnetwork_seed extends Seeder
             'link' => 'https://www.linkedin.com/in/matías-fernández/',
             'icon' => 'bi bi-linkedin'
         ]);
+
+        Socialnetwork::create([
+            'name' => 'Youtube',
+            'link' => 'https://www.youtube.com/channel/UChv_8mC1I0dFp0GdLlyYo9A',
+            'icon' => 'bi bi-youtube'
+        ]);
     }
 }
