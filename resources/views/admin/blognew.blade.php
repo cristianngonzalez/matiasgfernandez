@@ -31,7 +31,7 @@
                         @method('POST')
 
                         <div class="form-floating mb-3">
-                            <input type="title" class="form-control" name="title" id="blog-title" required>
+                            <input type="text" class="form-control" name="title" id="blog-title" required>
                             <label for="blog-title">Blog title</label>
                         </div>
 

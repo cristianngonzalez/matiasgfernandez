@@ -27,6 +27,7 @@ Route::get('/admin/testimonials', [App\Http\Controllers\AdminController::class, 
 Route::get('/admin/blogs', [App\Http\Controllers\AdminController::class, 'blogs'])->name('admin.blogs');
 Route::get('/admin/galery', [App\Http\Controllers\AdminController::class, 'galery'])->name('admin.galery');
 Route::get('/admin/taggalery' , [App\Http\Controllers\AdminController::class, 'taggalery'])->name('admin.taggalery');
+Route::get('/admin/category' , [App\Http\Controllers\AdminController::class, 'category'])->name('admin.category');
 Route::get('/admin/timeline' , [App\Http\Controllers\AdminController::class, 'timeline'])->name('admin.timeline');
 Route::get('/admin/video' , [App\Http\Controllers\AdminController::class, 'video'])->name('admin.video');
 Route::get('/admin/staticcontent' , [App\Http\Controllers\AdminController::class, 'staticcontent'])->name('admin.staticcontent');
@@ -71,6 +72,12 @@ Route::post('/admin/galery/update' , [App\Http\Controllers\GaleryController::cla
 //Admin taggaleries
 Route::post('/admin/taggalery/update' , [App\Http\Controllers\TaggaleryController::class, 'update'])->name('admin.taggalery.update');
 Route::post('/admin/taggalery/delete' , [App\Http\Controllers\TaggaleryController::class, 'delete'])->name('admin.taggalery.delete');
+Route::post('/admin/taggalery/set' , [App\Http\Controllers\TaggaleryController::class, 'set'])->name('admin.taggalery.set');
+
+//Admin categories
+Route::post('/admin/category/update' , [App\Http\Controllers\CategoryController::class, 'update'])->name('admin.category.update');
+Route::post('/admin/category/delete' , [App\Http\Controllers\CategoryController::class, 'delete'])->name('admin.category.delete');
+Route::post('/admin/category/set' , [App\Http\Controllers\CategoryController::class, 'set'])->name('admin.category.set');
 
 //Admin videos
 Route::get('/admin/video/new' , [App\Http\Controllers\VideoController::class, 'new'])->name('admin.video.new');

@@ -94,4 +94,10 @@ class AdminController extends Controller{
 
         return view('admin.staticcontent')->with(['staticcontents' => $staticcontents]);
     }
+
+    public function category(){
+        $categories = Category::all();
+
+        return view('admin.category')->with(['categories' => $categories]);
+    }
 }

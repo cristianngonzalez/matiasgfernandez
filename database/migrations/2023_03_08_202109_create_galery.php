@@ -13,7 +13,7 @@ class CreateGalery extends Migration{
     public function up(){
         Schema::create('galeries', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('comment');
+            $table->text('comment')->nullable();;
             $table->string('picture' , 255);
             $table->integer('taggalery_id');
             $table->timestamps();

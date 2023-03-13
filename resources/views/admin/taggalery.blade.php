@@ -11,6 +11,16 @@
                     @include('admin.partials.alerts')
                 </div>
 
+                <div class="col-md-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="{{route('admin')}}">Admin</a></li>
+                          <li class="breadcrumb-item"><a href="{{route('admin.galery')}}">Galery</a></li>
+                          <li class="breadcrumb-item">Tags manager</li>
+                        </ol>
+                    </nav>
+                </div>
+
                 <div class="row justify-content-between">
                     <div class="col-auto">
                         <h1>Tags manager</h1>
@@ -62,6 +72,20 @@
                             @endforeach
                         </tbody>
                     </table>
+
+
+                    <h2>Add a new tag</h2>
+                    <hr>
+                    <form action="{{route('admin.taggalery.set')}}" method="POST">
+                        @csrf
+                        @method('POST')
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="name" id="name" required>
+                            <label for="name">Tag name</label>
+                        </div>
+
+                        <input type="submit" value="Add tag" class="btn btn-success">
+                    </form>
 
                 </div>
 

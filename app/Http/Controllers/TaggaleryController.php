@@ -31,4 +31,13 @@ class TaggaleryController extends Controller{
         }
 
     }
+
+    public function set(Request $req){
+
+        Taggalery::create([
+            'name' => $req->input('name')
+        ]);
+
+        return redirect('/admin/taggalery?success=A new tag has been added');
+    }
 }
