@@ -3,7 +3,9 @@
     <div class="dizme_tm_contact">
         <div class="container">
             <div class="dizme_tm_main_title" data-align="center">
-                <span>Sigamos en contacto</span>
+                <span>{!!$staticcontents[8]->subtitle!!}</span>
+                <h3>{!!$staticcontents[8]->maintitle!!}</h3>
+                <p>{!!$staticcontents[8]->paragraph!!}</p>
             </div>
             <div class="contact_inner">
                 

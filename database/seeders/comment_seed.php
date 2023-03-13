@@ -4,8 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class comment_seed extends Seeder
-{
+class comment_seed extends Seeder{
     /**
      * Run the database seeds.
      *

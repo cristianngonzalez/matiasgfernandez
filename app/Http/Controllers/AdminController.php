@@ -15,6 +15,7 @@ use App\Models\Socialnetwork;
 use App\Models\Galery;
 use App\Models\Taggalery;
 use App\Models\Video;
+use App\Models\Staticcontent;
 
 class AdminController extends Controller{
 
@@ -88,4 +89,9 @@ class AdminController extends Controller{
         return view('admin.videos')->with(['videos' => $videos]);
     }
 
+    public function staticcontent(){
+        $staticcontents = Staticcontent::all();
+
+        return view('admin.staticcontent')->with(['staticcontents' => $staticcontents]);
+    }
 }

@@ -6,11 +6,13 @@
             <div class="content">
                 <div class="details">
                     <div class="name">
-                        <h3>Matías Fernández</h3>
+                        <!--///////////////////////////////////////////////////////////////////////-->
+                        <h3>{!!$staticcontents[0]->maintitle!!}</h3>
+                        <!--///////////////////////////////////////////////////////////////////////-->
                     </div>
                     <div class="job">
-                        <p>25 años diseñando, implementando y liderando <span class="greenText">estrategias de marketing y comerciales</span>.</p><br>
-                        <p>En los ultimos años me he enfocado en la disrupcion digital, como así también cerca del ecosistema <span class="purpleText">emprendedor & startups</span>.</p>
+                        <p>{!!$staticcontents[0]->subtitle!!}</p><br>
+                        <p>{!!$staticcontents[0]->paragraph!!}</p>
                     </div>
                     <div class="button">
                         <div class="dizme_tm_button">

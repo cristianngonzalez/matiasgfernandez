@@ -29,6 +29,7 @@ Route::get('/admin/galery', [App\Http\Controllers\AdminController::class, 'galer
 Route::get('/admin/taggalery' , [App\Http\Controllers\AdminController::class, 'taggalery'])->name('admin.taggalery');
 Route::get('/admin/timeline' , [App\Http\Controllers\AdminController::class, 'timeline'])->name('admin.timeline');
 Route::get('/admin/video' , [App\Http\Controllers\AdminController::class, 'video'])->name('admin.video');
+Route::get('/admin/staticcontent' , [App\Http\Controllers\AdminController::class, 'staticcontent'])->name('admin.staticcontent');
 
 //Admin User routes
 Route::post('/admin/users/remove', [App\Http\Controllers\Auth\UserController::class, 'remove'])->name('admin.users.remove');
@@ -75,3 +76,6 @@ Route::post('/admin/taggalery/delete' , [App\Http\Controllers\TaggaleryControlle
 Route::get('/admin/video/new' , [App\Http\Controllers\VideoController::class, 'new'])->name('admin.video.new');
 Route::post('/admin/video/set' , [App\Http\Controllers\VideoController::class, 'set'])->name('admin.video.set');
 Route::post('/admin/video/delete' , [App\Http\Controllers\VideoController::class, 'delete'])->name('admin.video.delete');
+
+//Static content
+Route::post('/admin/staticcontent/update' , [App\Http\Controllers\StaticcontentController::class, 'update'])->name('admin.staticcontent.update');

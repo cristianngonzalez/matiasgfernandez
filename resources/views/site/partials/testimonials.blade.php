@@ -2,9 +2,9 @@
 <div class="dizme_tm_section" id="trayectoria">
     <div class="dizme_tm_testimonials">
         <div class="dizme_tm_main_title" data-align="center">
-            <span>Recomendaciones</span>
-            <p>He tenido la posibilidad de trabajar con enormes personas y profesionales.</p>
-            <p>Gracias a todos los que me dieron oportunidades, confianza y guía en mi desarrollo profesional.</p>
+            <span>{!!$staticcontents[2]->subtitle!!}</span>
+            <h3>{!!$staticcontents[2]->maintitle!!}</h3>
+            <p>{!!$staticcontents[2]->paragraph!!}</p>
         </div>
         <div class="list_wrapper">
             <div class="total">

@@ -48,17 +48,17 @@
                 </div>
             </div>
 
-            <!--
+            
             <div class="col-md-3 mb-2">
                 <div class="card" style="width: 100%;">
                     <img src="{{env('ASSETS_URL')}}img/svg/icons/content.svg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <a href="{{route('admin.blogs')}}"><h5 class="card-title">Static content</h5></a>
-                      <p class="card-text">Your website has titles, paragraphs and others statics content that you can edit here.</p>
+                        <a href="{{route('admin.staticcontent')}}"><h5 class="card-title">Static content</h5></a>
+                        <p class="card-text">Your website has titles, paragraphs and others statics content that you can edit here.</p>
                     </div>
                 </div>
             </div>
-            -->
+            
 
             <!--
             <div class="col-md-3 mb-2">

@@ -3,8 +3,9 @@
     <div class="dizme_tm_news">
         <div class="container">
             <div class="dizme_tm_main_title" data-align="center">
-                <span>Mi Blog</span>
-                <h3>Mis mas recientes aportes</h3>
+                <span>{!!$staticcontents[6]->subtitle!!}</span>
+                <h3>{!!$staticcontents[6]->maintitle!!}</h3>
+                <p>{!!$staticcontents[6]->paragraph!!}</p>
                 <a href="{{route('site.blogs')}}" style="text-decoration: none; color:coral;">Ver todos mis blogs click aquí!</a>
             </div>
             <div class="news_list">

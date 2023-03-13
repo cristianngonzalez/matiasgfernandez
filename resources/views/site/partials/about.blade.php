@@ -16,11 +16,11 @@
                 </div>
                 <div class="right">
                     <div class="title wow fadeInUp" data-wow-duration="1s">
-                        <span>Matias Fernández</span>
-                        <h3>Desafiar paradigmas de creación de valor en la forma en que compramos y consumimos!</h3>
+                        <span>{!!$staticcontents[1]->subtitle!!}</span>
+                        <h3>{!!$staticcontents[1]->maintitle!!}</h3>
                     </div>
                     <div class="text wow fadeInUp" data-wow-duration="1s">
-                        <p>Soy Sr Business Executive con 25 años de aprendizajes en las áreas de Negocio, principalmente a través del desarrollo e implementación de Marketing Strategies.</p>
+                        <p>{!!$staticcontents[1]->paragraph!!}</p>
                     </div>
                     <div class="dizme_tm_button wow fadeInUp" data-wow-duration="1s">
                         <a class="anchor" href="#contact"><span>Contáctame</span></a>

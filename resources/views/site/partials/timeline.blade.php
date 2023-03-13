@@ -7,8 +7,9 @@
     <div class="container max-width-lg cd-timeline__container">
 
       <div class="dizme_tm_main_title" data-align="center" style="margin-bottom: 50px;">
-        <span>Mi experiencia Profesional</span>
-        <p>Me forme en empresas de diferentes culturas y estructuras, con responsabilidad sobre distintos negocios, categorias y marcas que han ampliado mi mirada de consumidores y mercados de Argentina y de Latam.</p>
+        <span>{!!$staticcontents[3]->subtitle!!}</span>
+        <h3>{!!$staticcontents[3]->maintitle!!}</h3>
+        <p>{!!$staticcontents[3]->paragraph!!}</p>
         <a href="{{$socialnetworks[0]->link}}" target="_blank" style="text-decoration: none; color:coral;">Conocer mas <i class="{{$socialnetworks[0]->icon}}"></i> click aquí!</a>
       </div>
 

@@ -3,9 +3,9 @@
     <div class="dizme_tm_portfolio">
         <div class="container">
             <div class="dizme_tm_main_title" data-align="center">
-                <span>Mi Galeria</span>
-                <h3></h3>
-                <p></p>
+                <span>{!!$staticcontents[5]->subtitle!!}</span>
+                <h3>{!!$staticcontents[5]->maintitle!!}</h3>
+                <p>{!!$staticcontents[5]->paragraph!!}</p>
             </div>
             <div class="portfolio_filter">
                 <ul>

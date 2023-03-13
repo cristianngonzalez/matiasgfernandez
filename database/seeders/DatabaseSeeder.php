@@ -24,7 +24,8 @@ class DatabaseSeeder extends Seeder{
                 galery_seed::class,
                 taggalery_seed::class,
                 timeline_seed::class,
-                video_seed::class
+                video_seed::class,
+                staticcontent_seed::class
             ]);
         }
 
