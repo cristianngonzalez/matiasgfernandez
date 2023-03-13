@@ -11,6 +11,7 @@ use App\Models\Taggalery;
 use App\Models\Timeline;
 use App\Models\Video;
 use App\Models\Staticcontent;
+use App\Models\Testimonial;
 
 use Illuminate\Http\Request;
 
@@ -25,6 +26,7 @@ class SiteController extends Controller{
         $timeline = Timeline::all();
         $videos = Video::all()->take(4);
         $staticcontents = Staticcontent::all();
+        $testimonials = Testimonial::all();
     
         return view('site.home')->with([
             'blogs' => $blogs , 
@@ -33,7 +35,8 @@ class SiteController extends Controller{
             'taggaleries' => $taggaleries,
             'timeline' => $timeline,
             'videos' => $videos,
-            'staticcontents' => $staticcontents
+            'staticcontents' => $staticcontents,
+            'testimonials' => $testimonials
         ]);
     }
 

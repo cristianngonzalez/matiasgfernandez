@@ -45,9 +45,11 @@ Route::post('/admin/timeline/delete', [App\Http\Controllers\TimelineController::
 Route::post('/admin/timeline/edit', [App\Http\Controllers\TimelineController::class, 'edit'])->name('admin.timeline.edit');
 
 //Admin Testimonials routes
+Route::get('/admin/testimonials/new', [App\Http\Controllers\TestimonialController::class, 'new'])->name('admin.testimonials.new');
+Route::post('/admin/testimonials/edit', [App\Http\Controllers\TestimonialController::class, 'edit'])->name('admin.testimonials.edit');
 Route::post('/admin/testimonials/set', [App\Http\Controllers\TestimonialController::class, 'set'])->name('admin.testimonials.set');
 Route::post('/admin/testimonials/update', [App\Http\Controllers\TestimonialController::class, 'update'])->name('admin.testimonials.update');
-Route::post('/admin/testimonials/remove', [App\Http\Controllers\TestimonialController::class, 'remove'])->name('admin.testimonials.remove');
+Route::post('/admin/testimonials/delete', [App\Http\Controllers\TestimonialController::class, 'delete'])->name('admin.testimonials.delete');
 
 //Admin blogs routes
 Route::get('/admin/blogs/new', [App\Http\Controllers\BlogController::class, 'new'])->name('admin.blogs.new');

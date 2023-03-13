@@ -10,57 +10,27 @@
             <div class="total">
                 <div class="in">
                     <ul class="owl-carousel owl-theme">
-                        <li>
-                            <div class="icon">
-                                <img class="svg" src="{{env('ASSETS_URL')}}img/svg/testimonials/quote.svg" alt="" />
-                            </div>
-                            <div class="text">
-                                <p>Matias fue un gran jefe de equipo, siempre transmitiendo objetivos claros y generando herramientas para poder alcanzarlos. Destaco su liderazgo hacia el negocio y principalmente hacia su equipo.</p>
-                            </div>
-                            <div class="short">
-                                <div class="image">
-                                    <div class="main" data-img-url="https://media.licdn.com/dms/image/C4E03AQFkZRrt3cGKfw/profile-displayphoto-shrink_100_100/0/1646940945346?e=1682553600&v=beta&t=sDJcCAFDRbEKyxsbUCMQqZxf9evv55StY-i1_CylFss"></div>
+
+                        @foreach ($testimonials as $testimonial)
+                            <li>
+                                <div class="icon">
+                                    <img class="svg" src="{{env('ASSETS_URL')}}img/svg/testimonials/quote.svg" alt="" />
                                 </div>
-                                <div class="detail">
-                                    <h3>Sergio Wolfsohn</h3>
-                                    <span>Communication Medical Marketing Manager en RB</span>
+                                <div class="text">
+                                    <p>{{$testimonial->testimonial}}</p>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img class="svg" src="{{env('ASSETS_URL')}}img/svg/testimonials/quote.svg" alt="" />
-                            </div>
-                            <div class="text">
-                                <p>Matias es un excelente profesional con una destacable visión estratégica para los negocios, como así también es altamente destacable su empuje emprendedor para afrontar nuevos desafíos y encontrar oportunidades en los diferentes proyectos.</p>
-                            </div>
-                            <div class="short">
-                                <div class="image">
-                                    <div class="main" data-img-url="https://media.licdn.com/dms/image/C4D03AQG2QG3x9F9Mhw/profile-displayphoto-shrink_100_100/0/1516304430809?e=1682553600&v=beta&t=6QWjj_c7MZ1fCyLn0jTPM4e0zT65az6lHu17YqpIFFM"></div>
+                                <div class="short">
+                                    <div class="image">
+                                        <div class="main" data-img-url="{{$testimonial->avatar}}"></div>
+                                    </div>
+                                    <div class="detail">
+                                        <h3>{{$testimonial->name}}</h3>
+                                        <span>{{$testimonial->detail}}</span>
+                                    </div>
                                 </div>
-                                <div class="detail">
-                                    <h3>Marcelo BatipallaMarcelo Batipalla</h3>
-                                    <span>Senior MKT Executive.</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img class="svg" src="{{env('ASSETS_URL')}}img/svg/testimonials/quote.svg" alt="" />
-                            </div>
-                            <div class="text">
-                                <p>Matias es un excelente profesional, con amplia trayectoria y conocimiento en varios mercados de consumo masivo. Ha sido un placer para mi poder trabajar con Matias y disfrutar de su pasión por los negocios, su orientación a resultados, su búsqueda por innovar y pensar distinto y su excelente comunicación y dedicacion al desarrollo de sus equipos.</p>
-                            </div>
-                            <div class="short">
-                                <div class="image">
-                                    <div class="main" data-img-url="https://media.licdn.com/dms/image/C4D03AQF3dp9NbZuvEg/profile-displayphoto-shrink_100_100/0/1615054871700?e=1682553600&v=beta&t=FD-ENw7ZWDwq9ih8tTADMUaHws8kTAutkVvM4dbq_MQ"></div>
-                                </div>
-                                <div class="detail">
-                                    <h3>Eduardo Lopardo BadanoEduardo Lopardo Badano</h3>
-                                    <span>Director General - Arcos Dorados Argentina</span>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
+                        @endforeach
+                        
                     </ul>
                 </div>
                 <div class="left_details">
