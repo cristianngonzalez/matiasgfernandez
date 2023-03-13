@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 //Models
 use App\Models\Timeline;
@@ -15,13 +15,17 @@ class TimelineController extends Controller{
 
     public function set(Request $req){
 
+        $file = $req->file('picture-file');
+        $file_name = Str::uuid()->toString();
 
-        $timeline = Timeline::create([
+        $file->storeAs('' , $file_name . "." . $file->extension() , 'public');
+
+        Timeline::create([
             'title' => $req->input('title') , 
             'company' => $req->input('company') ,
             'description' => $req->input('description'),
-            'category' => $req->input('category'),
-            'icon' => 'aaaaa',
+            'icon' => $file_name . "." . $file->extension() ,
+            'category' =>  $req->input('category') ,
             'date' => $req->input('date')
         ]);
 

@@ -17,7 +17,7 @@
                     <hr>
 
                     
-                    <form action="{{route('admin.timeline.set')}}" method="POST">
+                    <form action="{{route('admin.timeline.set')}}" method="POST" enctype='multipart/form-data'>
                         @csrf
                         @method('post')
                         <div class="mb-3">
@@ -28,12 +28,17 @@
                         </div>
 
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="category" name="category">
-                              <option value="company" selected>Company</option>
+                            <select class="form-select" id="category" name="category" required>
+                              <option value="company">Company</option>
                               <option value="startup" >Startup</option>
                               <option value="consultancy" >Consultancy</option>
                             </select>
                             <label for="category">What type of company have you worked for?</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="file" class="form-control" name="picture-file" id="picture-file" required>
+                            <label for="picture-file">Logo</label>
                         </div>
 
                         <div class="mb-3">

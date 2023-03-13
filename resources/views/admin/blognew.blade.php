@@ -35,7 +35,7 @@
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="file" class="form-control" name="picture-file" id="picture-file">
+                            <input type="file" class="form-control" name="picture-file" id="picture-file" required>
                             <label for="picture-file">Picture file</label>
                         </div>
 

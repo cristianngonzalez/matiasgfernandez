@@ -12,6 +12,7 @@ class Timeline extends Model{
         'title',
         'company',
         'description',
+        'category',
         'icon',
         'date',
     ];
