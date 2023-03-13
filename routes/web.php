@@ -40,7 +40,7 @@ Route::post('/admin/users/setAdmin', [App\Http\Controllers\Auth\UserController::
 Route::get('/admin/timeline/new', [App\Http\Controllers\TimelineController::class, 'new'])->name('admin.timeline.new');
 Route::post('/admin/timeline/set', [App\Http\Controllers\TimelineController::class, 'set'])->name('admin.timeline.set');
 Route::post('/admin/timeline/update', [App\Http\Controllers\TimelineController::class, 'update'])->name('admin.timeline.update');
-Route::post('/admin/timeline/remove', [App\Http\Controllers\TimelineController::class, 'remove'])->name('admin.timeline.remove');
+Route::post('/admin/timeline/delete', [App\Http\Controllers\TimelineController::class, 'delete'])->name('admin.timeline.delete');
 Route::post('/admin/timeline/edit', [App\Http\Controllers\TimelineController::class, 'edit'])->name('admin.timeline.edit');
 
 //Admin Testimonials routes

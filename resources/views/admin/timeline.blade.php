@@ -35,10 +35,11 @@
                                         </form>
                                     </div>
                                     <div class="col-auto">
-                                        <form action="{{route('admin.timeline.remove')}}" method="POST">
+                                        <form action="{{route('admin.timeline.delete')}}" method="POST">
                                             @csrf
                                             @method('post')
                                             <input type="text" name="id" value="{{$experience->id}}" hidden>
+                                            <input type="text" name="picture" value="{{$experience->icon}}" hidden>
                                             <input type="submit" class="btn btn-danger" value="Remove experience">
                                         </form>
                                     </div>

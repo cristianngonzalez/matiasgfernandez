@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 //Models
 use App\Models\Timeline;
@@ -51,8 +52,10 @@ class TimelineController extends Controller{
         return redirect('/admin/timeline?success=A experience of your timeline has been updated');
     }
 
-    public function remove(Request $req){
+    public function delete(Request $req){
         $experience = Timeline::where('id' , $req->input('id'))->delete();
+
+        Storage::disk('public')->delete($req->input('picture'));
 
         $timeline = Timeline::all();
         return view('admin.timeline')->with(['timeline' => $timeline]);
