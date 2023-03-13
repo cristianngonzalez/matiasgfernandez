@@ -46,7 +46,7 @@
                                 <tr>
                                     <th scope="row">{{$category->id}}</th>
                                     <td>
-                                        <form action="{{route('admin.taggalery.update')}}" method="POST">
+                                        <form action="{{route('admin.category.update')}}" method="POST">
                                             @csrf
                                             @method('POST')
                                             <input type="text" value="{{$category->id}}" name="id" hidden>
@@ -59,7 +59,7 @@
                                     </td>
 
                                     <td>
-                                        <form method="POST" action="{{ route('admin.taggalery.delete') }}">
+                                        <form method="POST" action="{{ route('admin.category.delete') }}">
                                                 @csrf
                                                 @method('post')
                                                 <input type="text" name="id" value="{{$category->id}}" hidden>
@@ -76,7 +76,7 @@
 
                     <h2>Add a new category</h2>
                     <hr>
-                    <form action="{{route('admin.taggalery.set')}}" method="POST">
+                    <form action="{{route('admin.category.set')}}" method="POST">
                         @csrf
                         @method('POST')
                         <div class="form-floating mb-3">

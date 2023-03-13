@@ -18,11 +18,11 @@ class CategoryController extends Controller{
 
     public function delete(Request $req){
 
-        $taggalery = Category::find( $req->input('id') );
+        $category = Category::find( $req->input('id') );
         //Obtenemos todas las galeries de esta taggalery para saber si la podemos borrar
-        $galeries_of_this_taggalery = $taggalery->galeries;
+        $blogs_of_this_category = $category->blogs;
 
-        if( count($galeries_of_this_taggalery) == 0 ){
+        if( count($blogs_of_this_category) == 0 ){
             $delete= Category::where('id', $req->input('id') )->delete();
 
             return redirect('/admin/category?success=A tag has been deleted');
