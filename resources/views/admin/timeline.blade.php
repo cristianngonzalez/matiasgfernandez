@@ -12,6 +12,15 @@
                 </div>
 
                 <div class="col-md-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="{{route('admin')}}">Admin</a></li>
+                          <li class="breadcrumb-item">Timeline</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="col-md-12">
         
                     <h1>Timeline of experience job</h1>
                     <hr>

@@ -47,7 +47,6 @@ class BlogController extends Controller{
     }
 
     public function update(Request $req){
-
         $blog = Blog::find( $req->input('id') );
         $blog->title = $req->input('title');
         $blog->category_id = $req->input('category');

@@ -12,6 +12,16 @@
                 </div>
 
                 <div class="col-md-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="{{route('admin')}}">Admin</a></li>
+                          <li class="breadcrumb-item"><a href="{{route('admin.blogs')}}">Blogs</a></li>
+                          <li class="breadcrumb-item">Edit blog</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="col-md-12">
         
                     <h1>Edit blog</h1>
                     <hr>

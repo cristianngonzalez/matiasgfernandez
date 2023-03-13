@@ -42,7 +42,7 @@
                 <div class="card" style="width: 100%;">
                     <img src="{{env('ASSETS_URL')}}img/svg/icons/youtube.svg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <a href="{{route('admin.video')}}"><h5 class="card-title">Youtube</h5></a>
+                        <a href="{{route('admin.video')}}"><h5 class="card-title">Videos</h5></a>
                       <p class="card-text">You can edit your social networks links.</p>
                     </div>
                 </div>
