@@ -35,6 +35,8 @@
     <!--Axios-->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
+    <meta name="google-site-verification" content="22zBlTYJC5WeQj4npX_upuhhby24GyMU5MR8XiLTS70" />
+
 </head>
 
 <body> 
