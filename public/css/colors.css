@@ -25,7 +25,7 @@
 .dizme_tm_all_wrap[data-color="blue"] .leftpart .menu ul li a:hover{color: #4169e1;}
 .dizme_tm_all_wrap[data-color="blue"] .leftpart .copyright a:hover{color: #4169e1;}
 .dizme_tm_all_wrap[data-color="blue"] .dizme_tm_about .description .name span{color: #4169e1;}
-.dizme_tm_all_wrap[data-color="blue"] .dizme_tm_button a{background-color: #4169e1;}
+.dizme_tm_all_wrap[data-color="blue"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #4169e1;}
 .dizme_tm_all_wrap[data-color="blue"] .dizme_tm_about .description .right > ul > li span{color: #4169e1;}
 .dizme_tm_all_wrap[data-color="blue"] .dizme_tm_about .description .right > ul > li a:hover{color: #4169e1;}
 .dizme_tm_all_wrap[data-color="blue"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #4169e1;}
@@ -45,7 +45,7 @@
 .timeline_filter ul li a.current{color: #4169e1;}
 
 body.dark .dizme_tm_all_wrap[data-color="blue"] .leftpart .copyright a:hover{color: #4169e1;}
-body.dark .dizme_tm_all_wrap[data-color="blue"] .dizme_tm_button a{color: #fff;}
+body.dark .dizme_tm_all_wrap[data-color="blue"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{color: #fff;}
 body.dark .dizme_tm_all_wrap[data-color="blue"] .leftpart .menu ul li.active a{color: #4169e1;}
 body.dark .dizme_tm_all_wrap[data-color="blue"] .leftpart .menu ul li a:hover{color: #4169e1;}
 
@@ -59,7 +59,7 @@ body.dark .dizme_tm_all_wrap[data-color="blue"] .leftpart .menu ul li a:hover{co
 .dizme_tm_all_wrap[data-color="green"] .leftpart .menu ul li a:hover{color: #66B95C;}
 .dizme_tm_all_wrap[data-color="green"] .leftpart .copyright a:hover{color: #66B95C;}
 .dizme_tm_all_wrap[data-color="green"] .dizme_tm_about .description .name span{color: #66B95C;}
-.dizme_tm_all_wrap[data-color="green"] .dizme_tm_button a{background-color: #66B95C;}
+.dizme_tm_all_wrap[data-color="green"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #66B95C;}
 .dizme_tm_all_wrap[data-color="green"] .dizme_tm_about .description .right > ul > li span{color: #66B95C;}
 .dizme_tm_all_wrap[data-color="green"] .dizme_tm_about .description .right > ul > li a:hover{color: #66B95C;}
 .dizme_tm_all_wrap[data-color="green"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #66B95C;}
@@ -94,7 +94,7 @@ body.dark .dizme_tm_all_wrap[data-color="green"] .leftpart .menu ul li a:hover{c
 .dizme_tm_all_wrap[data-color="brown"] .leftpart .copyright a:hover{color: #ff9800;}
 .dizme_tm_all_wrap[data-color="brown"] .dizme_tm_about .description .name span{color: #ff9800;}
 .dizme_tm_all_wrap[data-color="brown"] .dizme_tm_about .description .right > ul > li span{color: #ff9800;}
-.dizme_tm_all_wrap[data-color="brown"] .dizme_tm_button a{background-color: #ff9800;}
+.dizme_tm_all_wrap[data-color="brown"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #ff9800;}
 .dizme_tm_all_wrap[data-color="brown"] .dizme_tm_about .description .right > ul > li a:hover{color: #ff9800;}
 .dizme_tm_all_wrap[data-color="brown"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #ff9800;}
 
@@ -113,7 +113,7 @@ body.dark .dizme_tm_all_wrap[data-color="green"] .leftpart .menu ul li a:hover{c
 .timeline_filter ul li a.current{color: #ff9800;}
 
 body.dark .dizme_tm_all_wrap[data-color="brown"] .leftpart .copyright a:hover{color: #ff9800;}
-body.dark .dizme_tm_all_wrap[data-color="brown"] .dizme_tm_button a{color: #fff;}
+body.dark .dizme_tm_all_wrap[data-color="brown"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{color: #fff;}
 body.dark .dizme_tm_all_wrap[data-color="brown"] .leftpart .menu ul li.active a{color: #ff9800;}
 body.dark .dizme_tm_all_wrap[data-color="brown"] .leftpart .menu ul li a:hover{color: #ff9800;}
 
@@ -147,7 +147,7 @@ body.dark .dizme_tm_all_wrap[data-color="brown"] .leftpart .menu ul li a:hover{c
 .timeline_filter ul li a.current{color: #ff5e94;}
 
 body.dark .dizme_tm_all_wrap[data-color="pink"] .leftpart .copyright a:hover{color: #ff5e94;}
-body.dark .dizme_tm_all_wrap[data-color="pink"] .dizme_tm_button a{color: #fff;}
+body.dark .dizme_tm_all_wrap[data-color="pink"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{color: #fff;}
 body.dark .dizme_tm_all_wrap[data-color="pink"] .leftpart .menu ul li.active a{color: #ff5e94;}
 body.dark .dizme_tm_all_wrap[data-color="pink"] .leftpart .menu ul li a:hover{color: #ff5e94;}
 
@@ -162,7 +162,7 @@ body.dark .dizme_tm_all_wrap[data-color="pink"] .leftpart .menu ul li a:hover{co
 .dizme_tm_all_wrap[data-color="orange"] .leftpart .copyright a:hover{color: #fa5b0f;}
 .dizme_tm_all_wrap[data-color="orange"] .dizme_tm_about .description .name span{color: #fa5b0f;}
 .dizme_tm_all_wrap[data-color="orange"] .dizme_tm_about .description .right > ul > li span{color: #fa5b0f;}
-.dizme_tm_all_wrap[data-color="orange"] .dizme_tm_button a{background-color: #fa5b0f;}
+.dizme_tm_all_wrap[data-color="orange"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #fa5b0f;}
 .dizme_tm_all_wrap[data-color="orange"] .dizme_tm_about .description .right > ul > li a:hover{color: #fa5b0f;}
 .dizme_tm_all_wrap[data-color="orange"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #fa5b0f;}
 
@@ -181,7 +181,7 @@ body.dark .dizme_tm_all_wrap[data-color="pink"] .leftpart .menu ul li a:hover{co
 .timeline_filter ul li a.current{color: #fa5b0f;}
 
 body.dark .dizme_tm_all_wrap[data-color="orange"] .leftpart .copyright a:hover{color: #fa5b0f;}
-body.dark .dizme_tm_all_wrap[data-color="orange"] .dizme_tm_button a{color: #fff;}
+body.dark .dizme_tm_all_wrap[data-color="orange"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{color: #fff;}
 body.dark .dizme_tm_all_wrap[data-color="orange"] .leftpart .menu ul li.active a{color: #fa5b0f;}
 body.dark .dizme_tm_all_wrap[data-color="orange"] .leftpart .menu ul li a:hover{color: #fa5b0f;}
 
@@ -196,7 +196,7 @@ body.dark .dizme_tm_all_wrap[data-color="orange"] .leftpart .menu ul li a:hover{
 .dizme_tm_all_wrap[data-color="black"] .leftpart .copyright a:hover{color: #000;}
 .dizme_tm_all_wrap[data-color="black"] .dizme_tm_about .description .name span{color: #000;}
 .dizme_tm_all_wrap[data-color="black"] .dizme_tm_about .description .right > ul > li span{color: #000;}
-.dizme_tm_all_wrap[data-color="black"] .dizme_tm_button a{background-color: #000;}
+.dizme_tm_all_wrap[data-color="black"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #000;}
 .dizme_tm_all_wrap[data-color="black"] .dizme_tm_about .description .right > ul > li a:hover{color: #000;}
 .dizme_tm_all_wrap[data-color="black"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #000;}
 
@@ -215,7 +215,7 @@ body.dark .dizme_tm_all_wrap[data-color="orange"] .leftpart .menu ul li a:hover{
 .timeline_filter ul li a.current{color: #000;}
 
 body.dark .dizme_tm_all_wrap[data-color="black"] .leftpart .copyright a:hover{color: #000;}
-body.dark .dizme_tm_all_wrap[data-color="black"] .dizme_tm_button a{color: #fff;}
+body.dark .dizme_tm_all_wrap[data-color="black"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{color: #fff;}
 body.dark .dizme_tm_all_wrap[data-color="black"] .leftpart .menu ul li.active a{color: #000;}
 body.dark .dizme_tm_all_wrap[data-color="black"] .leftpart .menu ul li a:hover{color: #000;}
 
@@ -230,7 +230,7 @@ body.dark .dizme_tm_all_wrap[data-color="black"] .leftpart .menu ul li a:hover{c
 .dizme_tm_all_wrap[data-color="white"] .leftpart .copyright a:hover{color: #fff;}
 .dizme_tm_all_wrap[data-color="white"] .dizme_tm_about .description .name span{color: #fff;}
 .dizme_tm_all_wrap[data-color="white"] .dizme_tm_about .description .right > ul > li span{color: #fff;}
-.dizme_tm_all_wrap[data-color="white"] .dizme_tm_button a{background-color: #fff;}
+.dizme_tm_all_wrap[data-color="white"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #fff;}
 .dizme_tm_all_wrap[data-color="white"] .dizme_tm_about .description .right > ul > li a:hover{color: #fff;}
 .dizme_tm_all_wrap[data-color="white"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #fff;}
 
@@ -260,7 +260,7 @@ body.dark .dizme_tm_all_wrap[data-color="white"] .leftpart .menu ul li a:hover{c
 .dizme_tm_all_wrap[data-color="purple"] .leftpart .copyright a:hover{color: #9200ee;}
 .dizme_tm_all_wrap[data-color="purple"] .dizme_tm_about .description .name span{color: #9200ee;}
 .dizme_tm_all_wrap[data-color="purple"] .dizme_tm_about .description .right > ul > li span{color: #9200ee;}
-.dizme_tm_all_wrap[data-color="purple"] .dizme_tm_button a{background-color: #9200ee;}
+.dizme_tm_all_wrap[data-color="purple"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #9200ee;}
 .dizme_tm_all_wrap[data-color="purple"] .dizme_tm_about .description .right > ul > li a:hover{color: #9200ee;}
 .dizme_tm_all_wrap[data-color="purple"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #9200ee;}
 
@@ -279,7 +279,7 @@ body.dark .dizme_tm_all_wrap[data-color="white"] .leftpart .menu ul li a:hover{c
 .timeline_filter ul li a.current{color: #9200ee;}
 
 body.dark .dizme_tm_all_wrap[data-color="purple"] .leftpart .copyright a:hover{color: #9200ee;}
-body.dark .dizme_tm_all_wrap[data-color="purple"] .dizme_tm_button a{color: #fff;}
+body.dark .dizme_tm_all_wrap[data-color="purple"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{color: #fff;}
 body.dark .dizme_tm_all_wrap[data-color="purple"] .leftpart .menu ul li.active a{color: #9200ee;}
 body.dark .dizme_tm_all_wrap[data-color="purple"] .leftpart .menu ul li a:hover{color: #9200ee;}
 
@@ -294,7 +294,7 @@ body.dark .dizme_tm_all_wrap[data-color="purple"] .leftpart .menu ul li a:hover{
 .dizme_tm_all_wrap[data-color="sky"] .leftpart .copyright a:hover{color: #00D4BD;}
 .dizme_tm_all_wrap[data-color="sky"] .dizme_tm_about .description .name span{color: #00D4BD;}
 .dizme_tm_all_wrap[data-color="sky"] .dizme_tm_about .description .right > ul > li span{color: #00D4BD;}
-.dizme_tm_all_wrap[data-color="sky"] .dizme_tm_button a{background-color: #00D4BD;}
+.dizme_tm_all_wrap[data-color="sky"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #00D4BD;}
 .dizme_tm_all_wrap[data-color="sky"] .dizme_tm_about .description .right > ul > li a:hover{color: #00D4BD;}
 .dizme_tm_all_wrap[data-color="sky"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #00D4BD;}
 
@@ -313,7 +313,7 @@ body.dark .dizme_tm_all_wrap[data-color="purple"] .leftpart .menu ul li a:hover{
 .timeline_filter ul li a.current{color: #00D4BD;}
 
 body.dark .dizme_tm_all_wrap[data-color="sky"] .leftpart .copyright a:hover{color: #00D4BD;}
-body.dark .dizme_tm_all_wrap[data-color="sky"] .dizme_tm_button a{color: #fff;}
+body.dark .dizme_tm_all_wrap[data-color="sky"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{color: #fff;}
 body.dark .dizme_tm_all_wrap[data-color="sky"] .leftpart .menu ul li.active a{color: #00D4BD;}
 body.dark .dizme_tm_all_wrap[data-color="sky"] .leftpart .menu ul li a:hover{color: #00D4BD;}
 
@@ -328,7 +328,7 @@ body.dark .dizme_tm_all_wrap[data-color="sky"] .leftpart .menu ul li a:hover{col
 .dizme_tm_all_wrap[data-color="cadetBlue"] .leftpart .copyright a:hover{color: #5e9e9f;}
 .dizme_tm_all_wrap[data-color="cadetBlue"] .dizme_tm_about .description .name span{color: #5e9e9f;}
 .dizme_tm_all_wrap[data-color="cadetBlue"] .dizme_tm_about .description .right > ul > li span{color: #5e9e9f;}
-.dizme_tm_all_wrap[data-color="cadetBlue"] .dizme_tm_button a{background-color: #5e9e9f;}
+.dizme_tm_all_wrap[data-color="cadetBlue"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #5e9e9f;}
 .dizme_tm_all_wrap[data-color="cadetBlue"] .dizme_tm_about .description .right > ul > li a:hover{color: #5e9e9f;}
 .dizme_tm_all_wrap[data-color="cadetBlue"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #5e9e9f;}
 
@@ -347,7 +347,7 @@ body.dark .dizme_tm_all_wrap[data-color="sky"] .leftpart .menu ul li a:hover{col
 .timeline_filter ul li a.current{color: #5e9e9f;}
 
 body.dark .dizme_tm_all_wrap[data-color="cadetBlue"] .leftpart .copyright a:hover{color: #5e9e9f;}
-body.dark .dizme_tm_all_wrap[data-color="cadetBlue"] .dizme_tm_button a{color: #fff;}
+body.dark .dizme_tm_all_wrap[data-color="cadetBlue"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{color: #fff;}
 body.dark .dizme_tm_all_wrap[data-color="cadetBlue"] .leftpart .menu ul li.active a{color: #5e9e9f;}
 body.dark .dizme_tm_all_wrap[data-color="cadetBlue"] .leftpart .menu ul li a:hover{color: #5e9e9f;}
 
@@ -362,7 +362,7 @@ body.dark .dizme_tm_all_wrap[data-color="cadetBlue"] .leftpart .menu ul li a:hov
 .dizme_tm_all_wrap[data-color="olive"] .leftpart .copyright a:hover{color: #666d41;}
 .dizme_tm_all_wrap[data-color="olive"] .dizme_tm_about .description .name span{color: #666d41;}
 .dizme_tm_all_wrap[data-color="olive"] .dizme_tm_about .description .right > ul > li span{color: #666d41;}
-.dizme_tm_all_wrap[data-color="olive"] .dizme_tm_button a{background-color: #666d41;}
+.dizme_tm_all_wrap[data-color="olive"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #666d41;}
 .dizme_tm_all_wrap[data-color="olive"] .dizme_tm_about .description .right > ul > li a:hover{color: #666d41;}
 .dizme_tm_all_wrap[data-color="olive"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #666d41;}
 
@@ -381,7 +381,7 @@ body.dark .dizme_tm_all_wrap[data-color="cadetBlue"] .leftpart .menu ul li a:hov
 .timeline_filter ul li a.current{color: #666d41;}
 
 body.dark .dizme_tm_all_wrap[data-color="olive"] .leftpart .copyright a:hover{color: #666d41;}
-body.dark .dizme_tm_all_wrap[data-color="olive"] .dizme_tm_button a{color: #fff;}
+body.dark .dizme_tm_all_wrap[data-color="olive"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{color: #fff;}
 body.dark .dizme_tm_all_wrap[data-color="olive"] .leftpart .menu ul li.active a{color: #666d41;}
 body.dark .dizme_tm_all_wrap[data-color="olive"] .leftpart .menu ul li a:hover{color: #666d41;}
 
@@ -396,7 +396,7 @@ body.dark .dizme_tm_all_wrap[data-color="olive"] .leftpart .menu ul li a:hover{c
 .dizme_tm_all_wrap[data-color="crimson"] .leftpart .copyright a:hover{color: #e54b4b;}
 .dizme_tm_all_wrap[data-color="crimson"] .dizme_tm_about .description .name span{color: #e54b4b;}
 .dizme_tm_all_wrap[data-color="crimson"] .dizme_tm_about .description .right > ul > li span{color: #e54b4b;}
-.dizme_tm_all_wrap[data-color="crimson"] .dizme_tm_button a{background-color: #e54b4b;}
+.dizme_tm_all_wrap[data-color="crimson"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #e54b4b;}
 .dizme_tm_all_wrap[data-color="crimson"] .dizme_tm_about .description .right > ul > li a:hover{color: #e54b4b;}
 .dizme_tm_all_wrap[data-color="crimson"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #e54b4b;}
 
@@ -415,7 +415,7 @@ body.dark .dizme_tm_all_wrap[data-color="olive"] .leftpart .menu ul li a:hover{c
 .timeline_filter ul li a.current{color: #e54b4b;}
 
 body.dark .dizme_tm_all_wrap[data-color="crimson"] .leftpart .copyright a:hover{color: #e54b4b;}
-body.dark .dizme_tm_all_wrap[data-color="crimson"] .dizme_tm_button a{color: #fff;}
+body.dark .dizme_tm_all_wrap[data-color="crimson"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{color: #fff;}
 body.dark .dizme_tm_all_wrap[data-color="crimson"] .leftpart .menu ul li.active a{color: #e54b4b;}
 body.dark .dizme_tm_all_wrap[data-color="crimson"] .leftpart .menu ul li a:hover{color: #e54b4b;}
 
@@ -430,7 +430,7 @@ body.dark .dizme_tm_all_wrap[data-color="crimson"] .leftpart .menu ul li a:hover
 .dizme_tm_all_wrap[data-color="red"] .leftpart .copyright a:hover{color: #fe0000;}
 .dizme_tm_all_wrap[data-color="red"] .dizme_tm_about .description .name span{color: #fe0000;}
 .dizme_tm_all_wrap[data-color="red"] .dizme_tm_about .description .right > ul > li span{color: #fe0000;}
-.dizme_tm_all_wrap[data-color="red"] .dizme_tm_button a{background-color: #fe0000;}
+.dizme_tm_all_wrap[data-color="red"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{background-color: #fe0000;}
 .dizme_tm_all_wrap[data-color="red"] .dizme_tm_about .description .right > ul > li a:hover{color: #fe0000;}
 .dizme_tm_all_wrap[data-color="red"] .dizme_tm_portfolio .portfolio_filter ul li a:hover{color: #fe0000;}
 
@@ -449,7 +449,7 @@ body.dark .dizme_tm_all_wrap[data-color="crimson"] .leftpart .menu ul li a:hover
 .timeline_filter ul li a.current{color: #fe0000;}
 
 body.dark .dizme_tm_all_wrap[data-color="red"] .leftpart .copyright a:hover{color: #fe0000;}
-body.dark .dizme_tm_all_wrap[data-color="red"] .dizme_tm_button a{color: #fff;}
+body.dark .dizme_tm_all_wrap[data-color="red"] .dizme_tm_button a , .dizme_tm_button input[type=submit]{color: #fff;}
 body.dark .dizme_tm_all_wrap[data-color="red"] .leftpart .menu ul li.active a{color: #fe0000;}
 body.dark .dizme_tm_all_wrap[data-color="red"] .leftpart .menu ul li a:hover{color: #fe0000;}
 

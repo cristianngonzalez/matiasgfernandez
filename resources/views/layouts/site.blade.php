@@ -6,6 +6,11 @@
 
 <head>
 
+    <script>
+        const url = '{{Request::url()}}';
+        console.log(url); 
+    </script>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <meta name="description" content="Matias Fernandez - Sr Business Executive con 25 años de aprendizajes en las áreas de Negocio">
@@ -14,6 +19,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <title>Matías Fernández</title>
+
+    <!--Sweet allert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="{{env('ASSETS_URL')}}css/bootstrap-custom.css">
@@ -30,7 +38,6 @@
     <!-- /STYLES -->
 
     <!--Sweet allert-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="{{env('ASSETS_URL')}}css/sweetalert-custom.css">
     <!--Axios-->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -40,11 +47,6 @@
 </head>
 
 <body> 
-
-    <script>
-        const url = '{{Request::url()}}';
-        console.log(url); 
-    </script>
 
     <!-- Google Analytics -->
     <script>

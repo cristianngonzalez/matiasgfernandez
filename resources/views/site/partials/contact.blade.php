@@ -11,22 +11,22 @@
                 
                 <div class="wow" data-wow-duration="1s">
                     <div class="fields">
-                        <form action="/" method="post" class="contact_form" id="contact_form" autocomplete="off">
-                            <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
-                            <div class="empty_notice"><span>Please Fill Required Fields</span></div>
+                        <form action="" method="post" class="contact_form" id="contact_form" >
+                            <div class="returnmessage" data-success="He recibido su mensaje, Tan pronto como pueda me comunicare contigo."></div>
+                            <div class="empty_notice"><span>Por favor rellene todos los campos</span></div>
                             <div class="input_list">
                                 <ul>
-                                    <li><input id="name" type="text" placeholder="Su nombre" /></li>
-                                    <li><input id="email" type="text" placeholder="Su email" /></li>
+                                    <li><input id="name" type="text" placeholder="Su nombre" required/></li>
+                                    <li><input id="email" type="text" placeholder="Su email" required/></li>
                                     <li><input id="phone" type="number" placeholder="Su telefono (opcional)" /></li>
-                                    <li><input id="subject" type="text" placeholder="Asunto" /></li>
+                                    <li><input id="subject" type="text" placeholder="Asunto" required/></li>
                                 </ul>
                             </div>
                             <div class="message_area">
-                                <textarea id="message" placeholder="Escriba su mensaje aquí"></textarea>
+                                <textarea id="message" placeholder="Escriba su mensaje aquí" required></textarea>
                             </div>
                             <div class="dizme_tm_button">
-                                <a id="send_message" href="#"><span>Enviar</span></a>
+                                <button id="send_message"><span>Enviar</span></button>
                             </div>
                         </form>
                     </div>

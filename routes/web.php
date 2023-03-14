@@ -32,6 +32,7 @@ Route::get('/admin/timeline' , [App\Http\Controllers\AdminController::class, 'ti
 Route::get('/admin/video' , [App\Http\Controllers\AdminController::class, 'video'])->name('admin.video');
 Route::get('/admin/staticcontent' , [App\Http\Controllers\AdminController::class, 'staticcontent'])->name('admin.staticcontent');
 Route::get('/admin/requestcv' , [App\Http\Controllers\AdminController::class, 'requestcv'])->name('admin.requestcv');
+Route::get('/messages/contact' , [App\Http\Controllers\MessagesController::class, 'contact'])->name('messages.contact');
 
 //Admin User routes
 Route::post('/admin/users/remove', [App\Http\Controllers\Auth\UserController::class, 'remove'])->name('admin.users.remove');
