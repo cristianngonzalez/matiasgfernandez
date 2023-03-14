@@ -31,6 +31,7 @@ Route::get('/admin/category' , [App\Http\Controllers\AdminController::class, 'ca
 Route::get('/admin/timeline' , [App\Http\Controllers\AdminController::class, 'timeline'])->name('admin.timeline');
 Route::get('/admin/video' , [App\Http\Controllers\AdminController::class, 'video'])->name('admin.video');
 Route::get('/admin/staticcontent' , [App\Http\Controllers\AdminController::class, 'staticcontent'])->name('admin.staticcontent');
+Route::get('/admin/requestcv' , [App\Http\Controllers\AdminController::class, 'requestcv'])->name('admin.requestcv');
 
 //Admin User routes
 Route::post('/admin/users/remove', [App\Http\Controllers\Auth\UserController::class, 'remove'])->name('admin.users.remove');

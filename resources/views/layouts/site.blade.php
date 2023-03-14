@@ -8,7 +8,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <meta name="description" content="Matias Fernandez">
+    <meta name="description" content="Matias Fernandez - Sr Business Executive con 25 años de aprendizajes en las áreas de Negocio">
     <meta name="author" content="Matias Fernadez">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -41,6 +41,11 @@
 
 <body> 
 
+    <script>
+        const url = '{{Request::url()}}';
+        console.log(url); 
+    </script>
+
     <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -60,6 +65,7 @@
     <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
     <script src="{{env('ASSETS_URL')}}js/lib/plugins.js"></script>
     <script src="{{env('ASSETS_URL')}}js/lib/init.js"></script>
+    <script src="{{env('ASSETS_URL')}}js/solicitarCV.js"></script>
     <!-- /SCRIPTS -->
 
 </body>

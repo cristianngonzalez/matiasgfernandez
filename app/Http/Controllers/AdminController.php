@@ -16,6 +16,7 @@ use App\Models\Galery;
 use App\Models\Taggalery;
 use App\Models\Video;
 use App\Models\Staticcontent;
+use App\Models\Requestcv;
 
 class AdminController extends Controller{
 
@@ -99,5 +100,11 @@ class AdminController extends Controller{
         $categories = Category::all();
 
         return view('admin.category')->with(['categories' => $categories]);
+    }
+
+    public function requestcv(){
+        $requests = Requestcv::orderBy('updated_at', 'desc')->paginate(10);
+
+        return view('admin.requestcv')->with(['requests' => $requests]);
     }
 }

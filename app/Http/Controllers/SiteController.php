@@ -12,6 +12,7 @@ use App\Models\Timeline;
 use App\Models\Video;
 use App\Models\Staticcontent;
 use App\Models\Testimonial;
+use App\Models\RequestCV;
 
 use Illuminate\Http\Request;
 
@@ -42,6 +43,11 @@ class SiteController extends Controller{
 
     public function solicitarCV(Request $req){
         $email = $req->query->get('login');
+
+        RequestCV::create([
+            'email' => $email,
+            'sent' => false,
+        ]);
         
         return response()->json(['status' => 'success'] , 200);
     }

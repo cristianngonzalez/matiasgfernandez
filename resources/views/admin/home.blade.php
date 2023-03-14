@@ -84,17 +84,17 @@
             </div>
             
 
-            <!--
+            
             <div class="col-md-3 mb-2">
                 <div class="card" style="width: 100%;">
                     <img src="{{env('ASSETS_URL')}}img/svg/icons/cv_request.svg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <a href="{{route('admin.blogs')}}"><h5 class="card-title">Cv requests</h5></a>
+                        <a href="{{route('admin.requestcv')}}"><h5 class="card-title">Cv requests</h5></a>
                       <p class="card-text">You can admin who want to have your cv and sent it.</p>
                     </div>
                 </div>
             </div>
-            -->
+            
 
             
             <div class="col-md-3 mb-2">
