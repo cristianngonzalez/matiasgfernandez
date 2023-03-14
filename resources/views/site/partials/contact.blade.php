@@ -18,7 +18,7 @@
                                 <ul>
                                     <li><input id="name" type="text" placeholder="Su nombre" required/></li>
                                     <li><input id="email" type="text" placeholder="Su email" required/></li>
-                                    <li><input id="phone" type="number" placeholder="Su telefono (opcional)" /></li>
+                                    <li><input id="phone" type="phone" placeholder="Su telefono (opcional)" /></li>
                                     <li><input id="subject" type="text" placeholder="Asunto" required/></li>
                                 </ul>
                             </div>

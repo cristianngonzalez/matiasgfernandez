@@ -27,7 +27,8 @@ class DatabaseSeeder extends Seeder{
                 video_seed::class,
                 staticcontent_seed::class,
                 testimonial_seed::class,
-                requestcv_seed::class
+                requestcv_seed::class,
+                message_seed::class
             ]);
         }
 

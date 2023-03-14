@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+
+use App\Models\Message;
 
 class MessagesController extends Controller{
     //
@@ -15,18 +16,17 @@ class MessagesController extends Controller{
         $subject = $req->query->get('ajax_subject');
         $phone = $req->query->get('ajax_phone');
 
-        return response()->json(['status' => 'success'] , 200);
-
-    }
-
-    public function solicitarCV(Request $req){
-        $email = $req->query->get('login');
-
-        RequestCV::create([
+        Message::create([
+            'name' => $name,
             'email' => $email,
-            'sent' => false,
+            'subject' => $subject,
+            'phone' => $phone,
+            'message' => $message,
+            'readed' => false
         ]);
-        
+
         return response()->json(['status' => 'success'] , 200);
+
     }
+
 }
