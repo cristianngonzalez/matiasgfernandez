@@ -30,6 +30,6 @@ class MessageCV extends Mailable{
      */
     public function build(){
         
-        return $this->view('requestcv-local');
+        return $this->view('emails.requestcvlocal');
     }
 }
