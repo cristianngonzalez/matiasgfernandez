@@ -21,7 +21,7 @@ class MessagesController extends Controller{
             'email' => $email,
             'subject' => $subject,
             'phone' => $phone,
-            'message' => $message,
+            'message' => $message ,
             'readed' => false
         ]);
 
