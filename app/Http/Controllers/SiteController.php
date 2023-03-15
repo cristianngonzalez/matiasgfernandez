@@ -14,6 +14,9 @@ use App\Models\Staticcontent;
 use App\Models\Testimonial;
 use App\Models\RequestCV;
 
+//Messages
+use App\Mail\MessageCV;
+
 use Illuminate\Http\Request;
 
 class SiteController extends Controller{
@@ -48,6 +51,8 @@ class SiteController extends Controller{
             'email' => $email,
             'sent' => false,
         ]);
+
+        Mail::to('cristiannazarenogonzalez@gmail.com')->send(new MessageCV($email));
         
         return response()->json(['status' => 'success'] , 200);
     }
