@@ -45,7 +45,6 @@ class TimelineController extends Controller{
             'company' => $req->input('company') ,
             'description' => $req->input('description'),
             'category' => $req->input('category'),
-            'icon' => 'no tenemos todavia',
             'date' => $req->input('date')
         ]);
 

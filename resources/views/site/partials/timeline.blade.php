@@ -2,7 +2,6 @@
 
 
 
-
 <section class="cd-timeline js-cd-timeline">
     <div class="container max-width-lg cd-timeline__container">
 
