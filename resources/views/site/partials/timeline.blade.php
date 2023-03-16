@@ -72,7 +72,7 @@
             <div class="cd-timeline__img">
               <img src="{{env('ASSETS_URL')}}storage/${experience.icon}" alt="Picture">
             </div>
-            <div class="cd-timeline__content text-component">
+            <div class="cd-timeline__content text-component"  onclick="experienceVerMas(${experience.id})" >
               <h2>${experience.title}</h2>
               <h5>${experience.company}</h5>
               <span onclick="experienceVerMas(${experience.id})" id="span_vermas_experience_${experience.id}">Ver mas</span>
@@ -91,8 +91,12 @@
 
       //Despintar todos los parrafos
       alltimeline.forEach(experience => {
-        document.getElementById(`p_experience_description_${experience.id}`).innerHTML = '';
-        document.getElementById(`span_vermas_experience_${experience.id}`).style.display = 'inline';
+        if( document.getElementById(`p_experience_description_${experience.id}`) ){
+          document.getElementById(`p_experience_description_${experience.id}`).innerHTML = '';
+        }
+        if(  document.getElementById(`span_vermas_experience_${experience.id}`) ){
+          document.getElementById(`span_vermas_experience_${experience.id}`).style.display = 'inline';
+        }
       });
 
       //Volver a rellenar el parrafo apropiado
