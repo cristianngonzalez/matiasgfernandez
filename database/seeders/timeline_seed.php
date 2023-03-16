@@ -46,7 +46,7 @@ class timeline_seed extends Seeder{
             'title' => "Consultoría Estratégica",
             'company' => "Grupo Phronesis",
             'description' => "Evaluación estrátegica sobre posibles rutas de crecimiento en alimentos.",
-            'icon' => 'timeline-seed-10.webp',
+            'icon' => 'timeline-seed-12.png',
             'category' => "consultancy",
             'date' => "2021"
         ]);
@@ -64,7 +64,7 @@ class timeline_seed extends Seeder{
             'title' => "Consultoría Comercial",
             'company' => "Colmena Digital",
             'description' => "Análisis comercial, posicionamiento y escenarios de expansión en latam",
-            'icon' => 'timeline-seed-12.png',
+            'icon' => 'timeline-seed-10.webp',
             'category' => 'startup',
             'date' => "2022"
         ]);
