@@ -32,6 +32,14 @@ class timeline_seed extends Seeder{
             'date' => '2006 - 2008'
         ]);
 
+        Timeline::create([
+            'title' => 'Growth Marketing Manager',
+            'company' => 'Wimet',
+            'description' => "He estado desarrollando y siendo dueño de la estrategia para campañas de marketing de rendimiento en FB, display, redes sociales, plataformas de generación de leads y SEM. He estado desarrollando estrategia de contenido e implementación en canales pagos. Gestione las pérdidas y ganancias del marketing de rendimiento y optimice el gasto diario en medios Impulsar conocimientos cuantitativos y cualitativos, incluidos aportes e informes clave; monitorear las tendencias de crecimiento y medir todas las campañas de marketing Cree campañas de marketing multicanal para impulsar el sentimiento de marca y el crecimiento de los usuarios. Comunicar el desempeño, la estrategia y la visión.",
+            'icon' => 'timeline-seed-3.png',
+            'category' => 'startup',
+            'date' => '2020 - 2021'
+        ]);
 
         Timeline::create([
             'title' => 'Chief Growth Officer',
