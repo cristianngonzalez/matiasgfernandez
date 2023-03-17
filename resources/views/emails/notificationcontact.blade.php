@@ -4,7 +4,7 @@
     <h1>Has recibido un mensaje</h1>
     <p>Un usuario del sitio web ha enviado un mensaje desde el formulario de contacto</p>
 
-    <div>Asunto: {{$subject}}</div>
+    <div>Asunto: {{$sub}}</div>
     <div>Email: <a href="mailto:{{$email}}">{{$email}}</a></div>
     <div>Phone: {{$phone}}</div>
     <div>Message:

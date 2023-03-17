@@ -14,7 +14,7 @@ class NotificationContact extends Mailable{
     public $email;
     public $socialnetworks;
     public $name;
-    public $subject;
+    public $sub;
     public $phone;
     public $msg;
 
@@ -23,11 +23,11 @@ class NotificationContact extends Mailable{
      *
      * @return void
      */
-    public function __construct($email , $socialnetworks , $name , $subject , $phone , $msg){
+    public function __construct($email , $socialnetworks , $name , $sub, $phone , $msg){
         $this->email = $email;
         $this->socialnetworks = $socialnetworks;
         $this->name = $name;
-        $this->subject = $subject;
+        $this->sub = $sub;
         $this->phone = $phone;
         $this->msg = $msg;
     }
