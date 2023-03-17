@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Mail;
 
 use App\Models\Message;
 use App\Models\Reply;
+use App\Models\Socialnetwork;
 
 use App\Mail\MessageReply;
 
@@ -30,7 +31,7 @@ class MessagesController extends Controller{
         $message_id = $req->input('message_id');
         $msg = '';
         if($req->input('message') !== null){
-            $message = $req->input('message');
+            $msg = $req->input('message');
         }
 
         Reply::create([
@@ -40,8 +41,15 @@ class MessagesController extends Controller{
             'message_id' => $message_id
         ]);
 
-        Mail::to($to)->send(new MessageReply($msg , $sub));
+        $socialnetworks = Socialnetwork::all();
+
+        Mail::to($to)->send(new MessageReply($msg , $sub , $socialnetworks));
+
+        /*Esto es para mostrar como seria al mensaje (comentar en produccion) */
+        //return new MessageReply($msg , $sub , $socialnetworks);
 
         return redirect('/admin/messages?success=Your message has been sent');
+
+        
     }
 }

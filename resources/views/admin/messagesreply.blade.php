@@ -69,7 +69,8 @@
                                 mergetags_list: [
                                     { value: 'First.Name', title: 'First Name' },
                                     { value: 'Email', title: 'Email' },
-                                ]
+                                ],
+                                content_style: "body{font-size: 14px}"
                             });
                         </script>
 

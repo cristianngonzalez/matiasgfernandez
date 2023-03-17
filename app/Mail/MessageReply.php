@@ -12,16 +12,18 @@ class MessageReply extends Mailable{
 
     public $msg;
     public $sub;
+    public $socialnetworks;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($msg , $sub){
+    public function __construct($msg , $sub , $socialnetworks){
         //
         $this->msg = $msg;
         $this->sub = $sub;
+        $this->socialnetworks = $socialnetworks;
     }
 
     /**
