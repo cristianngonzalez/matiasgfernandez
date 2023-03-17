@@ -58,7 +58,7 @@ class SiteController extends Controller{
         $socialnetworks = Socialnetwork::all();
 
         Mail::to('contacto@matiasgfernandez.com')->send(new NotificationCvRequest($email , $socialnetworks));
-        Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationCvRequest($email , $socialnetworks));
+        //Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationCvRequest($email , $socialnetworks));
 
         Mail::to($email)->send(new GuestnotificationCvRequest($email , $socialnetworks));
         
