@@ -17,7 +17,8 @@ use App\Models\Testimonial;
 use App\Models\RequestCV;
 
 //Messages
-use App\Mail\MessageCV;
+use App\Mail\NotificationCvRequest;
+use App\Mail\GuestnotificationCvRequest;
 
 use Illuminate\Http\Request;
 
@@ -54,7 +55,12 @@ class SiteController extends Controller{
             'sent' => false,
         ]);
 
-        Mail::to('cristiannazarenogonzalez@gmail.com')->send(new MessageCV($email));
+        $socialnetworks = Socialnetwork::all();
+
+        Mail::to('contacto@matiasgfernandez.com')->send(new NotificationCvRequest($email , $socialnetworks));
+        Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationCvRequest($email , $socialnetworks));
+
+        Mail::to($email)->send(new GuestnotificationCvRequest($email , $socialnetworks));
         
         return response()->json(['status' => 'success'] , 200);
     }
