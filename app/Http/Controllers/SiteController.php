@@ -104,7 +104,7 @@ class SiteController extends Controller{
         $socialnetworks = Socialnetwork::all();
 
         Mail::to('contacto@matiasgfernandez.com')->send(new NotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
-        //Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
+        Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
 
         Mail::to($email)->send(new GuestnotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
 
