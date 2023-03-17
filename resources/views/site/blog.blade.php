@@ -79,9 +79,17 @@
     }
 
     /*======================================================================*/
+    .blog-comment-reply-container{
+        padding-left: 20px;
+        margin-top: 5px;
+    }
+    .blog-comment-reply-contanier-picture {
+        float: left;
+        margin-right: 10px
+    }
     .blog-comment-reply-contanier-picture img{
-        width: 50px;
-        border-radius: 25px;
+        width: 35px;
+        border-radius: 40px;
     }
 
 </style>
@@ -145,17 +153,18 @@
                                     <div class="blog-comment-container">
                                         <h5>{{$comment->name}}</h5>
                                         <p>{{$comment->comment}}</p>
-                                        <!--Reply-->
+                                        <!--Reply
                                         <div class="blog-comment-reply-container">
                                             <div class="blog-comment-reply-contanier-picture">
                                                 <img src="{{env('ASSETS_URL')}}img/slider/small-avatar.png" alt="Matias Fernandez">
                                             </div>
                                             <div class="blog-comment-reply">
-                                                <p>Matías Fernández</p>
+                                                <p><strong>Matías Fernández</strong></p>
                                                 <p>Muchas gracias, te mando un abrazo</p>
                                             </div>
                                             
                                         </div>
+                                    -->
                                         
                                     </div>
                                 @endforeach
