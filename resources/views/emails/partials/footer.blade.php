@@ -38,7 +38,7 @@
                       <tr>
                         <td width="7" class="hide-mobile"></td>
                         <td align="center">
-                          <img style="width:16px;border:0px;display: inline!important;" src="images/linkedin.png" width="16" border="0" editable="true" data-icon data-image-edit data-url data-label="Linkedin" data-image-width alt="icon">
+                          <img style="width:16px;border:0px;display: inline!important;" src="https://matiasgfernandez.com/public/img/svg/icons/linkedin.png" width="16" border="0" editable="true" data-icon data-image-edit data-url data-label="Linkedin" data-image-width alt="icon">
                         </td>
                         <td width="7" class="hide-mobile"></td>
                       </tr>
@@ -50,7 +50,7 @@
                       <tr>
                         <td width="7" class="hide-mobile"></td>
                         <td align="center">
-                          <img style="width:16px;border:0px;display: inline!important;" src="images/youtube.png" width="16" border="0" editable="true" data-icon data-image-edit data-url data-label="YouTube" data-image-width alt="icon">
+                          <img style="width:16px;border:0px;display: inline!important;" src="https://matiasgfernandez.com/public/img/svg/icons/youtube.png" width="16" border="0" editable="true" data-icon data-image-edit data-url data-label="YouTube" data-image-width alt="icon">
                         </td>
                       </tr>
                     </table>
