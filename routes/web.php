@@ -10,6 +10,7 @@ Route::get('/home', [App\Http\Controllers\SiteController::class, 'home'] );
 Route::get('/blogs', [App\Http\Controllers\SiteController::class, 'blogs'] )->name('site.blogs');
 Route::get('/blog',  [App\Http\Controllers\SiteController::class, 'blog'] )->name('site.blog');
 Route::post('/comment/post',  [App\Http\Controllers\CommentController::class, 'post'] )->name('site.comment.post');
+Route::get('/messages/contact' , [App\Http\Controllers\SiteController::class, 'contact'])->name('messages.contact');
 
 //=======================================================================================================================
 //Ajax routes
@@ -32,7 +33,8 @@ Route::get('/admin/timeline' , [App\Http\Controllers\AdminController::class, 'ti
 Route::get('/admin/video' , [App\Http\Controllers\AdminController::class, 'video'])->name('admin.video');
 Route::get('/admin/staticcontent' , [App\Http\Controllers\AdminController::class, 'staticcontent'])->name('admin.staticcontent');
 Route::get('/admin/requestcv' , [App\Http\Controllers\AdminController::class, 'requestcv'])->name('admin.requestcv');
-Route::get('/messages/contact' , [App\Http\Controllers\MessagesController::class, 'contact'])->name('messages.contact');
+Route::get('/admin/messages' , [App\Http\Controllers\AdminController::class, 'messages'])->name('admin.messages');
+
 
 //Admin User routes
 Route::post('/admin/users/remove', [App\Http\Controllers\Auth\UserController::class, 'remove'])->name('admin.users.remove');
@@ -90,3 +92,11 @@ Route::post('/admin/video/delete' , [App\Http\Controllers\VideoController::class
 
 //Static content
 Route::post('/admin/staticcontent/update' , [App\Http\Controllers\StaticcontentController::class, 'update'])->name('admin.staticcontent.update');
+
+//Request
+Route::post('/admin/requestcv/delete' , [App\Http\Controllers\RequestcvController::class, 'delete'])->name('admin.requestcv.delete');
+
+//Messages
+Route::post('/admin/messages/open', [App\Http\Controllers\MessagesController::class, 'open'])->name('admin.messages.open');
+Route::post('/admin/messages/reply', [App\Http\Controllers\MessagesController::class, 'reply'])->name('admin.messages.reply');
+Route::post('/admin/messages/reply/send', [App\Http\Controllers\MessagesController::class, 'replySend'])->name('admin.messages.reply.send');

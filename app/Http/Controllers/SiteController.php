@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Mail;
+use App\Models\Message;
 
 //Models
 use App\Models\Blog;
@@ -72,6 +73,27 @@ class SiteController extends Controller{
         $blogs = Blog::all()->take(3);
 
         return view('site.blog')->with(['blog' => $blog , 'blogs' => $blogs , 'comments' => $comments]);
+    }
+
+    public function contact(Request $req){
+
+        $name = $req->query->get('ajax_name');
+        $email = $req->query->get('ajax_email');
+        $message = $req->query->get('ajax_message');
+        $subject = $req->query->get('ajax_subject');
+        $phone = $req->query->get('ajax_phone');
+
+        Message::create([
+            'name' => $name,
+            'email' => $email,
+            'subject' => $subject,
+            'phone' => $phone,
+            'message' => $message ,
+            'readed' => false
+        ]);
+
+        return response()->json(['status' => 'success'] , 200);
+
     }
     
 }

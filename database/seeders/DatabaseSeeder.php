@@ -28,7 +28,8 @@ class DatabaseSeeder extends Seeder{
                 staticcontent_seed::class,
                 testimonial_seed::class,
                 requestcv_seed::class,
-                message_seed::class
+                message_seed::class,
+                reply_seed::class
             ]);
         }
 

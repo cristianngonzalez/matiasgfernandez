@@ -60,17 +60,17 @@
             </div>
             
 
-            <!--
+            
             <div class="col-md-3 mb-2">
                 <div class="card" style="width: 100%;">
                     <img src="{{env('ASSETS_URL')}}img/svg/icons/messages.svg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <a href="{{route('admin.blogs')}}"><h5 class="card-title">Messages</h5></a>
+                        <a href="{{route('admin.messages')}}"><h5 class="card-title">Messages</h5></a>
                       <p class="card-text">Your site has a contact form where you can receive messages, and you can send message from your admin here.</p>
                     </div>
                 </div>
             </div>
-            -->
+            
 
             
             <div class="col-md-3 mb-2">

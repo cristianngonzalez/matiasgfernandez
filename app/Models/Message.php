@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+use App\Models\Reply;
+
 class Message extends Model{
     use HasFactory;
 
@@ -16,6 +18,10 @@ class Message extends Model{
         'phone',
         'readed'
     ];
+
+    public function replies(){
+        return $this->hasMany('App\Models\Reply');
+    }
 
     protected $table = 'messages';
 }

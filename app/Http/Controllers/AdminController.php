@@ -17,6 +17,7 @@ use App\Models\Taggalery;
 use App\Models\Video;
 use App\Models\Staticcontent;
 use App\Models\Requestcv;
+use App\Models\Message;
 
 class AdminController extends Controller{
 
@@ -106,5 +107,11 @@ class AdminController extends Controller{
         $requests = Requestcv::orderBy('updated_at', 'desc')->paginate(10);
 
         return view('admin.requestcv')->with(['requests' => $requests]);
+    }
+
+    public function messages(){
+        $messages = Message::orderBy('updated_at', 'desc')->paginate(10);
+
+        return view('admin.messages')->with(['messages' => $messages]);
     }
 }
