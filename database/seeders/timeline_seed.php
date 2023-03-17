@@ -65,7 +65,7 @@ class timeline_seed extends Seeder{
             'company' => "Colmena Digital",
             'description' => "Análisis comercial, posicionamiento y escenarios de expansión en latam",
             'icon' => 'timeline-seed-10.webp',
-            'category' => 'startup',
+            'category' => 'consultancy',
             'date' => "2022"
         ]);
 

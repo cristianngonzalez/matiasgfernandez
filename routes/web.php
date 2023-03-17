@@ -17,7 +17,7 @@ Route::get('/messages/contact' , [App\Http\Controllers\SiteController::class, 'c
 Route::get('/solicitarCV', [App\Http\Controllers\SiteController::class, 'solicitarCV'])->name('solicitarCV');
 
 
-//========================================================================================================================
+//==================================================================================================================================
 //Admin routes
 Auth::routes();
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'admin'])->name('admin');
@@ -34,8 +34,9 @@ Route::get('/admin/video' , [App\Http\Controllers\AdminController::class, 'video
 Route::get('/admin/staticcontent' , [App\Http\Controllers\AdminController::class, 'staticcontent'])->name('admin.staticcontent');
 Route::get('/admin/requestcv' , [App\Http\Controllers\AdminController::class, 'requestcv'])->name('admin.requestcv');
 Route::get('/admin/messages' , [App\Http\Controllers\AdminController::class, 'messages'])->name('admin.messages');
+Route::get('/admin/comments' , [App\Http\Controllers\AdminController::class, 'comments'])->name('admin.comments');
 
-
+//=================================================================================================================================
 //Admin User routes
 Route::post('/admin/users/remove', [App\Http\Controllers\Auth\UserController::class, 'remove'])->name('admin.users.remove');
 Route::post('/admin/users/removeAdmin', [App\Http\Controllers\Auth\UserController::class, 'removeAdmin'])->name('admin.users.removeAdmin');

@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 @include('site.partials.preloader')
 
 @include('site.partials.header')
@@ -79,12 +78,16 @@
         box-shadow: 10px 10px 9px -6px rgba(0,0,0,0.10);
     }
 
+    /*======================================================================*/
+    .blog-comment-reply-contanier-picture img{
+        width: 50px;
+        border-radius: 25px;
+    }
+
 </style>
 
 
 <div class="dizme_tm_all_wrap" data-magic-cursor="show" style="margin-top: 150px; padding-bottom: 0px; margin-bottom: 0px;">
-
-    
 
     <div class="dizme_tm_section" id="blog" style="">
         <div class="dizme_tm_news" style="margin-bottom: 0px; padding-top: 0px; margin-top: 0px;">
@@ -142,6 +145,18 @@
                                     <div class="blog-comment-container">
                                         <h5>{{$comment->name}}</h5>
                                         <p>{{$comment->comment}}</p>
+                                        <!--Reply-->
+                                        <div class="blog-comment-reply-container">
+                                            <div class="blog-comment-reply-contanier-picture">
+                                                <img src="{{env('ASSETS_URL')}}img/slider/small-avatar.png" alt="Matias Fernandez">
+                                            </div>
+                                            <div class="blog-comment-reply">
+                                                <p>Matías Fernández</p>
+                                                <p>Muchas gracias, te mando un abrazo</p>
+                                            </div>
+                                            
+                                        </div>
+                                        
                                     </div>
                                 @endforeach
 
@@ -150,11 +165,11 @@
                             <div class="col-12 mt-4 mb-4">
                                 <h4>Dejame tu comentario</h4>
 
-
                                 <form action="{{route('site.comment.post')}}" method="POST">
                                     @csrf
                                     @method('POST')
                                     <input type="text" name="blog_id" value="{{$blog->id}}" class="blog-input" hidden>
+                                    <input type="text" name="blog_title" value="{{$blog->title}}" hidden>
                                     <input id="name" name="name" type="text" placeholder="Su nombre"  class="blog-input"/> 
                                     <input id="email" name="email" type="text" placeholder="Su email"  class="blog-input"/>
                                     <div class="message_area">
@@ -188,15 +203,11 @@
 
                 </div>
                 
-                
             </div>
             <div class="brush_1 wow zoomIn" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/news/1.png" alt="" /></div>
             <div class="brush_2 wow zoomIn" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/news/2.png" alt="" /></div>
         </div>
     </div>
-
-    
-
     
     @include('site.partials.footer')
     

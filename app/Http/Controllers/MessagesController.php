@@ -49,7 +49,5 @@ class MessagesController extends Controller{
         //return new MessageReply($msg , $sub , $socialnetworks);
 
         return redirect('/admin/messages?success=Your message has been sent');
-
-        
     }
 }

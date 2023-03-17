@@ -5,7 +5,6 @@
 
 @if(Auth::user()->admin)
 
-
     <div class="container">
         <div class="row">
 
@@ -15,6 +14,16 @@
                     <div class="card-body">
                       <a href="{{route('admin.blogs')}}"><h5 class="card-title">Blogs</h5></a>
                       <p class="card-text">You can edit, delete, and update your blogs and it's categories.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-2">
+                <div class="card" style="width: 100%;">
+                    <img src="{{env('ASSETS_URL')}}img/svg/icons/comments.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="{{route('admin.comments')}}"><h5 class="card-title">Comments</h5></a>
+                      <p class="card-text">Your blogs has comments.</p>
                     </div>
                 </div>
             </div>
@@ -107,8 +116,6 @@
                 </div>
             </div>
             
-
-            
             <div class="col-md-3 mb-2">
                 <div class="card" style="width: 100%;">
                     <img src="{{env('ASSETS_URL')}}img/svg/icons/timeline.svg" class="card-img-top" alt="...">
@@ -118,8 +125,6 @@
                     </div>
                 </div>
             </div>
-            
-
             
             <div class="col-md-3 mb-2">
                 <div class="card" style="width: 100%;">
