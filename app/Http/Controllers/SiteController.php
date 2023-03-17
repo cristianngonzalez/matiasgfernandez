@@ -20,6 +20,9 @@ use App\Models\RequestCV;
 use App\Mail\NotificationCvRequest;
 use App\Mail\GuestnotificationCvRequest;
 
+use App\Mail\NotificationContact;
+use App\Mail\GuestnotificationContact;
+
 use Illuminate\Http\Request;
 
 class SiteController extends Controller{
@@ -98,11 +101,12 @@ class SiteController extends Controller{
             'readed' => false
         ]);
 
+        $socialnetworks = Socialnetwork::all();
 
-        //Mail::to('contacto@matiasgfernandez.com')->send(new NotificationCvRequest($email , $socialnetworks));
-        // Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationCvRequest($email , $socialnetworks));
+        Mail::to('contacto@matiasgfernandez.com')->send(new NotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
+        //Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
 
-        //Mail::to($email)->send(new GuestnotificationCvRequest($email , $socialnetworks));
+        Mail::to($email)->send(new GuestnotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
 
         return response()->json(['status' => 'success'] , 200);
 
