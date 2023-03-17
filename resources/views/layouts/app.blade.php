@@ -9,6 +9,8 @@
 
     <title>Matias Fernandez</title>
 
+    <link  rel="stylesheet" href="{{env('ASSETS_URL')}}css/admin.css">
+
     <!-- Scripts -->
     <script src="{{env('ASSETS_URL')}}js/app.js" defer></script>
 

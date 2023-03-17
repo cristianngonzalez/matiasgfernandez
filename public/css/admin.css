@@ -1,0 +1,52 @@
+#message-admin-badge{
+    position: absolute;
+    top: 70px;
+    right: -20px;
+    font-size: 25px;
+}
+@media(max-width: 1399px){
+    #message-admin-badge{
+        top: 55px;
+        font-size: 20px;
+    }
+}
+@media(max-width: 1199px){
+    #message-admin-badge{
+        top: 45px;
+        right: -20px;
+    }
+}
+@media(max-width: 1000px){
+    #message-admin-badge{
+        top: 35px;
+        right: -20px;
+    }
+}
+@media(max-width: 767px){
+    #message-admin-badge{
+        top: 112px;
+        right: -60px;
+        font-size: 40px;
+    }
+}
+@media(max-width: 585px){
+    #message-admin-badge{
+        right: 5px;
+        font-size: 20px;
+    }
+}
+@media(max-width: 500px){
+    #message-admin-badge{
+        top: 100px;
+    }
+}
+@media(max-width: 440px){
+    #message-admin-badge{
+        top: 90px;
+    }
+}
+@media(max-width: 390px){
+    #message-admin-badge{
+        top: 80px;
+    }
+}

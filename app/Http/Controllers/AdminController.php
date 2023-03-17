@@ -38,7 +38,10 @@ class AdminController extends Controller{
     
     
     public function admin(){
-        return view('admin.home');
+        $unread_messages = Message::where('readed', 0)->count();
+        $unanswered_request = Requestcv::where('sent', 0)->count();
+
+        return view('admin.home')->with(['unread_messages' => $unread_messages , 'unanswered_request' => $unanswered_request]);
     }
     
     public function socialnetworks(){

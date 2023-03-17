@@ -5,6 +5,7 @@
 
 @if(Auth::user()->admin)
 
+
     <div class="container">
         <div class="row">
 
@@ -61,14 +62,21 @@
             
 
             
-            <div class="col-md-3 mb-2">
+            <div class="col-md-3 mb-2 position-relative">
                 <div class="card" style="width: 100%;">
+
+                    <span class="translate-middle badge rounded-pill bg-danger" id="message-admin-badge">
+                        {{$unread_messages}}+
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+
                     <img src="{{env('ASSETS_URL')}}img/svg/icons/messages.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <a href="{{route('admin.messages')}}"><h5 class="card-title">Messages</h5></a>
                       <p class="card-text">Your site has a contact form where you can receive messages, and you can send message from your admin here.</p>
                     </div>
                 </div>
+                
             </div>
             
 
@@ -83,10 +91,14 @@
                 </div>
             </div>
             
-
-            
-            <div class="col-md-3 mb-2">
+            <div class="col-md-3 mb-2 position-relative">
                 <div class="card" style="width: 100%;">
+
+                    <span class="translate-middle badge rounded-pill bg-danger" id="message-admin-badge">
+                        {{$unanswered_request}}+
+                        <span class="visually-hidden">unread messages</span>
+                      </span>
+
                     <img src="{{env('ASSETS_URL')}}img/svg/icons/cv_request.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <a href="{{route('admin.requestcv')}}"><h5 class="card-title">Cv requests</h5></a>
