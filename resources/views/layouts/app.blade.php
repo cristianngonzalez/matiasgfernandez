@@ -23,7 +23,7 @@
     <link href="{{env('ASSETS_URL')}}/css/app.css" rel="stylesheet">
 
 
-    <script src="https://cdn.tiny.cloud/1/88bud7jvrhlmy3a7i6la3er0y0b6kb4b1vy29mksvcckz0q7/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdn.tiny.cloud/1/doeso75d5cvooznsm8sq0z9c7f3mrmb6snwbpazfei028n7g/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>
     <div id="app">
