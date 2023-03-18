@@ -48,6 +48,10 @@
 
 <body> 
 
+    <script>
+        console.log('{{env('ASSETS_URL')}}')
+    </script>
+
     <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
