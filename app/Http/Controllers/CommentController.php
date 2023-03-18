@@ -15,6 +15,7 @@ class CommentController extends Controller{
 
         $name = $req->input('name');
         $blog_id = $req->input('blog_id');
+        $blog_picture = $req->input('blog_picture'); 
         $email = $req->input('email');
         $comment = $req->input('comment');
         $blog_title = $req->input('blog_title');
@@ -28,10 +29,16 @@ class CommentController extends Controller{
 
         $socialnetworks = Socialnetwork::all();
 
-        Mail::to('contacto@matiasgfernandez.com')->send(new NotificationNewComment($email , $socialnetworks , $name , $blog_id , $blog_title , $comment));
-        //Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationNewComment($email , $socialnetworks , $name , $blog_id , $blog_title , $comment));
+        if($_ENV["APP_ENV"] == 'production'){   
+            Mail::to('contacto@matiasgfernandez.com')->send(new NotificationNewComment($email , $socialnetworks , $name , $blog_id , $blog_title , $blog_picture , $comment));
+            Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationNewComment($email , $socialnetworks , $name , $blog_id , $blog_title , $blog_picture , $comment));
 
-        return redirect('blog?id='.$req->input('blog_id'));
+            return redirect('blog?id='.$req->input('blog_id'));
+        }else{
+            return new NotificationNewComment($email , $socialnetworks , $name , $blog_id , $blog_title , $blog_picture , $comment);
+        }
+
+       
     }
 
     public function delete(Request $req){

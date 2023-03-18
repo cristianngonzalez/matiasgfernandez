@@ -1,5 +1,5 @@
 <!---------------------------------------------------------------------------------------------->
-<div style="width: 100%; text-align:center; padding-top: 10px; padding-bottom: 10px; margin-top: 50px;
+<div style="width: 100%; text-align:center; padding-top: 10px; padding-bottom: 10px; margin-top: 50px; max-width: 500px;  margin-left: auto; margin-right: auto;
 box-shadow:
 inset 0 -3em 3em rgba(0,0,0,0.1),
       0 0  0 2px rgb(255,255,255),

@@ -177,7 +177,10 @@
                                                         @csrf
                                                         @method('POST')
                                                         <input type="text" name="comment_id" value="{{$comment->id}}" required hidden>
+                                                        <input type="text" name="comment" value="{{$comment->comment}}" required hidden>
                                                         <input type="text" name="blog_id" value="{{$blog->id}}" required hidden>
+                                                        <input type="text" name="blog_title" value="{{$blog->title}}" required hidden>
+                                                        <input type="text" name="blog_picture" value="{{$blog->picture}}" required hidden>
                                                         <div class="message_area">
                                                             <textarea id="message" name="reply" required></textarea>
                                                         </div>
@@ -201,6 +204,7 @@
                                     @method('POST')
                                     <input type="text" name="blog_id" value="{{$blog->id}}" class="blog-input" required hidden>
                                     <input type="text" name="blog_title" value="{{$blog->title}}" required hidden>
+                                    <input type="text" name="blog_picture" value="{{$blog->picture}}" required hidden>
                                     <input id="name" name="name" type="text" placeholder="Su nombre"  class="blog-input" required/> 
                                     <input id="email" name="email" type="text" placeholder="Su email"  class="blog-input" required/>
                                     <div class="message_area">

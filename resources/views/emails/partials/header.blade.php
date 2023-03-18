@@ -8,7 +8,7 @@
 <body style="padding: 0px; margin: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif">
   
   <!---------------------------------------------------------------------------------------------->
-  <div style="width: 100%; text-align:center; padding-top: 10px; padding-bottom: 10px; margin-bottom: 50px;
+  <div style="width: 100%; max-width: 500px;  margin-left: auto; margin-right: auto; text-align:center; padding-top: 10px; padding-bottom: 10px; margin-bottom: 50px;
     box-shadow:
     inset 0 -3em 3em rgba(0,0,0,0.1),
           0 0  0 2px rgb(255,255,255),

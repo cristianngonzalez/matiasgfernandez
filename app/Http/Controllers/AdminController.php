@@ -117,4 +117,11 @@ class AdminController extends Controller{
 
         return view('admin.messages')->with(['messages' => $messages]);
     }
+
+    public function comments(){
+
+        $comments = Comment::all();
+
+        return view('admin.comments')->with(['comments' => $comments]);
+    }
 }

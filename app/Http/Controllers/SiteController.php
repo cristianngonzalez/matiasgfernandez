@@ -60,12 +60,17 @@ class SiteController extends Controller{
 
         $socialnetworks = Socialnetwork::all();
 
-        Mail::to('contacto@matiasgfernandez.com')->send(new NotificationCvRequest($email , $socialnetworks));
-        Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationCvRequest($email , $socialnetworks));
+        if($_ENV["APP_ENV"] == 'production'){ 
+            Mail::to('contacto@matiasgfernandez.com')->send(new NotificationCvRequest($email , $socialnetworks));
+            Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationCvRequest($email , $socialnetworks));
 
-        Mail::to($email)->send(new GuestnotificationCvRequest($email , $socialnetworks));
+            Mail::to($email)->send(new GuestnotificationCvRequest($email , $socialnetworks));
+            
+            return response()->json(['status' => 'success'] , 200);
+        }else{
+            return response()->json(['status' => 'success'] , 200);
+        }
         
-        return response()->json(['status' => 'success'] , 200);
     }
 
     public function blogs(){
