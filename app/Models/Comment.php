@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Comments extends Model{
+class Comment extends Model{
     use HasFactory;
 
 
@@ -21,6 +21,10 @@ class Comments extends Model{
     
     public function blog(){
         return $this->belongsTo('App\Models\Blog' , 'blog_id');
+    }
+
+    public function repliescomment(){
+        return $this->hasMany('App\Models\Replycomment');
     }
 
 }

@@ -40,8 +40,7 @@ class BlogController extends Controller{
         $blog = Blog::where('id' , $req->input('id'))->first();
         $categories = Category::all();
 
-        //Get comments
-        $comments = Comments::where('blog_id' , $req->input('id'))->get();
+        $comments = Comment::where('blog_id' , $req->input('id'))->get();
 
         return view('admin.blogedit')->with(['blog' => $blog , 'categories' => $categories , 'comments' => $comments]);
     }

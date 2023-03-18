@@ -153,18 +153,40 @@
                                     <div class="blog-comment-container">
                                         <h5>{{$comment->name}}</h5>
                                         <p>{{$comment->comment}}</p>
-                                        <!--Reply
+
+                                        
+
+                                        <!--Reply-->
                                         <div class="blog-comment-reply-container">
-                                            <div class="blog-comment-reply-contanier-picture">
-                                                <img src="{{env('ASSETS_URL')}}img/slider/small-avatar.png" alt="Matias Fernandez">
-                                            </div>
-                                            <div class="blog-comment-reply">
-                                                <p><strong>Matías Fernández</strong></p>
-                                                <p>Muchas gracias, te mando un abrazo</p>
-                                            </div>
-                                            
+
+                                            @foreach ($comment->repliescomment as $reply)
+                                                <div class="blog-comment-reply-contanier-picture">
+                                                    <img src="{{env('ASSETS_URL')}}img/slider/small-avatar.png" alt="Matias Fernandez">
+                                                </div>
+                                                <div class="blog-comment-reply">
+                                                    <p><strong>Matías Fernández</strong></p>
+                                                    <p>{{$reply->reply}}</p>
+                                                </div>
+                                            @endforeach
+
+                                            @guest
+                                        
+                                            @else
+                                                @if(Auth::user()->admin)
+                                                    <form action="{{route('admin.reply.set')}}" method="POST">
+                                                        @csrf
+                                                        @method('POST')
+                                                        <input type="text" name="comment_id" value="{{$comment->id}}" required hidden>
+                                                        <input type="text" name="blog_id" value="{{$blog->id}}" required hidden>
+                                                        <div class="message_area">
+                                                            <textarea id="message" name="reply" required></textarea>
+                                                        </div>
+                                                        <input type="submit" value="Responder" style="margin-bottom: 10px;">
+                                                    </form>
+                                                @endif
+                                            @endguest
+
                                         </div>
-                                    -->
                                         
                                     </div>
                                 @endforeach
@@ -177,12 +199,12 @@
                                 <form action="{{route('site.comment.post')}}" method="POST">
                                     @csrf
                                     @method('POST')
-                                    <input type="text" name="blog_id" value="{{$blog->id}}" class="blog-input" hidden>
-                                    <input type="text" name="blog_title" value="{{$blog->title}}" hidden>
-                                    <input id="name" name="name" type="text" placeholder="Su nombre"  class="blog-input"/> 
-                                    <input id="email" name="email" type="text" placeholder="Su email"  class="blog-input"/>
+                                    <input type="text" name="blog_id" value="{{$blog->id}}" class="blog-input" required hidden>
+                                    <input type="text" name="blog_title" value="{{$blog->title}}" required hidden>
+                                    <input id="name" name="name" type="text" placeholder="Su nombre"  class="blog-input" required/> 
+                                    <input id="email" name="email" type="text" placeholder="Su email"  class="blog-input" required/>
                                     <div class="message_area">
-                                        <textarea id="message" name="comment" placeholder="Deje su comentario aquí"></textarea>
+                                        <textarea id="message" name="comment" placeholder="Deje su comentario aquí" required></textarea>
                                     </div>
                                     <input type="submit" class="" id="send_message" value="Enviar">
                                 </form>

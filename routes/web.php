@@ -1,11 +1,8 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-
 
 Route::get('/', [App\Http\Controllers\SiteController::class, 'home'] );
 Route::get('/home', [App\Http\Controllers\SiteController::class, 'home'] );
-
 
 Route::get('/blogs', [App\Http\Controllers\SiteController::class, 'blogs'] )->name('site.blogs');
 Route::get('/blog',  [App\Http\Controllers\SiteController::class, 'blog'] )->name('site.blog');
@@ -15,7 +12,6 @@ Route::get('/messages/contact' , [App\Http\Controllers\SiteController::class, 'c
 //=======================================================================================================================
 //Ajax routes
 Route::get('/solicitarCV', [App\Http\Controllers\SiteController::class, 'solicitarCV'])->name('solicitarCV');
-
 
 //==================================================================================================================================
 //Admin routes
@@ -101,3 +97,6 @@ Route::post('/admin/requestcv/delete' , [App\Http\Controllers\RequestcvControlle
 Route::post('/admin/messages/open', [App\Http\Controllers\MessagesController::class, 'open'])->name('admin.messages.open');
 Route::post('/admin/messages/reply', [App\Http\Controllers\MessagesController::class, 'reply'])->name('admin.messages.reply');
 Route::post('/admin/messages/reply/send', [App\Http\Controllers\MessagesController::class, 'replySend'])->name('admin.messages.reply.send');
+
+//Replycomments
+Route::post('/admin/replycomments/set', [App\Http\Controllers\ReplycommentController::class, 'set'])->name('admin.reply.set');

@@ -10,7 +10,7 @@ use App\Models\Timeline;
 use App\Models\Testimonial;
 use App\Models\Blog;
 use App\Models\Category;
-use App\Models\Comments;
+use App\Models\Comment;
 use App\Models\Socialnetwork;
 use App\Models\Galery;
 use App\Models\Taggalery;

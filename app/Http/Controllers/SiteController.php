@@ -6,7 +6,7 @@ use App\Models\Message;
 
 //Models
 use App\Models\Blog;
-use App\Models\Comments;
+use App\Models\Comment;
 use App\Models\Socialnetwork;
 use App\Models\Galery;
 use App\Models\Taggalery;
@@ -76,10 +76,10 @@ class SiteController extends Controller{
 
     public function blog(Request $req){
         $blog = Blog::where('id' , $req->input('id'))->first();
-        $comments = Comments::where('blog_id' , $req->input('id'))->get();
+        $comments = Comment::where('blog_id' , $req->input('id'))->get();
 
         //Tomamos tres blogs
-        $blogs = Blog::all()->take(3);
+        $blogs = Blog::where('id' , '!=' , $req->input('id') )->get()->take(3);
 
         return view('site.blog')->with(['blog' => $blog , 'blogs' => $blogs , 'comments' => $comments]);
     }

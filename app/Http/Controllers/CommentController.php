@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\NotificationNewComment;
 
 use Illuminate\Http\Request;
-use App\Models\Comments;
+use App\Models\Comment;
 use App\Models\Socialnetwork;
 
 class CommentController extends Controller{ 
@@ -19,7 +19,7 @@ class CommentController extends Controller{
         $comment = $req->input('comment');
         $blog_title = $req->input('blog_title');
 
-        Comments::create([
+        Comment::create([
             'blog_id' => $blog_id ,
             'name' => $name ,
             'email' => $email ,
@@ -29,7 +29,7 @@ class CommentController extends Controller{
         $socialnetworks = Socialnetwork::all();
 
         Mail::to('contacto@matiasgfernandez.com')->send(new NotificationNewComment($email , $socialnetworks , $name , $blog_id , $blog_title , $comment));
-        Mail::to('contacto@matiasgfernandez.com')->send(new NotificationNewComment($email , $socialnetworks , $name , $blog_id , $blog_title , $comment));
+        //Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationNewComment($email , $socialnetworks , $name , $blog_id , $blog_title , $comment));
 
         return redirect('blog?id='.$req->input('blog_id'));
     }
