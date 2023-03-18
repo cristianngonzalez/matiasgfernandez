@@ -38,6 +38,7 @@ class AdminController extends Controller{
     
     
     public function admin(){
+        //
         $unread_messages = Message::where('readed', 0)->count();
         $unanswered_request = Requestcv::where('sent', 0)->count();
 
