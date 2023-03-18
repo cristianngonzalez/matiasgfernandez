@@ -88,18 +88,6 @@
                 
             </div>
             
-
-            
-            <div class="col-md-3 mb-2">
-                <div class="card" style="width: 100%;">
-                    <img src="{{env('ASSETS_URL')}}img/svg/icons/galery.svg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <a href="{{route('admin.galery')}}"><h5 class="card-title">Galery</h5></a>
-                      <p class="card-text">You can upload media content to your site.</p>
-                    </div>
-                </div>
-            </div>
-            
             <div class="col-md-3 mb-2 position-relative">
                 <div class="card" style="width: 100%;">
 
@@ -115,6 +103,18 @@
                     </div>
                 </div>
             </div>
+
+            
+            <div class="col-md-3 mb-2">
+                <div class="card" style="width: 100%;">
+                    <img src="{{env('ASSETS_URL')}}img/svg/icons/galery.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="{{route('admin.galery')}}"><h5 class="card-title">Galery</h5></a>
+                      <p class="card-text">You can upload media content to your site.</p>
+                    </div>
+                </div>
+            </div>
+            
             
             <div class="col-md-3 mb-2">
                 <div class="card" style="width: 100%;">
