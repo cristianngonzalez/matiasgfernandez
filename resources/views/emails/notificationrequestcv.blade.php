@@ -1,6 +1,6 @@
 @include('emails.partials.header')
 
-<div style="padding-left: 10px; padding-right:20px; min-height: 300px;">
+<div style="padding-left: 20px; padding-right:20px; min-height: 300px;">
 
     <div style="padding-left: 20px; padding-right:20px ;">
         <h1>Alguien ha solicitado su curriculum</h1>
