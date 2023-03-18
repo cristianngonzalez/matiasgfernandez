@@ -16,7 +16,7 @@ use App\Models\Galery;
 use App\Models\Taggalery;
 use App\Models\Video;
 use App\Models\Staticcontent;
-use App\Models\Requestcv;
+use App\Models\RequestCV;
 use App\Models\Message;
 
 class AdminController extends Controller{
@@ -40,7 +40,7 @@ class AdminController extends Controller{
     public function admin(){
         //
         $unread_messages = Message::where('readed', 0)->count();
-        $unanswered_request = Requestcv::where('sent', 0)->count();
+        $unanswered_request = RequestCV::where('sent', 0)->count();
 
         return view('admin.home')->with(['unread_messages' => $unread_messages , 'unanswered_request' => $unanswered_request]);
     }
