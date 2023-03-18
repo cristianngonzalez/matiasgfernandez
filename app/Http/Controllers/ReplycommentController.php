@@ -23,7 +23,7 @@ class ReplycommentController extends Controller{
         $socialnetworks = Socialnetwork::all();
         
         
-        if($_ENV["APP_ENV"] == 'production'){   
+        if(env("APP_ENV") == 'production'){   
             Mail::to($comment->email)->send(new GuestNotificationReplyComment(
                 $comment->email , 
                 $socialnetworks , 
