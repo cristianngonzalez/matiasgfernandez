@@ -62,7 +62,6 @@ class SiteController extends Controller{
 
         if(env("APP_ENV") == 'production'){ 
             Mail::to('contacto@matiasgfernandez.com')->send(new NotificationCvRequest($email , $socialnetworks));
-            Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationCvRequest($email , $socialnetworks));
 
             Mail::to($email)->send(new GuestnotificationCvRequest($email , $socialnetworks));
             
@@ -110,7 +109,6 @@ class SiteController extends Controller{
 
         if(env("APP_ENV") == 'production'){ 
             Mail::to('contacto@matiasgfernandez.com')->send(new NotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
-            Mail::to('matiasfernandez1806@gmail.com')->send(new NotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
 
             Mail::to($email)->send(new GuestnotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
 
