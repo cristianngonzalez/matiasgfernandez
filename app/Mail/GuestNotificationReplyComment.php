@@ -45,6 +45,6 @@ class GuestNotificationReplyComment extends Mailable{
      * @return $this
      */
     public function build(){
-        return $this->view('emails.guestnotificationcommentreply');
+        return $this->view('emails.guestnotificationcommentreply')->subject('Matias Fernandez ha respondido a tu comentario');
     }
 }
