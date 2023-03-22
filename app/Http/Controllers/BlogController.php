@@ -50,10 +50,22 @@ class BlogController extends Controller{
         $blog->title = $req->input('title');
         $blog->category_id = $req->input('category');
         $blog->blog = $req->input('blog');
+        
 
-        $blog->save();
+        if($req->file('picture-file')){
+            $file = $req->file('picture-file');
+            $file_name = Str::uuid()->toString();
 
-        return redirect('/admin/blogs');
+            $file->storeAs('' , $file_name . "." . $file->extension() , 'public');
+
+            $blog->picture = $file_name . "." . $file->extension() ;
+
+            $blog->save();
+        }else{
+            $blog->save();
+        }
+
+        return redirect('/admin/blogs?success=A blog has been updated');
     }
 
     public function delete(Request $req){

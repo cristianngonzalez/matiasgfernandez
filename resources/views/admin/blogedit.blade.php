@@ -26,7 +26,7 @@
                     <h1>Edit blog</h1>
                     <hr>
 
-                    <form action="{{route('admin.blogs.update')}}" method="POST">
+                    <form action="{{route('admin.blogs.update')}}" method="POST" enctype='multipart/form-data'>
                         @csrf
                         @method('POST')
                         <input type="text" name="id" value="{{$blog->id}}" hidden>
