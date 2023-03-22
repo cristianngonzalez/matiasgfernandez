@@ -51,6 +51,10 @@
     }
 }
 
+/*===================================================================*/
 .col-admin-card-picture{
     width: 30px;
 }
+    .admin-card-picture{
+        width: 70px;
+    }
