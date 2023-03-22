@@ -9,8 +9,6 @@
 
     <title>Matias Fernandez</title>
 
-    <link  rel="stylesheet" href="{{env('ASSETS_URL')}}css/admin.css">
-
     <!-- Scripts -->
     <script src="{{env('ASSETS_URL')}}js/app.js" defer></script>
 
@@ -24,6 +22,8 @@
 
 
     <script src="https://cdn.tiny.cloud/1/doeso75d5cvooznsm8sq0z9c7f3mrmb6snwbpazfei028n7g/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <link  rel="stylesheet" href="{{env('ASSETS_URL')}}css/admin.css">
 </head>
 <body>
     <div id="app">
