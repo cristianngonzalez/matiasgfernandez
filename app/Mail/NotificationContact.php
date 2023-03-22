@@ -39,6 +39,6 @@ class NotificationContact extends Mailable{
      */
     public function build(){
 
-        return $this->view('emails.notificationcontact')->subject('Ha recibido un mensaje');
+        return $this->view('emails.notificationcontact')->subject('Ha recibido un mensaje desde el sitio');
     }
 }
