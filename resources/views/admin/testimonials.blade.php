@@ -41,7 +41,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="row">
+                                <div class="row mt-1">
                                     <div class="col-auto">
                                         <form action="{{route('admin.testimonials.edit')}}" method="POST">
                                             @method('POST')
