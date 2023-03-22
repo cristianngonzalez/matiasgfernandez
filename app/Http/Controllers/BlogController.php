@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Storage;
 
 use App\Models\Blog;
 use App\Models\Category;
-use App\Models\Comments;
+use App\Models\Comment;
 
 class BlogController extends Controller{
     //
