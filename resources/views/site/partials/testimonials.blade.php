@@ -21,7 +21,7 @@
                                 </div>
                                 <div class="short">
                                     <div class="image">
-                                        <div class="main" data-img-url="{{$testimonial->avatar}}"></div>
+                                        <div class="main" data-img-url="{{env('ASSETS_URL')}}storage/{{$testimonial->avatar}}"></div>
                                     </div>
                                     <div class="detail">
                                         <h3>{{$testimonial->name}}</h3>

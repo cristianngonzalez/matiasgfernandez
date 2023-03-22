@@ -52,7 +52,7 @@
                             </div>
                         </div>
         
-                        <input type="submit" class="btn btn-success" value="Create experience">
+                        <input type="submit" class="btn btn-success" value="Create testimonial">
                     </form>
 
                 </div>
