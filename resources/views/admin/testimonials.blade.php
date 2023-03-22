@@ -31,9 +31,16 @@
                                 {{$testimonial->name}}
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">{{$testimonial->detail}}</h5>
-                                <p class="card-text">{{$testimonial->testimonial}}</p>
-
+                                <div class="row">
+                                    <div class="col-auto col-admin-card-picture">
+                                        <img src="https://www.matiasgfernandez.com/public/storage/{{$testimonial->avatar}}" alt="">
+                                    </div>
+                                    <div class="col-auto">
+                                        <h5 class="card-title">{{$testimonial->detail}}</h5>
+                                        <p class="card-text">{{$testimonial->testimonial}}</p>
+                                    </div>
+                                </div>
+                                
                                 <div class="row">
                                     <div class="col-auto">
                                         <form action="{{route('admin.testimonials.edit')}}" method="POST">
