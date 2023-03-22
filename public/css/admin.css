@@ -56,8 +56,8 @@
     width: 70px;
 }
 .col-admin-card-picture-content-aside{
-    width: calc(100% - 70px);
+    width: calc(100% - 90px);
 }
     .admin-card-picture{
-        width: 70px;
+        width: 90px;
     }
