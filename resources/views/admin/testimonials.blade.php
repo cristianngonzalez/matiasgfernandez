@@ -33,9 +33,9 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-auto col-admin-card-picture">
-                                        <img src="https://www.matiasgfernandez.com/public/storage/{{$testimonial->avatar}}" alt="">
+                                        <img class="admin-card-picture" src="https://www.matiasgfernandez.com/public/storage/{{$testimonial->avatar}}" alt="">
                                     </div>
-                                    <div class="col-auto">
+                                    <div class="col-auto col-admin-card-picture-content-aside">
                                         <h5 class="card-title">{{$testimonial->detail}}</h5>
                                         <p class="card-text">{{$testimonial->testimonial}}</p>
                                     </div>

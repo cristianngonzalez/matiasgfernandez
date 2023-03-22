@@ -53,7 +53,10 @@
 
 /*===================================================================*/
 .col-admin-card-picture{
-    width: 30px;
+    width: 70px;
+}
+.col-admin-card-picture-content-aside{
+    width: calc(100% - 70px);
 }
     .admin-card-picture{
         width: 70px;
