@@ -63,4 +63,10 @@ class MessagesController extends Controller{
         }
        
     }
+
+    public function delete(Request $req){
+        $delete= Message::where('id', $req->input('id') )->delete();
+
+        return redirect('/admin/messages?success=A message has been deleted');
+    }
 }

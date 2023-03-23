@@ -99,6 +99,7 @@ Route::post('/admin/messages/open', [App\Http\Controllers\MessagesController::cl
 Route::post('/admin/messages/reply', [App\Http\Controllers\MessagesController::class, 'reply'])->name('admin.messages.reply');
 Route::post('/admin/messages/reply/send', [App\Http\Controllers\MessagesController::class, 'replySend'])->name('admin.messages.reply.send');
 Route::post('/admin/messages/markasreaded', [App\Http\Controllers\MessagesController::class, 'markAsReaded'])->name('admin.messages.markAsReaded');
+Route::post('/admin/messages/delete', [App\Http\Controllers\MessagesController::class, 'delete'])->name('admin.messages.delete');
 
 //Replycomments
 Route::post('/admin/replycomments/set', [App\Http\Controllers\ReplycommentController::class, 'set'])->name('admin.reply.set');

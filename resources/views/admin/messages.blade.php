@@ -75,7 +75,10 @@
                                         </form>
                                     </td>
                                     <td>
-                                        <form action="" method="POST">
+                                        <form action="{{route('admin.messages.delete')}}" method="POST">
+                                            @csrf
+                                            @method('POST')
+                                            <input type="text" name="id" value="{{$message->id}}" hidden>
                                             <input type="submit" class="btn btn-sm btn-danger" value="Remove">
                                         </form>
                                     </td>
