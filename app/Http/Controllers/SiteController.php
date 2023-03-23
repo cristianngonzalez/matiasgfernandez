@@ -15,6 +15,7 @@ use App\Models\Video;
 use App\Models\Staticcontent;
 use App\Models\Testimonial;
 use App\Models\RequestCV;
+use App\Models\Academy;
 
 //Messages
 use App\Mail\NotificationCvRequest;
@@ -37,6 +38,7 @@ class SiteController extends Controller{
         $videos = Video::all()->take(4);
         $staticcontents = Staticcontent::all();
         $testimonials = Testimonial::all();
+        $academies = Academy::all()->reverse();
     
         return view('site.home')->with([
             'blogs' => $blogs , 
@@ -46,7 +48,8 @@ class SiteController extends Controller{
             'timeline' => $timeline,
             'videos' => $videos,
             'staticcontents' => $staticcontents,
-            'testimonials' => $testimonials
+            'testimonials' => $testimonials,
+            'academies' => $academies
         ]);
     }
 
