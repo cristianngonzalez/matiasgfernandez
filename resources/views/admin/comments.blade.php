@@ -44,11 +44,11 @@
                                         <div class="col-auto">
                                             <form action="{{route('admin.comment.delete')}}" method="POST">
                                                 <input type="text" value="{{$comment->id}}" value="id" hidden>
-                                                <input type="submit" value="Delete" class="btn btn-sm btn-danger">
+                                                
 
                                                 <!-- Button trigger modal -->
-                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                    Launch demo modal
+                                                <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    Delete
                                                 </button>
                                                 
                                                 <!-- Modal -->
@@ -56,15 +56,14 @@
                                                     <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                         <div class="modal-body">
-                                                        ...
+                                                            Are you sure to delete this comment?
                                                         </div>
                                                         <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                                        <input type="submit" value="Delete" class="btn btn-danger">
                                                         </div>
                                                     </div>
                                                     </div>
