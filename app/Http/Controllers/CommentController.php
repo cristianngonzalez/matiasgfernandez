@@ -42,7 +42,7 @@ class CommentController extends Controller{
 
     public function delete(Request $req){
 
-        $delete= Comment::find( $req->input('id') )->delete();
+        $delete= Comment::where( 'id' , $req->input('id') )->delete();
 
         return redirect('/admin/comments?success=A comment has been deleted');
     }
