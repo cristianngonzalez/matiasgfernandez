@@ -16,7 +16,7 @@
                         <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
                             <div class="list_inner tilt-effect">
                                 <span class="icon">
-                                    <img class="svg" src="{{env('ASSETS_URL')}}storage/{{$academy->logo}}" alt="" />
+                                    <img class="svg" src="{{env('ASSETS_URL')}}storage/{{$academy->logo}}" alt="{{$academy->institution}} - {{$academy->degree}}" />
                                 </span>
                                 <div class="title">
                                     <h3>{{$academy->institution}}</h3>
