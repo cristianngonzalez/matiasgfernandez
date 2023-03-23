@@ -68,6 +68,7 @@ class ReplycommentController extends Controller{
         $blog = Blog::find($comment->blog->id);
         
         if(env("APP_ENV") == 'production'){   
+            /*
             Mail::to($comment->email)->send(new GuestNotificationReplyComment(
                 $comment->email , 
                 $socialnetworks , 
@@ -79,7 +80,8 @@ class ReplycommentController extends Controller{
                 $blog->picture , 
                 $req->input('reply') 
             ));
-            
+            */
+
             return redirect("/admin/comments?success=A comment has been replied");
         }else{
             /*
