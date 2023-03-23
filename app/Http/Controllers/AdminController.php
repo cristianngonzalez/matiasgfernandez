@@ -18,6 +18,7 @@ use App\Models\Video;
 use App\Models\Staticcontent;
 use App\Models\RequestCV;
 use App\Models\Message;
+use App\Models\Academy;
 
 class AdminController extends Controller{
 
@@ -139,5 +140,11 @@ class AdminController extends Controller{
         }
 
         return view('admin.comments')->with(['comments' => $comments]);
+    }
+
+    public function academy(Request $req){
+        $academies = Academy::all();
+
+        return view('admin.academy')->with(['academies' => $academies]);
     }
 }

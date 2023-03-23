@@ -31,6 +31,7 @@ Route::get('/admin/staticcontent' , [App\Http\Controllers\AdminController::class
 Route::get('/admin/requestcv' , [App\Http\Controllers\AdminController::class, 'requestcv'])->name('admin.requestcv');
 Route::get('/admin/messages' , [App\Http\Controllers\AdminController::class, 'messages'])->name('admin.messages');
 Route::get('/admin/comments' , [App\Http\Controllers\AdminController::class, 'comments'])->name('admin.comments');
+Route::get('/admin/academy' , [App\Http\Controllers\AdminController::class, 'academy'])->name('admin.academy');
 
 //=================================================================================================================================
 //Admin User routes
