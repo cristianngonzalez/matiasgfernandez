@@ -43,6 +43,8 @@
                                         </div>
                                         <div class="col-auto">
                                             <form action="{{route('admin.comment.delete')}}" method="POST">
+                                                @csrf
+                                                @method('POST')
                                                 <input type="text" value="{{$comment->id}}" value="id" hidden>
                                                 
 
@@ -62,7 +64,7 @@
                                                             Are you sure to delete this comment?
                                                         </div>
                                                         <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close without delete</button>
                                                         <input type="submit" value="Delete" class="btn btn-danger">
                                                         </div>
                                                     </div>
