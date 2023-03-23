@@ -102,3 +102,10 @@ Route::post('/admin/messages/reply/send', [App\Http\Controllers\MessagesControll
 //Replycomments
 Route::post('/admin/replycomments/set', [App\Http\Controllers\ReplycommentController::class, 'set'])->name('admin.reply.set');
 Route::post('/admin/replycomments/setAsAdmin', [App\Http\Controllers\ReplycommentController::class, 'setAsAdmin'])->name('admin.reply.setAsAdmin');
+
+//Acade
+Route::get('/admin/academy/new', [App\Http\Controllers\AcademyController::class, 'new'])->name('admin.academy.new');
+Route::post('/admin/academy/set', [App\Http\Controllers\AcademyController::class, 'set'])->name('admin.academy.set');
+Route::post('/admin/academy/update', [App\Http\Controllers\AcademyController::class, 'update'])->name('admin.academy.update');
+Route::post('/admin/academy/delete', [App\Http\Controllers\AcademyController::class, 'delete'])->name('admin.academy.delete');
+Route::post('/admin/academy/edit', [App\Http\Controllers\AcademyController::class, 'edit'])->name('admin.academy.edit');

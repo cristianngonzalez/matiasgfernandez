@@ -15,7 +15,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="{{route('admin')}}">Admin</a></li>
-                          <li class="breadcrumb-item">Testimonials</li>
+                          <li class="breadcrumb-item">Academy degrees</li>
                         </ol>
                     </nav>
                 </div>
@@ -43,20 +43,20 @@
                                 
                                 <div class="row mt-2">
                                     <div class="col-auto">
-                                        <form action="{{route('admin.testimonials.edit')}}" method="POST">
+                                        <form action="{{route('admin.academy.edit')}}" method="POST">
                                             @method('POST')
                                             @csrf
                                             <input type="text" name="id" value="{{$academy->id}}" hidden>
-                                            <input type="submit" value="Edit testimonial" class="btn btn-success">
+                                            <input type="submit" value="Edit degree" class="btn btn-success">
                                         </form>
                                     </div>
                                     <div class="col-auto">
-                                        <form action="{{route('admin.testimonials.delete')}}" method="POST">
+                                        <form action="{{route('admin.academy.delete')}}" method="POST">
                                             @csrf
-                                            @method('post')
+                                            @method('POST')
                                             <input type="text" name="id" value="{{$academy->id}}" hidden>
                                             <input type="text" name="picture" value="{{$academy->logo}}" hidden>
-                                            <input type="submit" class="btn btn-danger" value="Remove testimonial">
+                                            <input type="submit" class="btn btn-danger" value="Remove degree">
                                         </form>
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@
                         </div>
                     @endforeach
 
-                    <a href="{{route('admin.testimonials.new')}}" class="btn btn-success">Create a new testimonial</a>
+                    <a href="{{route('admin.academy.new')}}" class="btn btn-success">Create a new academy degree</a>
                     
                 </div>
             </div>

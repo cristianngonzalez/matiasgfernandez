@@ -15,6 +15,7 @@ class CreateAcademy extends Migration
     {
         Schema::create('academies', function (Blueprint $table) {
             //
+            $table->increments('id');
             $table->string('institution' , 255);
             $table->string('degree' , 255);
             $table->string('date' , 255);
