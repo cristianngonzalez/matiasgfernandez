@@ -30,7 +30,7 @@ class CommentController extends Controller{
         $socialnetworks = Socialnetwork::all();
 
         if(env("APP_ENV") == 'production'){   
-            Mail::to('contacto@matiasgfernandez.com')->send(new NotificationNewComment($email , $socialnetworks , $name , $blog_id , $blog_title , $blog_picture , $comment));
+            //Mail::to('contacto@matiasgfernandez.com')->send(new NotificationNewComment($email , $socialnetworks , $name , $blog_id , $blog_title , $blog_picture , $comment));
 
             return redirect('blog?id='.$req->input('blog_id'));
         }else{
