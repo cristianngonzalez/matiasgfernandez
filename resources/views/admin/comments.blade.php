@@ -45,8 +45,7 @@
                                             <form action="{{route('admin.comment.delete')}}" method="POST">
                                                 @csrf
                                                 @method('POST')
-                                                <input type="text" value="{{$comment->id}}" value="id" hidden>
-                                                
+                                                <input type="text" value="{{$comment->id}}" name="id" hidden>
 
                                                 <!-- Button trigger modal -->
                                                 <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
