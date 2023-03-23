@@ -16,7 +16,18 @@ class MessagesController extends Controller{
         $message = Message::find( $req->input('id') );
         $replies = Reply::where('message_id' , $req->input('id'))->get();
 
+        $message->readed = true;
+        $message->save();
+
         return view('admin.messagesopen')->with(['message' => $message , 'replies' => $replies]);
+    }
+
+    public function markAsReaded(Request $req){
+        $message = Message::find( $req->input('id') );
+        $message->readed = true;
+        $message->save();
+        
+        return redirect('/admin/messages');
     }
 
     public function reply(Request $req){

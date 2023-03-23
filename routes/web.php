@@ -98,6 +98,7 @@ Route::post('/admin/requestcv/delete' , [App\Http\Controllers\RequestcvControlle
 Route::post('/admin/messages/open', [App\Http\Controllers\MessagesController::class, 'open'])->name('admin.messages.open');
 Route::post('/admin/messages/reply', [App\Http\Controllers\MessagesController::class, 'reply'])->name('admin.messages.reply');
 Route::post('/admin/messages/reply/send', [App\Http\Controllers\MessagesController::class, 'replySend'])->name('admin.messages.reply.send');
+Route::post('/admin/messages/markasreaded', [App\Http\Controllers\MessagesController::class, 'markAsReaded'])->name('admin.messages.markAsReaded');
 
 //Replycomments
 Route::post('/admin/replycomments/set', [App\Http\Controllers\ReplycommentController::class, 'set'])->name('admin.reply.set');

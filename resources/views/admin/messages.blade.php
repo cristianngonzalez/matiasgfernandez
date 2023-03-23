@@ -57,9 +57,14 @@
                                         </form>
                                     </td>
                                     <td>
-                                        <form action="" method="POST">
-                                            <input type="submit" class="btn btn-sm btn-warning" value="Mark as read">
-                                        </form>
+                                        @if (!$message->readed)
+                                            <form action="{{route('admin.messages.markAsReaded')}}" method="POST">
+                                                @csrf
+                                                @method('POST')
+                                                <input type="text" name="id" value="{{$message->id}}" hidden>
+                                                <input type="submit" class="btn btn-sm btn-warning" value="Mark as read">
+                                            </form>
+                                        @endif
                                     </td>
                                     <td>
                                         <form action="{{route('admin.messages.reply')}}" method="POST">
