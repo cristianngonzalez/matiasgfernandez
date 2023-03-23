@@ -34,25 +34,27 @@
                     <!--Todos los comentarios que no tienen respuesta-->
                     @foreach ($comments as $comment)
                         @if ($comment->repliescomment->count() == 0)
-                            <div class="card">
+                            <div class="card mt-2">
                                 <div class="card-header">{{$comment->blog->title}}</div>
                                 <div class="card-body">
                                     <h5 class="card-title">{{$comment->name}}</h5>
                                     <h6 class="card-title"><a href="mailto:{{$comment->email}}">{{$comment->email}}</a></h6>
                                     <p class="card-text">{{$comment->comment}}</p>
 
-                                    <form action="" method="POST">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <form action="{{route('admin.reply.setAsAdmin')}}" method="POST">
+                                        @csrf
+                                        @method('POST')
+                                        <input type="text" name="comment_id" value="{{$comment->id}}" hidden>
+                                        <div class="form-floating mb-2">
+                                            <textarea class="form-control" placeholder="Leave a comment here" name="reply" id="floatingTextarea2" style="height: 100px"></textarea>
                                             <label for="floatingTextarea2">Reply</label>
-                                          </div>
+                                        </div>
+                                        <input type="submit" class="btn btn-success" value="Reply">
                                     </form>
                                 </div>
                             </div>
                         @endif
                     @endforeach
-
-                    
 
 
                 </div>

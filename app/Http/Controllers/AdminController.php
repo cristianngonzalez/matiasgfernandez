@@ -41,8 +41,19 @@ class AdminController extends Controller{
         //
         $unread_messages = Message::where('readed', 0)->count();
         $unanswered_request = RequestCV::where('sent', 0)->count();
+        $comments = Comment::all();
 
-        return view('admin.home')->with(['unread_messages' => $unread_messages , 'unanswered_request' => $unanswered_request]);
+        $unanswered_comments = 0;
+
+        //Sumamos todos los comentarios sin responder
+        foreach($comments as $comment){
+            //Si no tiene ninguna reply es sin responder y se mostrara en el marcador
+            if( $comment->repliescomment->count() == 0 ){
+                $unanswered_comments = $unanswered_comments + 1;
+            }
+        }
+
+        return view('admin.home')->with(['unread_messages' => $unread_messages , 'unanswered_request' => $unanswered_request , 'unanswered_comments' => $unanswered_comments]);
     }
     
     public function socialnetworks(){
@@ -122,6 +133,10 @@ class AdminController extends Controller{
     public function comments(){
 
         $comments = Comment::all();
+
+        foreach($comments as $comment){
+            
+        }
 
         return view('admin.comments')->with(['comments' => $comments]);
     }

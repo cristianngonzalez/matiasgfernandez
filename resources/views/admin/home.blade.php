@@ -18,8 +18,16 @@
                 </div>
             </div>
 
-            <div class="col-md-3 mb-2">
+            <div class="col-md-3 mb-2 position-relative">
                 <div class="card" style="width: 100%;">
+
+                    @if ($unanswered_comments > 0)
+                        <span class="translate-middle badge rounded-pill bg-danger" id="message-admin-badge">
+                            {{$unanswered_comments}}+
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    @endif
+
                     <img src="{{env('ASSETS_URL')}}img/svg/icons/comments.svg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <a href="{{route('admin.comments')}}"><h5 class="card-title">Comments</h5></a>
@@ -73,11 +81,14 @@
             
             <div class="col-md-3 mb-2 position-relative">
                 <div class="card" style="width: 100%;">
-
-                    <span class="translate-middle badge rounded-pill bg-danger" id="message-admin-badge">
-                        {{$unread_messages}}+
-                        <span class="visually-hidden">unread messages</span>
-                      </span>
+                    
+                    @if ($unread_messages > 0)
+                        <span class="translate-middle badge rounded-pill bg-danger" id="message-admin-badge">
+                            {{$unread_messages}}+
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    @endif
+                    
 
                     <img src="{{env('ASSETS_URL')}}img/svg/icons/messages.svg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -91,10 +102,12 @@
             <div class="col-md-3 mb-2 position-relative">
                 <div class="card" style="width: 100%;">
 
-                    <span class="translate-middle badge rounded-pill bg-danger" id="message-admin-badge">
-                        {{$unanswered_request}}+
-                        <span class="visually-hidden">unread messages</span>
-                      </span>
+                    @if ($unanswered_request > 0)
+                        <span class="translate-middle badge rounded-pill bg-danger" id="message-admin-badge">
+                            {{$unanswered_request}}+
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    @endif
 
                     <img src="{{env('ASSETS_URL')}}img/svg/icons/cv_request.svg" class="card-img-top" alt="...">
                     <div class="card-body">

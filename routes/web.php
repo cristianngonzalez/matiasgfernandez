@@ -100,3 +100,4 @@ Route::post('/admin/messages/reply/send', [App\Http\Controllers\MessagesControll
 
 //Replycomments
 Route::post('/admin/replycomments/set', [App\Http\Controllers\ReplycommentController::class, 'set'])->name('admin.reply.set');
+Route::post('/admin/replycomments/setAsAdmin', [App\Http\Controllers\ReplycommentController::class, 'setAsAdmin'])->name('admin.reply.setAsAdmin');
