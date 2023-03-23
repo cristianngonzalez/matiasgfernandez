@@ -15,7 +15,6 @@ class TimelineController extends Controller{
     }
 
     public function set(Request $req){
-
         $file = $req->file('picture-file');
         $file_name = Str::uuid()->toString();
 
@@ -47,6 +46,19 @@ class TimelineController extends Controller{
             'category' => $req->input('category'),
             'date' => $req->input('date')
         ]);
+
+        if($req->file('picture-file')){
+            $file = $req->file('picture-file');
+            $file_name = Str::uuid()->toString();
+
+            $file->storeAs('' , $file_name . "." . $file->extension() , 'public');
+
+            $experience = Timeline::find( $req->input('id') );
+            $experience->icon = $file_name . "." . $file->extension() ;
+
+            $experience->save();
+        }
+
 
         return redirect('/admin/timeline?success=A experience of your timeline has been updated');
     }

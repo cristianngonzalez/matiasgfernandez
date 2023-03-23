@@ -27,7 +27,7 @@
                     <hr>
 
                     
-                    <form action="{{route('admin.timeline.update')}}" method="POST">
+                    <form action="{{route('admin.timeline.update')}}" method="POST" enctype='multipart/form-data'>
                         @csrf
                         @method('post')
                         <input type="text" value="{{$experience->id}}" name="id" hidden>
@@ -45,6 +45,17 @@
                             </select>
                             <label for="category">What type of company have you worked for?</label>
                         </div>
+
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong>Atention!</strong> Your timeline already has a logo, but you can change it just by uploading an image here, if you want to keep the current image just ignore the image field.
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="file" class="form-control" name="picture-file" id="picture-file">
+                            <label for="picture-file">Picture file</label>
+                        </div>
+
                         <div class="mb-3">
                             <div class="form-floating">
                                 <textarea class="form-control" name="description" id="description" style="height: 100px" >{{$experience->description}}</textarea>

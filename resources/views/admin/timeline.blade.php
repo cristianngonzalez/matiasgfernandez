@@ -29,11 +29,19 @@
                         <div class="card mb-3">
                             <div class="card-header">{{$experience->title}}</div>
                             <div class="card-body">
-                                <h5 class="card-title">{{$experience->company}}</h5>
-                                <h6 class="text-capitalize">{{$experience->category}}</h6>
-                                <p class="card-text">{{$experience->date}}</p>
-                                <p class="card-text">{{$experience->description}}</p>
 
+                                <div class="row">
+                                    <div class="col-auto col-admin-card-picture">
+                                        <img class="admin-card-picture" src="https://www.matiasgfernandez.com/public/storage/{{$experience->icon}}" alt="">
+                                    </div>
+                                    <div class="col-auto col-admin-card-picture-content-aside">
+                                        <h5 class="card-title">{{$experience->company}}</h5>
+                                        <h6 class="text-capitalize">{{$experience->category}}</h6>
+                                        <p class="card-text">{{$experience->date}}</p>
+                                        <p class="card-text">{{$experience->description}}</p>
+                                    </div>
+                                </div>
+                                
                                 <div class="row">
                                     <div class="col-auto">
                                         <form action="{{route('admin.timeline.edit')}}" method="POST">
