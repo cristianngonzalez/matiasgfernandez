@@ -42,7 +42,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="row">
+                                <div class="row mt-2">
                                     <div class="col-auto">
                                         <form action="{{route('admin.timeline.edit')}}" method="POST">
                                             @method('POST')
