@@ -27,27 +27,19 @@
                     <hr>
 
                     
-                    <form action="{{route('admin.timeline.update')}}" method="POST" enctype='multipart/form-data'>
+                    <form action="{{route('admin.academy.update')}}" method="POST" enctype='multipart/form-data'>
                         @csrf
                         @method('post')
                         <input type="text" value="{{$academy->id}}" name="id" hidden>
                         <div class="mb-3">
-                            <input type="text" class="form-control" name="title" required placeholder="Experience title" value="{{$experience->title}}">
+                            <input type="text" class="form-control" name="title" required placeholder="Experience title" value="{{$academy->institution}}">
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" name="company" required placeholder="Company name" value="{{$experience->company}}">
-                        </div>
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="category" name="category">
-                                <option value="company" @if($experience->category == "company") selected @endif >Company</option>
-                                <option value="startup" @if($experience->category == "startup") selected @endif >Startup</option>
-                                <option value="consultancy" @if($experience->category == "consultancy") selected @endif >Consultancy</option>
-                            </select>
-                            <label for="category">What type of company have you worked for?</label>
+                            <input type="text" class="form-control" name="company" required placeholder="Company name" value="{{$academy->degree}}">
                         </div>
 
                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                            <strong>Atention!</strong> Your timeline already has a logo, but you can change it just by uploading an image here, if you want to keep the current image just ignore the image field.
+                            <strong>Atention!</strong> Your academy degree already has a institution logo, but you can change it just by uploading an image here, if you want to keep the current image just ignore the image field.
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
 
@@ -56,18 +48,12 @@
                             <label for="picture-file">Picture file</label>
                         </div>
 
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <textarea class="form-control" name="description" id="description" style="height: 100px" >{{$experience->description}}</textarea>
-                                <label for="description">Job description</label>
-                            </div>
-                        </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" name="date" id="experience-date" value="{{$experience->date}}">
-                            <label for="experience-date">Experience date</label>
+                            <input type="text" class="form-control" name="date" id="experience-date" value="{{$academy->date}}">
+                            <label for="experience-date">Degree date</label>
                         </div>
         
-                        <input type="submit" class="btn btn-success" value="Save experience">
+                        <input type="submit" class="btn btn-success" value="Update degree">
                     </form>
 
                 </div>
