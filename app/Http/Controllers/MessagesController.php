@@ -44,7 +44,7 @@ class MessagesController extends Controller{
         $socialnetworks = Socialnetwork::all();
 
         if(env("APP_ENV") == 'production'){   
-            Mail::to($to)->send(new MessageReply($msg , $sub , $socialnetworks));
+            //Mail::to($to)->send(new MessageReply($msg , $sub , $socialnetworks));
     
             return redirect('/admin/messages?success=Your message has been sent');
         }else{
