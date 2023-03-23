@@ -32,10 +32,10 @@
                         @method('post')
                         <input type="text" value="{{$academy->id}}" name="id" hidden>
                         <div class="mb-3">
-                            <input type="text" class="form-control" name="title" required placeholder="Experience title" value="{{$academy->institution}}">
+                            <input type="text" class="form-control" name="institution" required value="{{$academy->institution}}">
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" name="company" required placeholder="Company name" value="{{$academy->degree}}">
+                            <input type="text" class="form-control" name="degree" required value="{{$academy->degree}}">
                         </div>
 
                         <div class="alert alert-warning alert-dismissible fade show" role="alert">

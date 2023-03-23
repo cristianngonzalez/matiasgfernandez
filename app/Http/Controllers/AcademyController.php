@@ -43,4 +43,27 @@ class AcademyController extends Controller{
         return view('admin.academyedit')->with(['academy' => $academy]);
     }
 
+    public function update(Request $req){
+        $academy = Academy::where('id' , $req->input('id'))->update([
+            'institution' => $req->input('institution') , 
+            'degree' => $req->input('degree') ,
+            'date' => $req->input('date')
+        ]);
+
+        if($req->file('picture-file')){
+            $file = $req->file('picture-file');
+            $file_name = Str::uuid()->toString();
+
+            $file->storeAs('' , $file_name . "." . $file->extension() , 'public');
+
+            $academyupdated = Academy::find( $req->input('id') );
+            $academyupdated->logo = $file_name . "." . $file->extension() ;
+
+            $academyupdated->save();
+        }
+
+
+        return redirect('/admin/academy?success=An academy degree has been updated');
+    }
+
 }
