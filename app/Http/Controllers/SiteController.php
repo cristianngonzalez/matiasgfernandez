@@ -64,9 +64,9 @@ class SiteController extends Controller{
         $socialnetworks = Socialnetwork::all();
 
         if(env("APP_ENV") == 'production'){ 
-            //Mail::to('contacto@matiasgfernandez.com')->send(new NotificationCvRequest($email , $socialnetworks));
+            Mail::to('contacto@matiasgfernandez.com')->send(new NotificationCvRequest($email , $socialnetworks));
 
-            //Mail::to($email)->send(new GuestnotificationCvRequest($email , $socialnetworks));
+            Mail::to($email)->send(new GuestnotificationCvRequest($email , $socialnetworks));
             
             return response()->json(['status' => 'success'] , 200);
         }else{
