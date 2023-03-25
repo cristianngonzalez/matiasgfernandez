@@ -32,7 +32,7 @@ return [
 
 
     'sendgrid' => [
-        'api_key' => env('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'),
+        'api_key' => env('SENDGRID_API_KEY'),
      ],
 
 ];
