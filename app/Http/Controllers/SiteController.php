@@ -111,13 +111,15 @@ class SiteController extends Controller{
         $socialnetworks = Socialnetwork::all();
 
         if(env("APP_ENV") == 'production'){ 
-            //Mail::to('contacto@matiasgfernandez.com')->send(new NotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
+            Mail::to('contacto@matiasgfernandez.com')->send(new NotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
 
-            //Mail::to($email)->send(new GuestnotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
+            Mail::to($email)->send(new GuestnotificationContact($email , $socialnetworks , $name , $subject , $phone , $message ));
 
             return response()->json(['status' => 'success'] , 200);
         }else{
-            return response()->json(['status' => 'success'] , 200);
+            
+            return new GuestnotificationContact($email , $socialnetworks , $name , $subject , $phone , $message);
+            //return response()->json(['status' => 'success'] , 200);
         }
         
 

@@ -25,7 +25,7 @@ class ReplycommentController extends Controller{
         
         
         if(env("APP_ENV") == 'production'){   
-            /*
+            
             Mail::to($comment->email)->send(new GuestNotificationReplyComment(
                 $comment->email , 
                 $socialnetworks , 
@@ -37,7 +37,7 @@ class ReplycommentController extends Controller{
                 $req->input('blog_picture') , 
                 $req->input('reply') 
             ));
-            */
+            
             
             return redirect("/blog?id=".$req->input('blog_id'));
         }else{
@@ -68,7 +68,7 @@ class ReplycommentController extends Controller{
         $blog = Blog::find($comment->blog->id);
         
         if(env("APP_ENV") == 'production'){   
-            /*
+            
             Mail::to($comment->email)->send(new GuestNotificationReplyComment(
                 $comment->email , 
                 $socialnetworks , 
@@ -80,7 +80,7 @@ class ReplycommentController extends Controller{
                 $blog->picture , 
                 $req->input('reply') 
             ));
-            */
+            
 
             return redirect("/admin/comments?success=A comment has been replied");
         }else{
