@@ -8,7 +8,7 @@
 <!-- WRAPPER ALL -->
 
 
-<div class="dizme_tm_all_wrap" data-magic-cursor="show" style="padding-top:0px; padding-bottom: 0px; margin-bottom: 0px;">
+<div class="dizme_tm_all_wrap" data-magic-cursor="show" style="padding-top:0px; padding-bottom: 0px;">
 
     @include('site.partials.header')
     
