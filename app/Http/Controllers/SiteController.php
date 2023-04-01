@@ -124,5 +124,13 @@ class SiteController extends Controller{
         
 
     }
+
+    public function galery(){
+        $galeries = Galery::all();
+        $taggaleries = Taggalery::all();
+        $staticcontents = Staticcontent::all();
+
+        return view('site.galery')->with(['galeries' => $galeries , 'taggaleries' => $taggaleries , 'staticscontents' => $staticcontents]);
+    }
     
 }

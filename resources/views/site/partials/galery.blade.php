@@ -6,6 +6,7 @@
                 <span>{!!$staticcontents[5]->subtitle!!}</span>
                 <h3>{!!$staticcontents[5]->maintitle!!}</h3>
                 <p>{!!$staticcontents[5]->paragraph!!}</p>
+                <a href="{{route('site.galery')}}" style="text-decoration: none; color:coral;">Ver la galería completa</a>
             </div>
             <div class="portfolio_filter">
                 <ul>

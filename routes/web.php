@@ -9,6 +9,8 @@ Route::get('/blog',  [App\Http\Controllers\SiteController::class, 'blog'] )->nam
 Route::post('/comment/post',  [App\Http\Controllers\CommentController::class, 'post'] )->name('site.comment.post');
 Route::get('/messages/contact' , [App\Http\Controllers\SiteController::class, 'contact'])->name('messages.contact');
 
+Route::get('/galery',  [App\Http\Controllers\SiteController::class, 'galery'] )->name('site.galery');
+
 //=======================================================================================================================
 //Ajax routes
 Route::get('/solicitarCV', [App\Http\Controllers\SiteController::class, 'solicitarCV'])->name('solicitarCV');
