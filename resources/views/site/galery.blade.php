@@ -15,7 +15,7 @@
 
     <!-- Galery -->
     <div class="dizme_tm_section" id="galeria">
-        <div class="dizme_tm_portfolio" style="padding-bottom: 0px; margin-bottom: 0px;">
+        <div class="dizme_tm_portfolio" style="padding-bottom: 0px; margin-bottom: 0px; height: auto;">
             <div class="container">
                 <div class="portfolio_filter">
                     <ul>
