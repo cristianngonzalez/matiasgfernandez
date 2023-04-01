@@ -59,7 +59,7 @@
   
     let div_timeline_content = document.getElementById('timeline-content');
   
-    printTimeline(alltimeline);
+    printTimeline('Todo el timeline' , alltimeline);
 
     function printTimeline(timeline){
 
