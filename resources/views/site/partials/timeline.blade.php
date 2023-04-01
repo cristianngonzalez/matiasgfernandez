@@ -39,13 +39,13 @@
       <script>
         alltimeline.push(
           {
-            id: '{{$event->id}}',
-            title: '{{$event->title}}',
-            company: '{{$event->company}}',
-            description: '{{$event->description}}',
-            category: '{{$event->category}}',
-            icon: '{{$event->icon}}',
-            date: '{{$event->date}}'
+            id: `{{$event->id}}`,
+            title: `{{$event->title}}`,
+            company: `{{$event->company}}`,
+            description: `{{$event->description}}`,
+            category: `{{$event->category}}`,
+            icon: `{{$event->icon}}`,
+            date: `{{$event->date}}`
           }
         );
       </script>
