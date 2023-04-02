@@ -106,6 +106,9 @@ class SiteController extends Controller{
         $message = $req->query->get('ajax_message');
         $subject = $req->query->get('ajax_subject');
         $phone = $req->query->get('ajax_phone');
+        if($phone == null){
+            $phone = "";
+        }
 
         Message::create([
             'name' => $name,
