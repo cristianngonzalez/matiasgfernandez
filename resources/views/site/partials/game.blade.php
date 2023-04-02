@@ -31,11 +31,14 @@
         height: 400px;
         margin-left: calc(50% - 400px);
         text-align: center;
+        background: url("{{env('ASSETS_URL')}}gameassets/img/bg.png");
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
     #gamecard{
         margin-left: calc(50% - 400px);
         width: 800px;
-        height: 140px;
+        height: 125px;
         padding: 5px;
         background: hsl(205deg 38% 89%);
         border-top-left-radius: 10px;
