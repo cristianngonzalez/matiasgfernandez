@@ -34,8 +34,8 @@ class SiteController extends Controller{
         $socialnetworks = Socialnetwork::all();
         $galeries = Galery::all()->take(6);
         $taggaleries = Taggalery::all();
-        $timeline = Timeline::all()->take(4);
-        $videos = Video::all();
+        $timeline = Timeline::all();
+        $videos = Video::all()->take(4);
         $staticcontents = Staticcontent::all();
         $testimonials = Testimonial::all();
         $academies = Academy::all()->reverse();
