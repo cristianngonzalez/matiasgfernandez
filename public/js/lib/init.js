@@ -547,7 +547,7 @@ function dizme_tm_contact_form(){
 
 						Swal.fire({
 							title: `Muchas gracias`,
-							text: 'He recibido tu mensaje, tan pronto como pueda me comunicare contigo.',
+							text: 'He recibido tu mensaje, tan pronto como pueda me comunicaré contigo.',
 						})
 					}
 					
