@@ -2,7 +2,7 @@ function solicitarCV(){
 
 
     Swal.fire({
-        title: 'Gracias por tu interes!',
+        title: 'Gracias por tu interés!',
         text: 'Dejame tu correo y me contactaré contigo.',
         input: 'text',
         inputAttributes: {
