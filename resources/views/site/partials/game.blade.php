@@ -62,13 +62,18 @@
         border-bottom-right-radius: 10px;
         display: none;
     }
+    .sound{
+        width: 800px;
+        position: relative;
+        margin-left: calc(50% - 400px);
+    }
     #sound{
         width: 30px;
         height : 30px;
         cursor: pointer;
         position: absolute;
-        top : 465px;
-        left : calc(50% - 385px);
+        top : 355px;
+        left : 15px;
         font-family: "Germania One";
     }
     #gameover{
@@ -130,6 +135,8 @@
       </div>
       
       <div id="startGameScreen">
+            <h2>Descubre mi trayectoria derribando los bloques</h2>
+            <h2>Pulsa izquierda y derecha jugar!</h2>
             <h1 id="startGameScreen-text">Preparados</h1>
       </div>
 
