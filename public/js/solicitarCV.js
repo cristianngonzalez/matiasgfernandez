@@ -41,7 +41,7 @@ function solicitarCV(){
         if (result.isConfirmed) {
             Swal.fire({
                 title: `Muchas gracias`,
-                text: 'Tan pronto como pueda me comunicare contigo.',
+                text: 'Tan pronto como pueda me comunicaré contigo.',
             })
         }
     })

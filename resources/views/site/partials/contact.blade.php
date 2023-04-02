@@ -12,7 +12,7 @@
                 <div class="wow" data-wow-duration="1s">
                     <div class="fields">
                         <form action="" method="post" class="contact_form" id="contact_form" >
-                            <div class="returnmessage" data-success="He recibido su mensaje, Tan pronto como pueda me comunicare contigo."></div>
+                            <div class="returnmessage" data-success="He recibido su mensaje, Tan pronto como pueda me comunicaré contigo."></div>
                             <div class="empty_notice"><span>Por favor rellene todos los campos</span></div>
                             <div class="input_list">
                                 <ul>
