@@ -521,7 +521,7 @@ function dizme_tm_contact_form(){
 	
 		jQuery(".contact_form .returnmessage").empty(); //To empty previous error/success message.
 		//checking for blank fields	
-		if(name===''||email===''|| message==='' || phone==='' || subject===''){
+		if(name===''||email===''|| message==='' || subject===''){
 			
 			jQuery('div.empty_notice').slideDown(500).delay(2000).slideUp(500);
 		}
