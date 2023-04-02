@@ -1,7 +1,11 @@
 <!-- ABOUT -->
 <div class="dizme_tm_section" id="about">
+
+    @include('site.partials.game')
+
     <div class="dizme_tm_about">
         <div class="container">
+
             <div class="wrapper">
                 <div class="left">
                     <div class="image">
