@@ -1,3 +1,5 @@
+
+
 <div class="dizme_tm_section" id="chanel">
     <div class="dizme_tm_services">
         <div class="container">
@@ -17,6 +19,7 @@
                         </li>
                     @endforeach
                 </ul>
+                <p style="text-align: center;" onclick="loadMoreVideos()"><a href="{{route('site.videos')}}" style="text-decoration: none; color: gray;">Ver mas</a></p>
             </div>
         </div>
         <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="{{env('ASSETS_URL')}}img/brushes/service/5.png" alt="" /></div>

@@ -10,6 +10,7 @@ Route::post('/comment/post',  [App\Http\Controllers\CommentController::class, 'p
 Route::get('/messages/contact' , [App\Http\Controllers\SiteController::class, 'contact'])->name('messages.contact');
 
 Route::get('/galery',  [App\Http\Controllers\SiteController::class, 'galery'] )->name('site.galery');
+Route::get('/videos',  [App\Http\Controllers\SiteController::class, 'videos'] )->name('site.videos');
 
 //=======================================================================================================================
 //Ajax routes
