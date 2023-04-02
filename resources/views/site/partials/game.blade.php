@@ -102,7 +102,6 @@
         cursor: pointer;
         font-size: 1.25em;
         color : #FFF;
-        font-family: "Germania One";
     }
 </style>
 
