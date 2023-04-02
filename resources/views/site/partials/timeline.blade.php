@@ -52,7 +52,7 @@
   @endforeach
 
   <script>
-    alltimeline = alltimeline.reverse();
+    //alltimeline = alltimeline.reverse();
   </script>
 
   <script>
