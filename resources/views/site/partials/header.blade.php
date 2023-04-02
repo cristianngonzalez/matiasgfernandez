@@ -33,7 +33,7 @@ $thisPath = Request::path();
                     <a href="#home">Inicio</a>
                 </li>
                 <li><a href="{{url('/')}}#about">Acerca de mi</a></li>
-                <li><a href="{{url('/')}}#trayectoria">Recomendaciones</a></li>
+                <li><a href="{{url('/')}}#trayectoria">Testimonios</a></li>
                 <li><a href="{{url('/')}}#portfolio">Portfolio</a></li>
                 <li><a href="{{url('/')}}#blog">Blog</a></li>
                 <li><a href="{{url('/')}}#contact">Contacto</a></li>
@@ -55,7 +55,7 @@ $thisPath = Request::path();
                 <ul class="anchor_nav">
                     <li class="current"><a  href="{{url('/')}}#home">Inicio</a></li>
                     <li><a href="{{url('/')}}#about">Acerca de mi</a></li>
-                    <li><a href="{{url('/')}}#trayectoria">Recomendaciones</a></li>
+                    <li><a href="{{url('/')}}#trayectoria">Testimonios</a></li>
                     <li><a href="{{url('/')}}#galeria">Mi Galeria</a></li>
                     <li><a href="{{url('/')}}#blog">Blog</a></li>
                     <li><a href="{{url('/')}}#contact">Contacto</a></li>
