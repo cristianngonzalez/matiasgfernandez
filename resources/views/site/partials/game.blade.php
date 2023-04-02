@@ -8,13 +8,28 @@
     <script>
         gamecards.push({
             title: `{{$gamecard->title}}`,
-            icon: `{{$gamecard->icon}}`
+            icon: `{{$gamecard->icon}}`,
+            company: `{{$gamecard->company}}`,
+            date: `{{$gamecard->date}}`,
         });
     </script>
 @endforeach
 
 
 <style>
+    #gameContainer{
+        position: relative;
+        display: inline;
+    }
+    @media(max-width: 1200px){
+        #gameContainer{
+            display: none;
+        }
+    }
+    #startGameScreen{
+        width: 800px;
+        height: 400px;
+    }
     #gamecard{
         margin-left: calc(50% - 400px);
         width: 800px;
@@ -40,6 +55,7 @@
         font-family: "Germania One";
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        display: none;
     }
     #sound{
         width: 30px;
@@ -88,7 +104,7 @@
     }
 </style>
 
-<div style="position: relative;">
+<div id="gameContainer">
 
     <div id="gamecard">
             <div id="gamecard-icon">
@@ -109,6 +125,10 @@
         <div id="restart">Play Again!</div>
       </div>
       
+      <div id="startGameScreen">
+            <h1>Preparados</h1>
+      </div>
+
       <canvas id="breakout" width="800" height="500"></canvas>
 </div>
 
@@ -375,7 +395,11 @@ function ballBrickCollision(){
 
                     countBreakCollisions++;
                     gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}storage/${gamecards[countBreakCollisions - 1].icon}"/>`;
-                    gamecard_title.innerHTML = `<h2>${gamecards[countBreakCollisions - 1].title}</h2>`;
+                    gamecard_title.innerHTML = `
+                        <h3>${gamecards[countBreakCollisions - 1].title}</h3>
+                        <h4>${gamecards[countBreakCollisions - 1].company}</h4>
+                        <h6>${gamecards[countBreakCollisions - 1].date}</h6>
+                    `;
 
                 }
             }
@@ -475,7 +499,19 @@ function loop(){
         requestAnimationFrame(loop);
     }
 }
-loop();
+
+function startGame(){
+
+    setTimeout(() => {
+
+        document.getElementById("startGameScreen").style.display = 'none';
+        document.getElementById("breakout").style.display = 'inline';
+
+        loop();
+    }, 3000);
+    
+    
+}
 
 
 // SELECT SOUND ELEMENT
