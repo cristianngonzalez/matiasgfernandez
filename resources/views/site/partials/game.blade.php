@@ -29,6 +29,8 @@
     #startGameScreen{
         width: 800px;
         height: 400px;
+        margin-left: calc(50% - 400px);
+        text-align: center;
     }
     #gamecard{
         margin-left: calc(50% - 400px);
@@ -126,7 +128,7 @@
       </div>
       
       <div id="startGameScreen">
-            <h1>Preparados</h1>
+            <h1 id="startGameScreen-text">Preparados</h1>
       </div>
 
       <canvas id="breakout" width="800" height="500"></canvas>
@@ -187,6 +189,7 @@ const cvs = document.getElementById("breakout");
 const ctx = cvs.getContext("2d");
 let gamecard_icon = document.getElementById("gamecard-icon");
 let gamecard_title = document.getElementById("gamecard-title");
+let startGameScreen_text = document.getElementById("startGameScreen-text");
 
 // ADD BORDER TO CANVAS
 //cvs.style.border = "1px solid #f75023";
@@ -504,10 +507,16 @@ function startGame(){
 
     setTimeout(() => {
 
-        document.getElementById("startGameScreen").style.display = 'none';
-        document.getElementById("breakout").style.display = 'inline';
+        setTimeout(() => {
+            startGameScreen_text.innerText = "Ahora!";
+        }, 1000);
 
-        loop();
+        setTimeout(() => {
+            document.getElementById("startGameScreen").style.display = 'none';
+            document.getElementById("breakout").style.display = 'inline';
+            loop();
+        }, 3000);
+
     }, 3000);
     
     
