@@ -19,7 +19,7 @@
             <ul class="anchor_nav">
                 <li class="current"><a href="#home">Inicio</a></li>
 				<li><a href="#about">Acerca de mi</a></li>
-				<li><a href="#trayectoria">Testimonio</a></li>
+				<li><a href="#trayectoria">Testimonios</a></li>
 				<li><a href="#galeria">Mi Galeria</a></li>
 				<li><a href="#blog">Blog</a></li>
 				<li><a href="#contact">Contacto</a></li>
@@ -41,7 +41,7 @@
                 <ul class="anchor_nav">
                     <li class="current"><a href="#home">Inicio</a></li>
 					<li><a href="#about">Acerca de mi</a></li>
-					<li><a href="#trayectoria">Testimonio</a></li>
+					<li><a href="#trayectoria">Testimonios</a></li>
 					<li><a href="#galeria">Mi Galeria</a></li>
 					<li><a href="#blog">Blog</a></li>
 					<li><a href="#contact">Contacto</a></li>
