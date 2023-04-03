@@ -135,9 +135,12 @@
       </div>
       
       <div id="startGameScreen">
-            <h2>Descubre mi trayectoria derribando los bloques</h2>
-            <h2>Pulsa izquierda y derecha jugar!</h2>
-            <h1 id="startGameScreen-text">Preparados</h1>
+            <h3 style="padding-top: 110px;">Descubre mi trayectoria derribando los bloques</h3>
+            <h3>Pulsa izquierda y derecha jugar!</h3>
+            <div class="dizme_tm_button" id="startGameScreen-startbutton">
+                <a class="anchor" href="#about" onclick="startGame()"><span>Start Game</span></a>
+            </div>
+            <h1 id="startGameScreen-text" style="display: none;">Preparate!</h1>
       </div>
 
       <canvas id="breakout" width="800" height="500"></canvas>
@@ -513,6 +516,9 @@ function loop(){
 }
 
 function startGame(){
+
+    document.getElementById('startGameScreen-startbutton').style.display = 'none';
+    startGameScreen_text.style.display = 'inline';
 
     setTimeout(() => {
 
