@@ -193,17 +193,20 @@ let bricks = [];
 function createBricks(){
     let auxBricksCounts = 0;
     for(let r = 0; r < brick.row; r++){
-        if(auxBricksCounts < gamecards.length){
+        
             bricks[r] = [];
             for(let c = 0; c < brick.column; c++){
-                bricks[r][c] = {
-                    x : c * ( brick.offSetLeft + brick.width ) + brick.offSetLeft,
-                    y : r * ( brick.offSetTop + brick.height ) + brick.offSetTop + brick.marginTop,
-                    status : true
+                if(auxBricksCounts < gamecards.length){
+                    bricks[r][c] = {
+                        x : c * ( brick.offSetLeft + brick.width ) + brick.offSetLeft,
+                        y : r * ( brick.offSetTop + brick.height ) + brick.offSetTop + brick.marginTop,
+                        status : true
+                    }
+
+                    auxBricksCounts++;
                 }
             }
-            auxBricksCounts++;
-        }
+
     }
 }
 
@@ -211,16 +214,23 @@ createBricks();
 
 // draw the bricks
 function drawBricks(){
+
+    let auxBricksCounts = 0;
+
     for(let r = 0; r < brick.row; r++){
         for(let c = 0; c < brick.column; c++){
             let b = bricks[r][c];
             // if the brick isn't broken
-            if(b.status){
-                ctx.fillStyle = brick.fillColor;
-                ctx.fillRect(b.x, b.y, brick.width, brick.height);
-                
-                ctx.strokeStyle = brick.strokeColor;
-                ctx.strokeRect(b.x, b.y, brick.width, brick.height);
+            if(auxBricksCounts < gamecards.length){
+                if(b.status){
+                    ctx.fillStyle = brick.fillColor;
+                    ctx.fillRect(b.x, b.y, brick.width, brick.height);
+                    
+                    ctx.strokeStyle = brick.strokeColor;
+                    ctx.strokeRect(b.x, b.y, brick.width, brick.height);
+                }
+
+                auxBricksCounts++;
             }
         }
     }
@@ -229,27 +239,33 @@ function drawBricks(){
 // ball brick collision
 function ballBrickCollision(){
 
+    let auxBricksCounts = 0;
+
     for(let r = 0; r < brick.row; r++){
         for(let c = 0; c < brick.column; c++){
             let b = bricks[r][c];
             // if the brick isn't broken
-            if(b.status){
-                if(ball.x + ball.radius > b.x && ball.x - ball.radius < b.x + brick.width && ball.y + ball.radius > b.y && ball.y - ball.radius < b.y + brick.height){
-                    BRICK_HIT.play();
-                    ball.dy = - ball.dy;
-                    b.status = false; // the brick is broken
-                    SCORE += SCORE_UNIT;
+            if(auxBricksCounts < gamecards.length){
+                if(b.status){
+                    if(ball.x + ball.radius > b.x && ball.x - ball.radius < b.x + brick.width && ball.y + ball.radius > b.y && ball.y - ball.radius < b.y + brick.height){
+                        BRICK_HIT.play();
+                        ball.dy = - ball.dy;
+                        b.status = false; // the brick is broken
+                        SCORE += SCORE_UNIT;
 
 
-                    countBreakCollisions++;
-                    gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}storage/${gamecards[countBreakCollisions - 1].icon}"/>`;
-                    gamecard_title.innerHTML = `
-                        <h3>${gamecards[countBreakCollisions - 1].title}</h3>
-                        <h4>${gamecards[countBreakCollisions - 1].company}</h4>
-                        <h6>${gamecards[countBreakCollisions - 1].date}</h6>
-                    `;
+                        countBreakCollisions++;
+                        gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}storage/${gamecards[countBreakCollisions - 1].icon}"/>`;
+                        gamecard_title.innerHTML = `
+                            <h3>${gamecards[countBreakCollisions - 1].title}</h3>
+                            <h4>${gamecards[countBreakCollisions - 1].company}</h4>
+                            <h6>${gamecards[countBreakCollisions - 1].date}</h6>
+                        `;
 
+                    }
                 }
+
+                auxBricksCounts++;
             }
         }
     }
@@ -295,11 +311,16 @@ function gameOver(){
 // level up
 function levelUp(){
     let isLevelDone = true;
+    let auxBricksCounts = 0;
     
     // check if all the bricks are broken
     for(let r = 0; r < brick.row; r++){
         for(let c = 0; c < brick.column; c++){
-            isLevelDone = isLevelDone && ! bricks[r][c].status;
+            if(auxBricksCounts < gamecards.length){
+                isLevelDone = isLevelDone && ! bricks[r][c].status;
+
+                auxBricksCounts++;
+            }
         }
     }
     
@@ -401,7 +422,7 @@ function audioManager(){
 // SHOW GAME OVER MESSAGE
 /* SELECT ELEMENTS */
 let gameover = document.getElementById("gameover");
-let youwin = document.getElementById("youwin");
+let winGameScreen = document.getElementById("winGameScreen");
 
 
 function restart(){
@@ -420,8 +441,8 @@ function restart(){
 
 // SHOW YOU WIN
 function showYouWin(){
-    gameover.style.display = "block";
-    youwon.style.display = "block";
+    document.getElementById("breakout").style.display = 'none';
+    winGameScreen.style.display = "block";
 }
 
 // SHOW YOU LOSE

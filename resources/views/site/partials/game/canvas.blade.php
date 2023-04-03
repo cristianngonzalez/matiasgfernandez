@@ -32,5 +32,9 @@
             <a href="#timeline" class="gameContainer-link" id="startGameScreen-link">Ver mi experiencia laboral completa</a>
       </div>
 
+      <div id="winGameScreen">
+        <h3>Has Ganado!</h3>
+      </div>
+
       <canvas id="breakout" width="800" height="400"></canvas>
 </div>
