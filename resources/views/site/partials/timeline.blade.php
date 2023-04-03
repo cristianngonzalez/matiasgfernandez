@@ -2,7 +2,7 @@
 
 
 
-<section class="cd-timeline js-cd-timeline">
+<section class="dizme_tm_section cd-timeline js-cd-timeline" id="timeline">
     <div class="container max-width-lg cd-timeline__container">
 
       <div class="dizme_tm_main_title" data-align="center" style="margin-bottom: 50px;">

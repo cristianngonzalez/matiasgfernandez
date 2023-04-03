@@ -5,7 +5,7 @@
                 <img src="{{env('ASSETS_URL')}}gameassets/img/score.png" alt="Matias Fernandez Timeline Experiencia Game">
             </div>
             <div id="gamecard-title">
-                <h2>Juega para conocer mi trayectoria!</h2>
+                <h2 style="padding-top: 30px;">Juega para conocer mi trayectoria!</h2>
             </div>
     </div>
 
@@ -14,10 +14,11 @@
       </div>
       
       <div id="gameover">
-        <h2>Game Over</h2>
-        <div class="dizme_tm_button" >
+        <h2 style="padding-top: 80px;">Game Over</h2>
+        <div class="dizme_tm_button" style="padding-top: 40px;">
             <a class="anchor" href="#about" onclick="restart()"><span>Start Game</span></a>
         </div>
+        <a href="#timeline">Ver mi experiencia laboral completa</a>
       </div>
       
       <div id="startGameScreen">
@@ -27,6 +28,8 @@
                 <a class="anchor" href="#about" onclick="startGame()"><span>Start Game</span></a>
             </div>
             <h1 id="startGameScreen-text">Preparate!</h1>
+
+            <a href="#timeline">Ver mi experiencia laboral completa</a>
       </div>
 
       <canvas id="breakout" width="800" height="400"></canvas>
