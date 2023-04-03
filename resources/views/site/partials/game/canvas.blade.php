@@ -5,7 +5,7 @@
                 <img src="{{env('ASSETS_URL')}}gameassets/img/score.png" alt="Matias Fernandez Timeline Experiencia Game">
             </div>
             <div id="gamecard-title">
-                <h2 style="padding-top: 30px;">Juega para conocer mi trayectoria!</h2>
+                <h2 style="padding-top: 30px;">¡Juega para conocer mi trayectoria!</h2>
             </div>
     </div>
 
@@ -23,7 +23,7 @@
       
       <div id="startGameScreen">
             <h3 style="padding-top: 80px;">Descubre mi trayectoria derribando los bloques</h3>
-            <h3>Pulsa izquierda y derecha jugar!</h3>
+            <h3>¡Pulsa izquierda y derecha jugar!</h3>
             <div class="dizme_tm_button" id="startGameScreen-startbutton" style="padding-top: 30px; padding-bottom: 30px;">
                 <a class="anchor" href="#about" onclick="startGame()"><span>Start Game</span></a>
             </div>
