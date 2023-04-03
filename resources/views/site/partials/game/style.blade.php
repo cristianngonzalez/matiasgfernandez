@@ -4,6 +4,9 @@
         position: relative;
         display: inline;
     }
+    .gameContainer-link{
+        color: #f75023;
+    }
     @media(max-width: 1200px){
         #gameContainer{
             display: none;

@@ -30,6 +30,7 @@ let gamecard_icon = document.getElementById("gamecard-icon");
 let gamecard_title = document.getElementById("gamecard-title");
 let startGameScreen = document.getElementById("startGameScreen");
 let startGameScreen_text = document.getElementById("startGameScreen-text");
+let startGameScreen_link = document.getElementById("startGameScreen-link");
 
 // ADD BORDER TO CANVAS
 //cvs.style.border = "1px solid #f75023";
@@ -346,6 +347,7 @@ function loop(){
 function startGame(){
     gameover.style.display = "none";
     startGameScreen.style.display = 'block';
+    startGameScreen_link.style.display = "none";
 
     document.getElementById('startGameScreen-startbutton').style.display = 'none';
     startGameScreen_text.style.display = 'inline';
@@ -401,6 +403,10 @@ function restart(){
     let countBreakCollisions = 0;
 
     gameover.style.display = "none";
+
+    let bricks = [];
+    createBricks();
+
     startGame();
 }
 

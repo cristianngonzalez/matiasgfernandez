@@ -18,7 +18,7 @@
         <div class="dizme_tm_button" style="padding-top: 40px;">
             <a class="anchor" href="#about" onclick="restart()"><span>Start Game</span></a>
         </div>
-        <a href="#timeline">Ver mi experiencia laboral completa</a>
+        <a href="#timeline" class="gameContainer-link">Ver mi experiencia laboral completa</a>
       </div>
       
       <div id="startGameScreen">
@@ -29,7 +29,7 @@
             </div>
             <h1 id="startGameScreen-text">Preparate!</h1>
 
-            <a href="#timeline">Ver mi experiencia laboral completa</a>
+            <a href="#timeline" class="gameContainer-link" id="startGameScreen-link">Ver mi experiencia laboral completa</a>
       </div>
 
       <canvas id="breakout" width="800" height="400"></canvas>
