@@ -334,7 +334,8 @@ function levelUp(){
 
             //Dispatch conffetis
             jsConfetti.addConfetti({
-                emojis: ['🌈', '⚡️', '💥', '✨', '💫', '👏'],
+                emojis: ['🌈', '⚡️', '💥', '✨', '💫', '👏' , '🥇' , '🏆'],
+
             }).then(() => jsConfetti.addConfetti())
 
             GAME_OVER = true;

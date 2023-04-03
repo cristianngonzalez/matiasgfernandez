@@ -33,7 +33,9 @@
       </div>
 
       <div id="winGameScreen">
-        <h3>Has Ganado!</h3>
+        <h1 style="padding-top: 70px">Has Ganado!</h1>
+        <h3 style="padding-top: 20px; padding-bottom: 40px;">Puedes mi trayectoria completa en la timeline</h3>
+        <a href="#timeline" class="gameContainer-link">Ver mi experiencia laboral completa</a>
       </div>
 
       <canvas id="breakout" width="800" height="400"></canvas>
