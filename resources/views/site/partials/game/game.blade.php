@@ -286,6 +286,8 @@ function draw(){
 function gameOver(){
     if(LIFE <= 0){
         showYouLose();
+        MUSIC_LOOP.pause();
+        GAME_OVER_SOUND.play();
         GAME_OVER = true;
     }
 }
@@ -356,6 +358,8 @@ function startGame(){
     document.getElementById('startGameScreen-startbutton').style.display = 'none';
     startGameScreen_text.style.display = 'inline';
 
+    MUSIC_LOOP.play();
+
     setTimeout(() => {
 
         setTimeout(() => {
@@ -365,7 +369,6 @@ function startGame(){
         setTimeout(() => {
             startGameScreen.style.display = 'none';
             document.getElementById("breakout").style.display = 'inline';
-            MUSIC_LOOP.play();
             loop();
         }, 3000);
 

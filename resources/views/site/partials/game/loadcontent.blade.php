@@ -39,6 +39,10 @@
     
     const MUSIC_LOOP = new Audio();
     MUSIC_LOOP.src = "{{env('ASSETS_URL')}}gameassets/sounds/game-music-loop.mp3";
+    MUSIC_LOOP.loop = true;
+
+    const GAME_OVER_SOUND = new Audio();
+    GAME_OVER_SOUND.src = "{{env('ASSETS_URL')}}gameassets/sounds/gameover.mp3";
 
     /////// END LOAD SOUNDS ////////
     
