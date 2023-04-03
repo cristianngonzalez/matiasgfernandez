@@ -22,9 +22,9 @@
       </div>
       
       <div id="startGameScreen">
-            <h3 style="padding-top: 110px;">Descubre mi trayectoria derribando los bloques</h3>
+            <h3 style="padding-top: 80px;">Descubre mi trayectoria derribando los bloques</h3>
             <h3>Pulsa izquierda y derecha jugar!</h3>
-            <div class="dizme_tm_button" id="startGameScreen-startbutton">
+            <div class="dizme_tm_button" id="startGameScreen-startbutton" style="padding-top: 30px; padding-bottom: 30px;">
                 <a class="anchor" href="#about" onclick="startGame()"><span>Start Game</span></a>
             </div>
             <h1 id="startGameScreen-text">Preparate!</h1>

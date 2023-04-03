@@ -6,6 +6,7 @@
     }
     .gameContainer-link{
         color: #f75023;
+        padding-top: 30px;
     }
     @media(max-width: 1200px){
         #gameContainer{

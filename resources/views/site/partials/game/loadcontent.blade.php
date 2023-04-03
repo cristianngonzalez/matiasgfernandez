@@ -37,7 +37,9 @@
     const BRICK_HIT = new Audio();
     BRICK_HIT.src = "{{env('ASSETS_URL')}}gameassets/sounds/brick_hit.mp3";
     
-    
+    const MUSIC_LOOP = new Audio();
+    MUSIC_LOOP.src = "{{env('ASSETS_URL')}}gameassets/sounds/game-music-loop.mp3";
+
     /////// END LOAD SOUNDS ////////
     
     

@@ -191,14 +191,18 @@ const brick = {
 let bricks = [];
 
 function createBricks(){
+    let auxBricksCounts = 0;
     for(let r = 0; r < brick.row; r++){
-        bricks[r] = [];
-        for(let c = 0; c < brick.column; c++){
-            bricks[r][c] = {
-                x : c * ( brick.offSetLeft + brick.width ) + brick.offSetLeft,
-                y : r * ( brick.offSetTop + brick.height ) + brick.offSetTop + brick.marginTop,
-                status : true
+        if(auxBricksCounts < gamecards.length){
+            bricks[r] = [];
+            for(let c = 0; c < brick.column; c++){
+                bricks[r][c] = {
+                    x : c * ( brick.offSetLeft + brick.width ) + brick.offSetLeft,
+                    y : r * ( brick.offSetTop + brick.height ) + brick.offSetTop + brick.marginTop,
+                    status : true
+                }
             }
+            auxBricksCounts++;
         }
     }
 }
@@ -356,11 +360,12 @@ function startGame(){
 
         setTimeout(() => {
             startGameScreen_text.innerText = "Ahora!";
-        }, 1000);
+        }, 1500);
 
         setTimeout(() => {
             startGameScreen.style.display = 'none';
             document.getElementById("breakout").style.display = 'inline';
+            MUSIC_LOOP.play();
             loop();
         }, 3000);
 
@@ -400,7 +405,7 @@ function restart(){
     LIFE = 3; // PLAYER HAS 3 LIVES
     SCORE = 0;
     GAME_OVER = false;
-    let countBreakCollisions = 0;
+    countBreakCollisions = 0;
 
     gameover.style.display = "none";
 
