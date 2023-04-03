@@ -394,13 +394,13 @@ function startGame(){
 
         setTimeout(() => {
             startGameScreen_text.innerText = "Ahora!";
-        }, 1500);
+        }, 1000);
 
         setTimeout(() => {
             startGameScreen.style.display = 'none';
             document.getElementById("breakout").style.display = 'inline';
             loop();
-        }, 3000);
+        }, 1500);
 
     }, 3000);
     
