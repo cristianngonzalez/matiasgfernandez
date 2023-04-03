@@ -1,3 +1,5 @@
+@include('site.partials.game.confeti')
+
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">
 
 <!--Recolectar la timeline-->
@@ -329,6 +331,12 @@ function levelUp(){
         
         if(LEVEL >= MAX_LEVEL){
             showYouWin();
+
+            //Dispatch conffetis
+            jsConfetti.addConfetti({
+                emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
+            }).then(() => jsConfetti.addConfetti())
+
             GAME_OVER = true;
             return;
         }
