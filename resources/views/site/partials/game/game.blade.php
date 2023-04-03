@@ -414,6 +414,9 @@ function showYouWin(){
 function showYouLose(){
     document.getElementById("breakout").style.display = 'none';
     gameover.style.display = "block";
+
+    gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}gameassets/img/score.png" alt="Matias Fernandez Timeline Experiencia Game">`;
+    gamecard_title.innerHTML = `<h2>Juega para conocer mi trayectoria!</h2>`;
 }
 
 </script>

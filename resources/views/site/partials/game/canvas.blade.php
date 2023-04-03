@@ -5,7 +5,7 @@
                 <img src="{{env('ASSETS_URL')}}gameassets/img/score.png" alt="Matias Fernandez Timeline Experiencia Game">
             </div>
             <div id="gamecard-title">
-                <h2>Ayudame a completar mi linea de tiempo!</h2>
+                <h2>Juega para conocer mi trayectoria!</h2>
             </div>
     </div>
 
