@@ -335,7 +335,7 @@ function levelUp(){
             //Dispatch conffetis
             jsConfetti.addConfetti({
                 emojis: ['🌈', '⚡️', '💥', '✨', '💫', '👏' , '🥇' , '🏆'],
-
+                confettiRadius: 40,
             }).then(() => jsConfetti.addConfetti())
 
             GAME_OVER = true;
