@@ -75,8 +75,7 @@ canvas#confetti {
 <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 
 <script>
-
-    const button = document.querySelector('#button');
+    
     const canvas = document.querySelector('#confetti');
 
     const jsConfetti = new JSConfetti();
