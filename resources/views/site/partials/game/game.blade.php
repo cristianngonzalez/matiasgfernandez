@@ -1,26 +1,56 @@
-// SELECT CANVAS ELEMENT
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">
+
+<!--Recolectar la timeline-->
+<script>
+    let gamecards = [];
+</script>
+@foreach ($timeline as $gamecard)
+    <script>
+        gamecards.push({
+            title: `{{$gamecard->title}}`,
+            icon: `{{$gamecard->icon}}`,
+            company: `{{$gamecard->company}}`,
+            date: `{{$gamecard->date}}`,
+        });
+    </script>
+@endforeach
+
+@include('site.partials.game.style')
+
+@include('site.partials.game.canvas')
+
+@include('site.partials.game.loadcontent')
+
+
+<script >
+    // SELECT CANVAS ELEMENT
 const cvs = document.getElementById("breakout");
 const ctx = cvs.getContext("2d");
+let gamecard_icon = document.getElementById("gamecard-icon");
+let gamecard_title = document.getElementById("gamecard-title");
+let startGameScreen = document.getElementById("startGameScreen");
+let startGameScreen_text = document.getElementById("startGameScreen-text");
 
 // ADD BORDER TO CANVAS
-cvs.style.border = "1px solid #0ff";
+//cvs.style.border = "1px solid #f75023";
 
 // MAKE LINE THIK WHEN DRAWING TO CANVAS
 ctx.lineWidth = 3;
 
 // GAME VARIABLES AND CONSTANTS
-const PADDLE_WIDTH = 100;
+const PADDLE_WIDTH = 200;
 const PADDLE_MARGIN_BOTTOM = 50;
 const PADDLE_HEIGHT = 20;
 const BALL_RADIUS = 8;
 let LIFE = 3; // PLAYER HAS 3 LIVES
 let SCORE = 0;
 const SCORE_UNIT = 10;
-let LEVEL = 1;
+let LEVEL = 3;
 const MAX_LEVEL = 3;
 let GAME_OVER = false;
 let leftArrow = false;
 let rightArrow = false;
+let countBreakCollisions = 0;
 
 // CREATE THE PADDLE
 const paddle = {
@@ -33,10 +63,10 @@ const paddle = {
 
 // DRAW PADDLE
 function drawPaddle(){
-    ctx.fillStyle = "#2e3548";
+    ctx.fillStyle = "#fff";
     ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
     
-    ctx.strokeStyle = "#ffcd05";
+    ctx.strokeStyle = "#f75023";
     ctx.strokeRect(paddle.x, paddle.y, paddle.width, paddle.height);
 }
 
@@ -80,10 +110,10 @@ function drawBall(){
     ctx.beginPath();
     
     ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2);
-    ctx.fillStyle = "#ffcd05";
+    ctx.fillStyle = "#fff";
     ctx.fill();
     
-    ctx.strokeStyle = "#2e3548";
+    ctx.strokeStyle = "#f75023";
     ctx.stroke();
     
     ctx.closePath();
@@ -146,15 +176,15 @@ function ballPaddleCollision(){
 
 // CREATE THE BRICKS
 const brick = {
-    row : 1,
-    column : 5,
-    width : 55,
+    row : 2,
+    column : 6,
+    width : 110,
     height : 20,
     offSetLeft : 20,
     offSetTop : 20,
     marginTop : 40,
-    fillColor : "#2e3548",
-    strokeColor : "#FFF"
+    fillColor : "#f75023",
+    strokeColor : "#f75023"
 }
 
 let bricks = [];
@@ -193,6 +223,7 @@ function drawBricks(){
 
 // ball brick collision
 function ballBrickCollision(){
+
     for(let r = 0; r < brick.row; r++){
         for(let c = 0; c < brick.column; c++){
             let b = bricks[r][c];
@@ -203,6 +234,16 @@ function ballBrickCollision(){
                     ball.dy = - ball.dy;
                     b.status = false; // the brick is broken
                     SCORE += SCORE_UNIT;
+
+
+                    countBreakCollisions++;
+                    gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}storage/${gamecards[countBreakCollisions - 1].icon}"/>`;
+                    gamecard_title.innerHTML = `
+                        <h3>${gamecards[countBreakCollisions - 1].title}</h3>
+                        <h4>${gamecards[countBreakCollisions - 1].company}</h4>
+                        <h6>${gamecards[countBreakCollisions - 1].date}</h6>
+                    `;
+
                 }
             }
         }
@@ -212,7 +253,7 @@ function ballBrickCollision(){
 // show game stats
 function showGameStats(text, textX, textY, img, imgX, imgY){
     // draw text
-    ctx.fillStyle = "#FFF";
+    ctx.fillStyle = "#000000";
     ctx.font = "25px Germania One";
     ctx.fillText(text, textX, textY);
     
@@ -301,7 +342,30 @@ function loop(){
         requestAnimationFrame(loop);
     }
 }
-loop();
+
+function startGame(){
+    gameover.style.display = "none";
+    startGameScreen.style.display = 'block';
+
+    document.getElementById('startGameScreen-startbutton').style.display = 'none';
+    startGameScreen_text.style.display = 'inline';
+
+    setTimeout(() => {
+
+        setTimeout(() => {
+            startGameScreen_text.innerText = "Ahora!";
+        }, 1000);
+
+        setTimeout(() => {
+            startGameScreen.style.display = 'none';
+            document.getElementById("breakout").style.display = 'inline';
+            loop();
+        }, 3000);
+
+    }, 3000);
+    
+    
+}
 
 
 // SELECT SOUND ELEMENT
@@ -312,7 +376,7 @@ soundElement.addEventListener("click", audioManager);
 function audioManager(){
     // CHANGE IMAGE SOUND_ON/OFF
     let imgSrc = soundElement.getAttribute("src");
-    let SOUND_IMG = imgSrc == "img/SOUND_ON.png" ? "img/SOUND_OFF.png" : "img/SOUND_ON.png";
+    let SOUND_IMG = imgSrc == "{{env('ASSETS_URL')}}gameassets/img/SOUND_ON.png" ? "{{env('ASSETS_URL')}}gameassets/img/SOUND_OFF.png" : "{{env('ASSETS_URL')}}gameassets/img/SOUND_ON.png";
     
     soundElement.setAttribute("src", SOUND_IMG);
     
@@ -326,15 +390,19 @@ function audioManager(){
 
 // SHOW GAME OVER MESSAGE
 /* SELECT ELEMENTS */
-const gameover = document.getElementById("gameover");
-const youwin = document.getElementById("youwin");
-const youlose = document.getElementById("youlose");
-const restart = document.getElementById("restart");
+let gameover = document.getElementById("gameover");
+let youwin = document.getElementById("youwin");
 
-// CLICK ON PLAY AGAIN BUTTON
-restart.addEventListener("click", function(){
-    location.reload(); // reload the page
-})
+
+function restart(){
+    LIFE = 3; // PLAYER HAS 3 LIVES
+    SCORE = 0;
+    GAME_OVER = false;
+    let countBreakCollisions = 0;
+
+    gameover.style.display = "none";
+    startGame();
+}
 
 // SHOW YOU WIN
 function showYouWin(){
@@ -344,25 +412,10 @@ function showYouWin(){
 
 // SHOW YOU LOSE
 function showYouLose(){
+    document.getElementById("breakout").style.display = 'none';
     gameover.style.display = "block";
-    youlose.style.display = "block";
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</script>
 
 
