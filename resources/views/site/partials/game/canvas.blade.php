@@ -11,7 +11,7 @@
       </div>
       
       <div id="gameover">
-        <h2 style="padding-top: 80px;">Game Over</h2>
+        <h2  class="animate__animated animate__pulse animate_infinite_loop">Game Over</h2>
         <div class="dizme_tm_button" style="padding-top: 40px;">
             <a class="anchor" href="#about" onclick="restart()"><span>Start Game</span></a>
         </div>

@@ -43,6 +43,11 @@
         border-radius: 10px;
         font-family: 'Luckiest Guy', cursive !important;
     }
+        #gameover h2{
+            padding-top: 80px;
+            font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
+            text-shadow: 0px 2px 4px rgb(0, 204, 255);
+        }
     #winGameScreen{
         width: 800px;
         height: 400px;

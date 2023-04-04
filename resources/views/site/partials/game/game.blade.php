@@ -44,7 +44,7 @@ let startGameScreen_text = document.getElementById("startGameScreen-text");
 ctx.lineWidth = 3;
 
 // GAME VARIABLES AND CONSTANTS
-const PADDLE_WIDTH = 100;
+const PADDLE_WIDTH = 90;
 const PADDLE_MARGIN_BOTTOM = 50;
 const PADDLE_HEIGHT = 20;
 const BALL_RADIUS = 8;
