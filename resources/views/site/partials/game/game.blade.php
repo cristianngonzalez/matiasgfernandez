@@ -262,24 +262,23 @@ function ballBrickCollision(){
                         countBreakCollisions++;
                         //gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}storage/${gamecards[countBreakCollisions - 1].icon}"/>`;
                         gamecard_div.innerHTML = `
-                            <h3 
-                                class="animate__animated animate__fadeInUpBig"
-                                style="color: #1cbe59; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); padding-top: 20px; font-family: 'Luckiest Guy', cursive !important; text-align: center;"
-                            >
-                                ${gamecards[countBreakCollisions - 1].title}
-                            </h3>
-                            <h4
-                                class="animate__animated animate__fadeInRight"
-                                style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); font-family: 'Luckiest Guy', cursive !important; text-align: center;"
-                            >
-                                ${gamecards[countBreakCollisions - 1].company}
-                            </h4>
-                            <h6
-                                class="animate__animated  animate__fadeInLeft"
-                                style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); font-family: 'Luckiest Guy', cursive !important; text-align: center;"
-                            >
-                                ${gamecards[countBreakCollisions - 1].date}
-                            </h6>
+                            <div class="animate__animated animate__fadeInUpBig">
+                                <h3 
+                                    style="color: #1cbe59; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); padding-top: 20px; font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                                >
+                                    ${gamecards[countBreakCollisions - 1].title}
+                                </h3>
+                                <h4
+                                    style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                                >
+                                    ${gamecards[countBreakCollisions - 1].company}
+                                </h4>
+                                <h6
+                                    style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                                >
+                                    ${gamecards[countBreakCollisions - 1].date}
+                                </h6>
+                            </div>
                         `;
 
                     }
