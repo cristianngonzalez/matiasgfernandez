@@ -493,6 +493,7 @@ function restart(){
 function showYouWin(){
     cvs.style.display = 'none';
     winGameScreen.style.display = "block";
+    gamecard_div.innerHTML = "";
 }
 
 // SHOW YOU LOSE
