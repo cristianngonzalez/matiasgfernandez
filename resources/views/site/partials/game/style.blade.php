@@ -59,8 +59,7 @@
         border-radius: 10px;
     }
         #winGameScreen h1{
-            padding-top: 20px;
-            padding-top: 80px; font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
+            padding-top: 50px; font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
             text-shadow: 0px 2px 4px rgb(0, 204, 255);
         }
         #winGameScreen h4{
@@ -90,6 +89,16 @@
         border-radius: 10px;
         display: none;
         font-family: 'Luckiest Guy', cursive !important;
+    }
+    #textOverGame{
+        position: absolute;
+        width: 700px;
+        height: 400px;
+        left: calc(50% - 350px);
+        z-index: 3;
+        text-align: center;
+        top: 125px;
+        pointer-events: none;
     }
     .sound{
         width: 800px;

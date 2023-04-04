@@ -36,6 +36,7 @@ let gamecard_div = document.getElementById("gamecard");
 let gamecard_title = document.getElementById("gamecard-title");
 let startGameScreen = document.getElementById("startGameScreen");
 let startGameScreen_text = document.getElementById("startGameScreen-text");
+let textOverGame = document.getElementById("textOverGame");
 
 // ADD BORDER TO CANVAS
 //cvs.style.border = "1px solid #f75023";
@@ -261,10 +262,31 @@ function ballBrickCollision(){
 
                         countBreakCollisions++;
                         //gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}storage/${gamecards[countBreakCollisions - 1].icon}"/>`;
+                        /*
                         gamecard_div.innerHTML = `
                             <div class="animate__animated animate__fadeInUpBig">
                                 <h3 
                                     style="color: #1cbe59; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); padding-top: 20px; font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                                >
+                                    ${gamecards[countBreakCollisions - 1].title}
+                                </h3>
+                                <h4
+                                    style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                                >
+                                    ${gamecards[countBreakCollisions - 1].company}
+                                </h4>
+                                <h6
+                                    style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                                >
+                                    ${gamecards[countBreakCollisions - 1].date}
+                                </h6>
+                            </div>
+                        `;
+                        */
+                       textOverGame.innerHTML = `
+                            <div class="animate__animated animate__fadeInUpBig">
+                                <h3 
+                                    style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); padding-top: 180px; font-family: 'Luckiest Guy', cursive !important; text-align: center;"
                                 >
                                     ${gamecards[countBreakCollisions - 1].title}
                                 </h3>
@@ -416,7 +438,7 @@ function startGame(){
 
         setTimeout(() => {
             startGameScreen.style.display = 'none';
-            cvs.style.display = 'inline';
+            cvs.style.display = 'block';
             loop();
         }, 1500);
 

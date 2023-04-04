@@ -30,5 +30,9 @@
         <h4 class="animate__animated animate__pulse animate_infinite_loop">Puedes ver mi trayectoria completa en la timeline</h4>
       </div>
 
+      <div id="textOverGame">
+
+      </div>
+
       <canvas id="breakout" width="800" height="400"></canvas>
 </div>
