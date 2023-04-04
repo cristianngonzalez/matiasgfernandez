@@ -26,8 +26,8 @@
       </div>
 
       <div id="winGameScreen">
-        <h1 style="padding-top: 70px">Has Ganado!</h1>
-        <h3 style="padding-top: 20px; padding-bottom: 40px;">Puedes mi trayectoria completa en la timeline</h3>
+        <h1 class="animate__animated animate__pulse animate_infinite_loop">Has Ganado!</h1>
+        <h4 class="">Puedes ver mi trayectoria completa en la timeline</h4>
       </div>
 
       <canvas id="breakout" width="800" height="400"></canvas>

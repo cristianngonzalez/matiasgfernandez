@@ -53,6 +53,17 @@
         font-family: 'Luckiest Guy', cursive !important;
         border-radius: 10px;
     }
+        #winGameScreen h1{
+            padding-top: 20px;
+            padding-top: 80px; font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
+            text-shadow: 0px 2px 4px rgb(0, 204, 255);
+        }
+        #winGameScreen h4{
+            padding-top: 20px; padding-bottom: 40px;
+            font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
+            text-shadow: 0px 2px 4px rgb(0, 204, 255);
+        }
+
     #gamecard{
         margin-left: calc(50% - 400px);
         width: 800px;
