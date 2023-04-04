@@ -1,6 +1,9 @@
 @include('site.partials.game.confeti')
 
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
 
 <!--Recolectar la timeline-->
 <script>
@@ -28,11 +31,11 @@
     // SELECT CANVAS ELEMENT
 const cvs = document.getElementById("breakout");
 const ctx = cvs.getContext("2d");
-let gamecard_icon = document.getElementById("gamecard-icon");
+//let gamecard_icon = document.getElementById("gamecard-icon");
+let gamecard_div = document.getElementById("gamecard");
 let gamecard_title = document.getElementById("gamecard-title");
 let startGameScreen = document.getElementById("startGameScreen");
 let startGameScreen_text = document.getElementById("startGameScreen-text");
-let startGameScreen_link = document.getElementById("startGameScreen-link");
 
 // ADD BORDER TO CANVAS
 //cvs.style.border = "1px solid #f75023";
@@ -257,11 +260,26 @@ function ballBrickCollision(){
 
 
                         countBreakCollisions++;
-                        gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}storage/${gamecards[countBreakCollisions - 1].icon}"/>`;
-                        gamecard_title.innerHTML = `
-                            <h3>${gamecards[countBreakCollisions - 1].title}</h3>
-                            <h4>${gamecards[countBreakCollisions - 1].company}</h4>
-                            <h6>${gamecards[countBreakCollisions - 1].date}</h6>
+                        //gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}storage/${gamecards[countBreakCollisions - 1].icon}"/>`;
+                        gamecard_div.innerHTML = `
+                            <h3 
+                                class="animate__animated animate__fadeInUpBig"
+                                style="color: #1cbe59; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); padding-top: 20px; font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                            >
+                                ${gamecards[countBreakCollisions - 1].title}
+                            </h3>
+                            <h4
+                                class="animate__animated animate__fadeInRight"
+                                style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                            >
+                                ${gamecards[countBreakCollisions - 1].company}
+                            </h4>
+                            <h6
+                                class="animate__animated  animate__fadeInLeft"
+                                style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                            >
+                                ${gamecards[countBreakCollisions - 1].date}
+                            </h6>
                         `;
 
                     }
@@ -277,7 +295,7 @@ function ballBrickCollision(){
 function showGameStats(text, textX, textY, img, imgX, imgY){
     // draw text
     ctx.fillStyle = "#000000";
-    ctx.font = "25px Germania One";
+    ctx.font = "25px Luckiest Guy";
     ctx.fillText(text, textX, textY);
     
     // draw image
@@ -383,7 +401,6 @@ function loop(){
 function startGame(){
     gameover.style.display = "none";
     startGameScreen.style.display = 'block';
-    startGameScreen_link.style.display = "none";
 
     document.getElementById('startGameScreen-startbutton').style.display = 'none';
     startGameScreen_text.style.display = 'inline';
@@ -394,11 +411,13 @@ function startGame(){
 
         setTimeout(() => {
             startGameScreen_text.innerText = "Ahora!";
+            gamecard_title.className = "animate__animated animate__zoomInDown animate_duration_2s";
+            gamecard_title.innerText = "Presiona derecha e izquierda para desplazar"
         }, 1000);
 
         setTimeout(() => {
             startGameScreen.style.display = 'none';
-            document.getElementById("breakout").style.display = 'inline';
+            cvs.style.display = 'inline';
             loop();
         }, 1500);
 
@@ -426,6 +445,7 @@ function audioManager(){
     BRICK_HIT.muted = BRICK_HIT.muted ? false : true;
     WIN.muted = WIN.muted ? false : true;
     LIFE_LOST.muted = LIFE_LOST.muted ? false : true;
+    MUSIC_LOOP.muted = MUSIC_LOOP.muted ? false : true;
 }
 
 // SHOW GAME OVER MESSAGE
@@ -450,16 +470,16 @@ function restart(){
 
 // SHOW YOU WIN
 function showYouWin(){
-    document.getElementById("breakout").style.display = 'none';
+    cvs.style.display = 'none';
     winGameScreen.style.display = "block";
 }
 
 // SHOW YOU LOSE
 function showYouLose(){
-    document.getElementById("breakout").style.display = 'none';
+    cvs.style.display = 'none';
     gameover.style.display = "block";
 
-    gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}gameassets/img/score.png" alt="Matias Fernandez Timeline Experiencia Game">`;
+    //gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}gameassets/img/score.png" alt="Matias Fernandez Timeline Experiencia Game">`;
     gamecard_title.innerHTML = `<h2 style="padding-top: 30px;">Juega para conocer mi trayectoria!</h2>`;
 }
 
