@@ -346,6 +346,7 @@ function gameOver(){
         MUSIC_LOOP.pause();
         GAME_OVER_SOUND.play();
         GAME_OVER = true;
+        textOverGame.innerHTML = '';
     }
 }
 
