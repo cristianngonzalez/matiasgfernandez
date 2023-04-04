@@ -502,7 +502,6 @@ function showYouLose(){
     gameover.style.display = "block";
 
     //gamecard_icon.innerHTML = `<img src="{{env('ASSETS_URL')}}gameassets/img/score.png" alt="Matias Fernandez Timeline Experiencia Game">`;
-    gamecard_title.innerHTML = `<h2 style="padding-top: 30px;">Juega para conocer mi trayectoria!</h2>`;
 }
 
 </script>
