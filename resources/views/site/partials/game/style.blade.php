@@ -24,7 +24,7 @@
         font-family: 'Luckiest Guy', cursive !important;
     }
         #startGameScreen-title{
-            padding-top: 80px; font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
+            padding-top: 120px; font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
             text-shadow: 0px 2px 4px rgb(0, 204, 255);
         }
         #startGameScreen-text{
@@ -46,7 +46,7 @@
         font-family: 'Luckiest Guy', cursive !important;
     }
         #gameover h2{
-            padding-top: 80px;
+            padding-top: 120px;
             font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
             text-shadow: 0px 2px 4px rgb(0, 204, 255);
         }
