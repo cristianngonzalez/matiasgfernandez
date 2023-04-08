@@ -1799,6 +1799,12 @@ h6 { font-size: 16px; }
 	max-height: 260px;
 
 }
+	@media(max-width: 1600px){
+		.dizme_tm_testimonials .text{
+			max-height: 160px;
+		}
+	}
+
 .dizme_tm_testimonials .text p{
 	font-size: 30px;
 	font-style: italic;
