@@ -31,6 +31,7 @@ Route::get('/admin/category' , [App\Http\Controllers\AdminController::class, 'ca
 Route::get('/admin/timeline' , [App\Http\Controllers\AdminController::class, 'timeline'])->name('admin.timeline');
 Route::get('/admin/video' , [App\Http\Controllers\AdminController::class, 'video'])->name('admin.video');
 Route::get('/admin/staticcontent' , [App\Http\Controllers\AdminController::class, 'staticcontent'])->name('admin.staticcontent');
+Route::get('admin/staticpicture/' , [App\Http\Controllers\AdminController::class, 'staticpicture'])->name('admin.staticpicture');
 Route::get('/admin/requestcv' , [App\Http\Controllers\AdminController::class, 'requestcv'])->name('admin.requestcv');
 Route::get('/admin/messages' , [App\Http\Controllers\AdminController::class, 'messages'])->name('admin.messages');
 Route::get('/admin/comments' , [App\Http\Controllers\AdminController::class, 'comments'])->name('admin.comments');
@@ -93,6 +94,9 @@ Route::post('/admin/video/delete' , [App\Http\Controllers\VideoController::class
 
 //Static content
 Route::post('/admin/staticcontent/update' , [App\Http\Controllers\StaticcontentController::class, 'update'])->name('admin.staticcontent.update');
+
+//Static pictures
+
 
 //Request
 Route::post('/admin/requestcv/delete' , [App\Http\Controllers\RequestcvController::class, 'delete'])->name('admin.requestcv.delete');

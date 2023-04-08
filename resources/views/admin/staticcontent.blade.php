@@ -20,9 +20,18 @@
                     </nav>
                 </div>
 
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <h1>Static content</h1>
+                    </div>
+                    <div class="col-auto">
+                        <a href="{{route('admin.staticpicture')}}" class="btn btn-success"><i class="bi bi-image-fill"></i> Static pictures manager</a>
+                    </div>
+                </div>
+
                 <div class="col-md-12">
         
-                    <h1>Static content</h1>
+                    
                     <hr>
 
                     <form action="{{route('admin.staticcontent.update')}}" method="POST">

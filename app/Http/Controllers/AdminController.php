@@ -113,6 +113,12 @@ class AdminController extends Controller{
         return view('admin.staticcontent')->with(['staticcontents' => $staticcontents]);
     }
 
+    public function staticpicture(){
+        $staticpictures = Staticcontent::all();
+
+        return view('admin.staticpicture')->with(['staticpictures' => $staticpictures]);
+    }
+
     public function category(){
         $categories = Category::all();
 
