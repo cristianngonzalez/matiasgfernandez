@@ -33,7 +33,8 @@
                 </div>
                 <div class="avatar">
                     <div class="image">
-                        <img src="{{env('ASSETS_URL')}}img/slider/avatar-2.png" alt="" />
+                        <img src="{{env('ASSETS_URL')}}storage/{{$staticpictures[0]->path}}" alt="Matias Fernandez Marketing Business chief" />
+                        <!--<img src="{{env('ASSETS_URL')}}img/slider/avatar-2.png" alt="" />-->
                         <span class="skills illustrator anim_moveBottom"><img class="svg" src="{{env('ASSETS_URL')}}img/arrows//arrow-1.svg" alt="" /></span>
                         <span class="skills figma anim_moveBottom"><img class="svg" src="{{env('ASSETS_URL')}}img/arrows/arrow-2.svg" alt="" /></span>
                     </div>

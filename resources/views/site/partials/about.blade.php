@@ -9,7 +9,8 @@
             <div class="wrapper">
                 <div class="left">
                     <div class="image">
-                        <img src="{{env('ASSETS_URL')}}img/about/2.png" alt="" />
+                        <img src="{{env('ASSETS_URL')}}storage/{{$staticpictures[1]->path}}" alt="Matias G Fernandez Marketing Chief" />
+                        <!--<img src="{{env('ASSETS_URL')}}img/about/2.png" alt="" />-->
                         <div class="numbers project">
                             <div class="wrapper">
                                 <h3><span class="dizme_tm_counter" data-from="0" data-to="25" data-speed="2000"></span></h3>

@@ -46,8 +46,8 @@
                                             @method('POST')
                                             <input type="text" value="{{$staticpicture->id}}" name="id" hidden>
                                             <div class="form-floating mb-3">
-                                                <input type="file" class="form-control" id="picture" name="picture" required>
-                                                <label for="picture">Change picture</label>
+                                                <input type="file" class="form-control" id="picture-file" name="picture-file" required>
+                                                <label for="picture-file">Change picture</label>
                                             </div>
                                             <input type="submit" value="Change picture" class="btn btn-sm btn-success">
                                         </form>
