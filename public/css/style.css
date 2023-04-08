@@ -1568,7 +1568,7 @@ h6 { font-size: 16px; }
 	border-radius: 12px;
 	background-color: #fff;
 	box-shadow: 18px 0px 87px rgba(10,15,70,.07);
-	padding: 65px 65px 65px 195px;
+	padding: 20px 65px 20px 140px;
 }
 
 /*===================================================================================*/
@@ -1610,7 +1610,7 @@ h6 { font-size: 16px; }
 	margin-bottom: 19px;
 }
 .dizme_tm_services .service_list .title h3{
-	font-size: 30px;
+	font-size: 23px;
 	margin-bottom: 16px;
 }
 .dizme_tm_services .service_list .price{
@@ -1625,8 +1625,8 @@ h6 { font-size: 16px; }
 }
 .dizme_tm_services .service_list .icon{
 	position: absolute;
-	left: 65px;
-	top: 65px;
+	left: 20px;
+	top: 20px;
 	width: 95px;
 	height: 95px;
 }
@@ -2754,7 +2754,7 @@ input[type=number] {
 	.dizme_tm_main_title span{font-size: 22px;}
 	.dizme_tm_main_title h3{font-size: 38px;}
 	.dizme_tm_main_title h3{margin-bottom: 16px;}
-	.dizme_tm_services .service_list .title h3{font-size: 25px;margin-bottom: 10px;}
+	.dizme_tm_services .service_list .title h3{font-size: 23px;margin-bottom: 10px;}
 	.dizme_tm_services .service_list .price{font-size: 18px;}
 	.dizme_tm_services .service_list .price span{font-size: 20px;}
 	.dizme_tm_testimonials .in{max-width: 650px;}
@@ -2880,9 +2880,14 @@ input[type=number] {
 	.dizme_tm_hero .social{padding-left: 15px;}
 	.dizme_tm_portfolio .portfolio_list ul{margin: 0px;}
 	.dizme_tm_portfolio .portfolio_list ul li{width: 100%;padding-left: 0px;}
-	.dizme_tm_services .service_list .icon{display: none;}
-	.dizme_tm_services .service_list ul li .list_inner{padding: 40px 20px;}
-	.dizme_tm_services .service_list .title h3{font-size: 25px;}
+	.dizme_tm_services .service_list .icon{
+		top: 5px;
+		bottom: 5px;
+		left: 5px;
+		right: 5px;
+	}
+	.dizme_tm_services .service_list ul li .list_inner{padding: 20px 20px 20px 100px;}
+	.dizme_tm_services .service_list .title h3{font-size: 23px;}
 	.dizme_tm_services .service_list .price{font-size: 19px;}
 	.dizme_tm_services .service_list .price span{font-size: 21px;}
 	.dizme_tm_partners ul li{width: 50%;}
