@@ -30,7 +30,8 @@ class DatabaseSeeder extends Seeder{
                 requestcv_seed::class,
                 message_seed::class,
                 reply_seed::class,
-                academy_seed::class
+                academy_seed::class,
+                staticpictures_seed::class
             ]);
         }
 

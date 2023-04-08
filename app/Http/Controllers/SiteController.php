@@ -16,6 +16,7 @@ use App\Models\Staticcontent;
 use App\Models\Testimonial;
 use App\Models\RequestCV;
 use App\Models\Academy;
+use App\Models\Staticpicture;
 
 //Messages
 use App\Mail\NotificationCvRequest;
@@ -30,7 +31,7 @@ class SiteController extends Controller{
     
     public function home(){
         //Tomamos tres blogs
-        $blogs = Blog::all()->take(3);
+        $blogs = Blog::all()->reverse()->take(3);
         $socialnetworks = Socialnetwork::all();
         $galeries = Galery::all()->take(6);
         $taggaleries = Taggalery::all();
@@ -39,6 +40,7 @@ class SiteController extends Controller{
         $staticcontents = Staticcontent::all();
         $testimonials = Testimonial::all();
         $academies = Academy::all()->reverse();
+        $staticpictures = Staticpicture::all();
     
         return view('site.home')->with([
             'blogs' => $blogs , 
@@ -49,7 +51,8 @@ class SiteController extends Controller{
             'videos' => $videos,
             'staticcontents' => $staticcontents,
             'testimonials' => $testimonials,
-            'academies' => $academies
+            'academies' => $academies,
+            'staticpictures' => $staticpictures
         ]);
     }
 
