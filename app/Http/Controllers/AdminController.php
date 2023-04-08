@@ -16,6 +16,7 @@ use App\Models\Galery;
 use App\Models\Taggalery;
 use App\Models\Video;
 use App\Models\Staticcontent;
+use App\Models\Staticpicture;
 use App\Models\RequestCV;
 use App\Models\Message;
 use App\Models\Academy;
@@ -114,7 +115,7 @@ class AdminController extends Controller{
     }
 
     public function staticpicture(){
-        $staticpictures = Staticcontent::all();
+        $staticpictures = Staticpicture::all();
 
         return view('admin.staticpicture')->with(['staticpictures' => $staticpictures]);
     }

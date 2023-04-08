@@ -31,8 +31,34 @@
 
                 <div class="col-md-12">
         
-                    
                     <hr>
+
+                    <div class="row">
+                        @foreach ($staticpictures as $staticpicture)
+                            <div class="col-md-4 mb-3">
+                                <div class="card">
+                                    <img src="{{env('ASSETS_URL')}}storage/{{$staticpicture->path}}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5>{{$staticpicture->name}}</h5>
+
+                                        <form action="{{route('admin.staticpicture.update')}}" method="POST" enctype='multipart/form-data'>
+                                            @csrf
+                                            @method('POST')
+                                            <input type="text" value="{{$staticpicture->id}}" name="id" hidden>
+                                            <div class="form-floating mb-3">
+                                                <input type="file" class="form-control" id="picture" name="picture" required>
+                                                <label for="picture">Change picture</label>
+                                            </div>
+                                            <input type="submit" value="Change picture" class="btn btn-sm btn-success">
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        @endforeach
+                    </div>
+
 
 
                 </div>

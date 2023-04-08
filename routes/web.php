@@ -96,7 +96,7 @@ Route::post('/admin/video/delete' , [App\Http\Controllers\VideoController::class
 Route::post('/admin/staticcontent/update' , [App\Http\Controllers\StaticcontentController::class, 'update'])->name('admin.staticcontent.update');
 
 //Static pictures
-
+Route::post('/admin/staticpicture/update' , [App\Http\Controllers\StaticpictureController::class, 'update'])->name('admin.staticpicture.update');
 
 //Request
 Route::post('/admin/requestcv/delete' , [App\Http\Controllers\RequestcvController::class, 'delete'])->name('admin.requestcv.delete');
