@@ -580,7 +580,9 @@ function dizme_tm_owl_carousel(){
 
 	"use strict";
 	
-	var carousel			= jQuery('.dizme_tm_testimonials .owl-carousel');
+	var carousel = jQuery('.dizme_tm_testimonials .owl-carousel');
+	//Buttons control carousel
+	let carouselButtons = document.getElementsByClassName("owl-dots");
 	
 	var rtlMode	= false;
 
@@ -598,8 +600,17 @@ function dizme_tm_owl_carousel(){
 		rtl: rtlMode,
 		dots: true,
 		nav: false,
-		navSpeed: false
+		navSpeed: false,
+		//onDragged: carouselDraggEvent
 	});
+
+	for (var i = 0; i < carouselButtons.length; i++) {
+		//Los botones del carousel desactiva la funcion autoplay del carousel
+		carouselButtons[i].addEventListener('click', function(){
+			carousel.data('owl.carousel').options.autoplay = false;
+			carousel.trigger('refresh.owl.carousel');
+		});
+	}
 	dizme_tm_imgtosvg();
 }
 
