@@ -16,9 +16,11 @@ class staticpictures_seed extends Seeder{
     public function run(){
         //
         Staticpicture::create([
+            'name' => 'Main picture',
             'path' => 'static-picture-seed-1.png'
         ]);
         Staticpicture::create([
+            'name' => 'About picture',
             'path' => 'static-picture-seed-2.png'
         ]);
     }
