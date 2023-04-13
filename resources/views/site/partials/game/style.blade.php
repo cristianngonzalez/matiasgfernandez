@@ -3,15 +3,15 @@
     #gameContainer{
         position: relative;
         display: inline;
-        font-family: 'Luckiest Guy', cursive !important;
+        /*font-family: 'Luckiest Guy', cursive !important;*/
     }
         #gameContaine h1 , #gameContaine h2 , #gameContaine h3{
-            font-family: 'Luckiest Guy', cursive !important;
+            /* font-family: 'Luckiest Guy', cursive !important; */
         }
     @media(max-width: 1200px){
         #gameContainer{
             display: none;
-            font-family: 'Luckiest Guy', cursive !important;
+            /* font-family: 'Luckiest Guy', cursive !important; */
         }
     }
     #startGameScreen{
@@ -21,18 +21,25 @@
         text-align: center;
         background: url("{{env('ASSETS_URL')}}gameassets/img/bg.png");
         border-radius: 10px;
-        font-family: 'Luckiest Guy', cursive !important;
+        /* font-family: 'Luckiest Guy', cursive !important; */
     }
         #startGameScreen-title{
-            padding-top: 120px; font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
-            text-shadow: 0px 2px 4px rgb(0, 204, 255);
+            padding-top: 120px; 
+            padding-left: 40px;
+            padding-right: 40px;
+            /* font-family: 'Luckiest Guy', cursive !important; 
+            color: #ff9100; 
+            -webkit-text-stroke: 1px #F8F8F8;
+            text-shadow: 0px 2px 4px rgb(0, 204, 255); */
         }
         #startGameScreen-text{
             display: none;
             padding-top: 40px;
-            font-family: 'Luckiest Guy', cursive !important;
-            font-family: 'Luckiest Guy', cursive !important; color: black; -webkit-text-stroke: 1px #F8F8F8;
-            text-shadow: 0px 2px 4px rgb(0, 204, 255);
+
+            /* font-family: 'Luckiest Guy', cursive !important;
+            font-family: 'Luckiest Guy', cursive !important; 
+            color: black; -webkit-text-stroke: 1px #F8F8F8;
+            text-shadow: 0px 2px 4px rgb(0, 204, 255); */
         }
 
     #gameover{
@@ -43,12 +50,15 @@
         display: none;
         background: url("{{env('ASSETS_URL')}}gameassets/img/bg.png");
         border-radius: 10px;
-        font-family: 'Luckiest Guy', cursive !important;
+        /* font-family: 'Luckiest Guy', cursive !important; */
     }
         #gameover h2{
             padding-top: 120px;
-            font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
-            text-shadow: 0px 2px 4px rgb(0, 204, 255);
+
+            /* font-family: 'Luckiest Guy', cursive !important; 
+            color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
+            text-shadow: 0px 2px 4px rgb(0, 204, 255); */
+
         }
     #winGameScreen{
         width: 800px;
@@ -57,7 +67,7 @@
         background: url("{{env('ASSETS_URL')}}gameassets/img/bg.png");
         display: none;
         text-align: center;
-        font-family: 'Luckiest Guy', cursive !important;
+        /* font-family: 'Luckiest Guy', cursive !important; */
         border-radius: 10px;
     }
         #winGameScreen h1{
@@ -65,9 +75,9 @@
             text-shadow: 0px 2px 4px rgb(0, 204, 255);
         }
         #winGameScreen h4{
-            padding-top: 20px; padding-bottom: 40px;
+            /* padding-top: 20px; padding-bottom: 40px;
             font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
-            text-shadow: 0px 2px 4px rgb(0, 204, 255);
+            text-shadow: 0px 2px 4px rgb(0, 204, 255); */
         }
 
     #gamecard{
@@ -76,21 +86,22 @@
         height: 125px;
         padding: 5px;
         border-radius: 10px;
-        font-family: 'Luckiest Guy', cursive !important;
+        /* font-family: 'Luckiest Guy', cursive !important; */
     }
         #gamecard-title{
             text-align: center;
-            padding-top: 30px; font-family: 'Luckiest Guy', cursive !important; 
+            padding-top: 30px; 
+            /* font-family: 'Luckiest Guy', cursive !important; 
             color: #1cbe59;
             -webkit-text-stroke: 1px #fff;
-            text-shadow: 0px 2px 4px rgb(0, 204, 255);
+            text-shadow: 0px 2px 4px rgb(0, 204, 255); */
         }
 
     #breakout{
         margin-left: calc(50% - 400px);
         border-radius: 10px;
         display: none;
-        font-family: 'Luckiest Guy', cursive !important;
+        /* font-family: 'Luckiest Guy', cursive !important; */
     }
     #textOverGame{
         position: absolute;
@@ -125,7 +136,7 @@
         cursor: pointer;
         font-size: 1.25em;
         color : #FFF;
-        font-family: 'Luckiest Guy', cursive !important;
+        /* font-family: 'Luckiest Guy', cursive !important; */
     }
 
     .animate_infinite_loop{

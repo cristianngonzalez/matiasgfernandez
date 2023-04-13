@@ -1,7 +1,7 @@
 <div id="gameContainer">
 
     <div id="gamecard">
-        <h2 id="gamecard-title" class="animate__animated animate__bounce animate_infinite_loop animate_duration_3s" >
+        <h2 id="gamecard-title" class=" animate_infinite_loop animate_duration_3s" >
             ¡Juega para conocer mi experiencia profesional!
         </h2>
     </div>

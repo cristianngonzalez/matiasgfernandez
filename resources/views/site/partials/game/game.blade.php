@@ -284,19 +284,19 @@ function ballBrickCollision(){
                         `;
                         */
                        textOverGame.innerHTML = `
-                            <div class="animate__animated animate__fadeInUpBig">
+                            <div class="">
                                 <h3 
-                                    style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); padding-top: 180px; font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                                    style="color: black; padding-top: 180px; text-align: center;"
                                 >
                                     ${gamecards[countBreakCollisions - 1].title}
                                 </h3>
                                 <h4
-                                    style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                                    style="color: black;"
                                 >
                                     ${gamecards[countBreakCollisions - 1].company}
                                 </h4>
                                 <h6
-                                    style="color: black; -webkit-text-stroke: 1px #fff; text-shadow: 0px 2px 4px rgb(0, 204, 255); font-family: 'Luckiest Guy', cursive !important; text-align: center;"
+                                    style="color: black;"
                                 >
                                     ${gamecards[countBreakCollisions - 1].date}
                                 </h6>
