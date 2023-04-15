@@ -90,7 +90,8 @@
     }
         #gamecard-title{
             text-align: center;
-            padding-top: 30px; 
+            padding-top: 55px; 
+            font-size: 30px;
             /* font-family: 'Luckiest Guy', cursive !important; 
             color: #1cbe59;
             -webkit-text-stroke: 1px #fff;
