@@ -117,7 +117,7 @@
         width: 800px;
         position: relative;
         margin-left: calc(50% - 400px);
-        font-family: 'Luckiest Guy', cursive !important;
+        /* font-family: 'Luckiest Guy', cursive !important; */
     }
     #sound{
         width: 30px;
@@ -126,7 +126,7 @@
         position: absolute;
         top : 355px;
         left : 15px;
-        font-family: 'Luckiest Guy', cursive !important;
+        /* font-family: 'Luckiest Guy', cursive !important; */
     }
     
     #restart{

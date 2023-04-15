@@ -17,7 +17,7 @@
               <li><a onclick="filterExperience('all')" class="current" id="timeline_filter_all">Todas</a></li>
               <li><a onclick="filterExperience('startup')" id="timeline_filter_startup">Startups</a></li>
               <li><a onclick="filterExperience('company')" id="timeline_filter_company">Empresas</a></li>
-              <li><a onclick="filterExperience('consultancy')" id="timeline_filter_consultancy">Consultorias</a></li>
+              <li><a onclick="filterExperience('consultancy')" id="timeline_filter_consultancy">Consultorías</a></li>
           </ul>
       </div>
 
