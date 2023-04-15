@@ -517,7 +517,7 @@ h6 { font-size: 16px; }
 	margin-bottom: 35px;
 }
 .dizme_tm_hero .job p{
-	font-size: 28px;
+	font-size: 24px;
 	color: #000;
 	font-weight: 500;
 }
@@ -2743,7 +2743,7 @@ input[type=number] {
 	.dizme_tm_header .menu ul li{margin-right: 20px;}
 	.dizme_tm_hero .hello h3{font-size: 25px;}
 	.dizme_tm_hero .name h3{font-size: 60px;}
-	.dizme_tm_hero .job p{font-size: 19px;}
+	.dizme_tm_hero .job p{font-size: 17px;}
 	.dizme_tm_hero .text p{font-size: 16px;}
 	.dizme_tm_button a , .dizme_tm_button button , .dizme_tm_button  input[type=submit]{padding: 9px 35px 8px 35px;}
 	.dizme_tm_hero .social{padding-left: 24px;}

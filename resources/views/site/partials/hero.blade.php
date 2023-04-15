@@ -11,7 +11,7 @@
                         <!--///////////////////////////////////////////////////////////////////////-->
                     </div>
                     <div class="job">
-                        <p>{!!$staticcontents[0]->subtitle!!}</p><br>
+                        <p>{!!$staticcontents[0]->subtitle!!}</p>
                         <p>{!!$staticcontents[0]->paragraph!!}</p>
                     </div>
                     <div class="button">
