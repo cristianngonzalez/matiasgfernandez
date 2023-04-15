@@ -114,6 +114,15 @@
         top: 125px;
         pointer-events: none;
     }
+        #textOverGame h3{
+            font-size: 21px;
+        }
+        #textOverGame h4{
+            font-size: 17px;
+        }
+        #textOverGame h6{
+            font-size: 14px;
+        }
     .sound{
         width: 800px;
         position: relative;
