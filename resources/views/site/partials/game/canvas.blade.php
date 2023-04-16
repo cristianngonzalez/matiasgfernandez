@@ -36,7 +36,6 @@
 
       <div id="winGameScreen">
         <h1 class="animate__animated animate__pulse animate_infinite_loop">Has Ganado!</h1>
-        <h4 class="animate__animated animate__pulse animate_infinite_loop">Puedes ver mi trayectoria completa en la timeline</h4>
       </div>
 
       <div id="textOverGame">

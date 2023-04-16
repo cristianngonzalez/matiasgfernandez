@@ -3,9 +3,9 @@
 
     #game-controls-container{
         position: absolute;
-        width: 800px;
-        height: 400px;
-        margin-left: calc(50% - 400px);
+        width: 370px;
+        height: 450px;
+        margin-left: calc(50% - 185px);
     }
         #game-controls-container button{
             border: none;
@@ -27,8 +27,10 @@
             right: 5px;
         }
 
-        @media(){
-            
+        @media(min-width: 801px){
+            #game-controls-container{
+                display: none;
+            }            
         }
 
     #gameContainer{
@@ -39,14 +41,6 @@
         #gameContaine h1 , #gameContaine h2 , #gameContaine h3{
             /* font-family: 'Luckiest Guy', cursive !important; */
         }
-
-    
-    @media(max-width: 1200px){
-        #gameContainer{
-            /* display: none; */
-            /* font-family: 'Luckiest Guy', cursive !important; */
-        }
-    }
 
     
     #startGameScreen{
@@ -75,6 +69,13 @@
             font-family: 'Luckiest Guy', cursive !important; 
             color: black; -webkit-text-stroke: 1px #F8F8F8;
             text-shadow: 0px 2px 4px rgb(0, 204, 255); */
+        }
+        @media(max-width: 800px){
+            #startGameScreen{
+                width: 370px;
+                height: 450px;
+                margin-left: calc(50% - 185px);
+            }
         }
 
     #gameover{
@@ -114,6 +115,13 @@
             font-family: 'Luckiest Guy', cursive !important; color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
             text-shadow: 0px 2px 4px rgb(0, 204, 255); */
         }
+        @media(max-width: 800px){
+            #winGameScreen{
+                width: 370px;
+                height: 450px;
+                margin-left: calc(50% - 185px);
+            }
+        }
 
     #gamecard{
         margin-left: calc(50% - 400px);
@@ -139,6 +147,12 @@
         display: none;
         /* font-family: 'Luckiest Guy', cursive !important; */
     }
+        @media(max-width: 800px){
+            #breakout{
+                margin-left: calc(50% - 185px);
+            }
+        }
+
     #textOverGame{
         position: absolute;
         width: 700px;
@@ -158,6 +172,14 @@
         #textOverGame h6{
             font-size: 14px;
         }
+        @media(max-width: 800px){
+            #textOverGame{
+                width: 360px;
+                left: calc(50% - 180px);
+            }
+        }
+
+
     .sound{
         width: 800px;
         position: relative;
@@ -173,6 +195,11 @@
         left : 15px;
         /* font-family: 'Luckiest Guy', cursive !important; */
     }
+        @media(max-width: 800px){
+            #sound{
+                display: none;
+            }
+        }
     
     #restart{
         position: absolute;

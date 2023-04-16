@@ -28,6 +28,7 @@
 
 
 <script >
+
     // SELECT CANVAS ELEMENT
 const cvs = document.getElementById("breakout");
 const ctx = cvs.getContext("2d");
@@ -40,6 +41,7 @@ let textOverGame = document.getElementById("textOverGame");
 const game_control_left = document.getElementById("game-control-left");
 const game_control_right = document.getElementById("game-control-right");
 
+
 // ADD BORDER TO CANVAS
 //cvs.style.border = "1px solid #f75023";
 
@@ -47,7 +49,7 @@ const game_control_right = document.getElementById("game-control-right");
 ctx.lineWidth = 3;
 
 // GAME VARIABLES AND CONSTANTS
-const PADDLE_WIDTH = 90;
+let PADDLE_WIDTH = 90;
 const PADDLE_MARGIN_BOTTOM = 50;
 const PADDLE_HEIGHT = 20;
 const BALL_RADIUS = 8;
@@ -60,6 +62,16 @@ let GAME_OVER = false;
 let leftArrow = false;
 let rightArrow = false;
 let countBreakCollisions = 0;
+//Algunos parametros del juego cambiaran si es mobile
+let isMobile = false;
+
+//Si el juego se carga en mobile cambiamos el tamano del canvas
+if( screen.width < 800){
+    isMobile = true;
+    PADDLE_WIDTH = 50;
+    cvs.width = 370;
+    cvs.height = 450;
+}
 
 // CREATE THE PADDLE
 const paddle = {
@@ -95,25 +107,6 @@ document.addEventListener("keyup", function(event){
    }
 });
 
-//screen touch controls Funcion listener
-/*
-game_control_left.onmousedown = function() {
-    leftArrow = true;
-    rightArrow = false;
-};
-game_control_left.onmouseup = function() {
-    leftArrow = false;
-    rightArrow = false;
-};
-game_control_right.onmousedown = function() {
-    rightArrow = true;
-    leftArrow = false;
-};
-game_control_right.onmouseup = function() {
-    leftArrow = false;
-    rightArrow = false;
-};
-*/
 
 game_control_left.onclick = function() {
     leftArrow = true;
@@ -220,7 +213,7 @@ function ballPaddleCollision(){
 }
 
 // CREATE THE BRICKS
-const brick = {
+let brick = {
     row : 2,
     column : 6,
     width : 110,
@@ -230,6 +223,12 @@ const brick = {
     marginTop : 40,
     fillColor : "#f75023",
     strokeColor : "#f75023"
+}
+
+if(isMobile){
+    brick.width = 44;
+    brick.offSetLeft = 15;
+    brick.offSetRight = 15;
 }
 
 let bricks = [];
