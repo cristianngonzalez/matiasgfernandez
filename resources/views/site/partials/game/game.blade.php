@@ -37,6 +37,8 @@ let gamecard_title = document.getElementById("gamecard-title");
 let startGameScreen = document.getElementById("startGameScreen");
 let startGameScreen_text = document.getElementById("startGameScreen-text");
 let textOverGame = document.getElementById("textOverGame");
+const game_control_left = document.getElementById("game-control-left");
+const game_control_right = document.getElementById("game-control-right");
 
 // ADD BORDER TO CANVAS
 //cvs.style.border = "1px solid #f75023";
@@ -93,12 +95,39 @@ document.addEventListener("keyup", function(event){
    }
 });
 
+//screen touch controls Funcion listener
+game_control_left.onmousedown = function() {
+    leftArrow = true;
+    rightArrow = false;
+};
+
+/*Cuando se deje de hacer clic*/
+game_control_left.onmouseup = function() {
+    leftArrow = false;
+    rightArrow = false;
+};
+
+game_control_right.onmousedown = function() {
+    rightArrow = true;
+    leftArrow = false;
+};
+
+/*Cuando se deje de hacer clic*/
+game_control_right.onmouseup = function() {
+    leftArrow = false;
+    rightArrow = false;
+};
+
+
+
+
 // MOVE PADDLE
 function movePaddle(){
     if(rightArrow && paddle.x + paddle.width < cvs.width){
         paddle.x += paddle.dx;
     }else if(leftArrow && paddle.x > 0){
         paddle.x -= paddle.dx;
+        console.log("Me estoy moviendo a la izquierda")
     }
 }
 

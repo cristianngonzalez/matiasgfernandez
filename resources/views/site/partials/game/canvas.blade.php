@@ -16,6 +16,15 @@
             <a class="anchor" href="#about" onclick="restart()"><span>Start Game</span></a>
         </div>
       </div>
+
+      <div id="game-controls-container">
+        <button id="game-control-left">
+          <i class="bi bi-caret-left-fill"></i>
+        </button>
+        <button id="game-control-right">
+          <i class="bi bi-caret-right-fill"></i>
+        </button>
+      </div>
       
       <div id="startGameScreen">
             <h3 id="startGameScreen-title">Descubre las empresas en las que trabajé derribando los bloques</h3>

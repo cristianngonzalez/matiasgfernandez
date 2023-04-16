@@ -1,5 +1,36 @@
 
 <style>
+
+    #game-controls-container{
+        position: absolute;
+        width: 800px;
+        height: 400px;
+        margin-left: calc(50% - 400px);
+    }
+        #game-controls-container button{
+            border: none;
+            border-radius: 5px;
+            background: #f75023;
+            color: white;    
+            position: absolute;
+            bottom: 5px;
+            zoom: 2;
+        }
+        #game-controls-container button:active{
+            color: #f75023;
+            background: white; 
+        }
+        #game-control-left{
+            left: 5px;
+        }
+         #game-control-right{
+            right: 5px;
+        }
+
+        @media(){
+            
+        }
+
     #gameContainer{
         position: relative;
         display: inline;
@@ -8,12 +39,16 @@
         #gameContaine h1 , #gameContaine h2 , #gameContaine h3{
             /* font-family: 'Luckiest Guy', cursive !important; */
         }
+
+    
     @media(max-width: 1200px){
         #gameContainer{
             display: none;
             /* font-family: 'Luckiest Guy', cursive !important; */
         }
     }
+
+    
     #startGameScreen{
         width: 800px;
         height: 400px;
