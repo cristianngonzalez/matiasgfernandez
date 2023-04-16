@@ -96,37 +96,33 @@ document.addEventListener("keyup", function(event){
 });
 
 //screen touch controls Funcion listener
+/*
 game_control_left.onmousedown = function() {
     leftArrow = true;
     rightArrow = false;
 };
-
-/*Cuando se deje de hacer clic*/
 game_control_left.onmouseup = function() {
     leftArrow = false;
     rightArrow = false;
 };
-
 game_control_right.onmousedown = function() {
     rightArrow = true;
     leftArrow = false;
 };
-
-/*Cuando se deje de hacer clic*/
 game_control_right.onmouseup = function() {
     leftArrow = false;
     rightArrow = false;
 };
+*/
 
 game_control_left.addEventListener("onclick" , function() {
     leftArrow = true;
     rightArrow = false;
 })
 
-game_control_left.addEventListener("onclick" , function() {
+game_control_right.addEventListener("onclick" , function() {
     leftArrow = false;
-    rightArrow = false;
-})
+    rightArrow = true
 
 
 
