@@ -118,6 +118,18 @@ game_control_right.onmouseup = function() {
     rightArrow = false;
 };
 
+game_control_left.addEventListener("onclick" , function() {
+    leftArrow = true;
+    rightArrow = false;
+})
+
+game_control_left.addEventListener("onclick" , function() {
+    leftArrow = false;
+    rightArrow = false;
+})
+
+
+
 
 
 
