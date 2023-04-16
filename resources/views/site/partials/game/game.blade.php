@@ -462,7 +462,9 @@ function loop(){
 function startGame(){
     gameover.style.display = "none";
     startGameScreen.style.display = 'block';
-    game_controls_container.style.display = 'block';
+    if(isMobile){
+        game_controls_container.style.display = 'block';
+    }
 
     document.getElementById('startGameScreen-startbutton').style.display = 'none';
     startGameScreen_text.style.display = 'inline';
@@ -533,6 +535,9 @@ function restart(){
 // SHOW YOU WIN
 function showYouWin(){
     cvs.style.display = 'none';
+    if(isMobile){
+        game_controls_container.style.display = "none";
+    }
     winGameScreen.style.display = "block";
     gamecard_div.innerHTML = "";
 }
