@@ -6,6 +6,7 @@
         width: 370px;
         height: 450px;
         margin-left: calc(50% - 185px);
+        display: none;
     }
         #game-controls-container button{
             border: none;
@@ -14,7 +15,7 @@
             color: white;    
             position: absolute;
             bottom: 5px;
-            zoom: 2;
+            zoom: 2.5;
         }
         #game-controls-container button:active{
             color: #f75023;
@@ -95,6 +96,13 @@
             color: #ff9100; -webkit-text-stroke: 1px #F8F8F8;
             text-shadow: 0px 2px 4px rgb(0, 204, 255); */
 
+        }
+        @media(max-width: 800px){
+            #gameover{
+                width: 370px;
+                height: 400px;
+                margin-left: calc(50% - 185px);
+            }
         }
     #winGameScreen{
         width: 800px;

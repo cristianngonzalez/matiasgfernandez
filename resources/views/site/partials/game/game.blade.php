@@ -40,6 +40,7 @@ let startGameScreen_text = document.getElementById("startGameScreen-text");
 let textOverGame = document.getElementById("textOverGame");
 const game_control_left = document.getElementById("game-control-left");
 const game_control_right = document.getElementById("game-control-right");
+const game_controls_container = document.getElementById("game-controls-container");
 
 
 // ADD BORDER TO CANVAS
@@ -461,6 +462,7 @@ function loop(){
 function startGame(){
     gameover.style.display = "none";
     startGameScreen.style.display = 'block';
+    game_controls_container.style.display = 'block';
 
     document.getElementById('startGameScreen-startbutton').style.display = 'none';
     startGameScreen_text.style.display = 'inline';
