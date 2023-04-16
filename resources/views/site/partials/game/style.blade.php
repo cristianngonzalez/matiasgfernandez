@@ -43,7 +43,7 @@
     
     @media(max-width: 1200px){
         #gameContainer{
-            display: none;
+            /* display: none; */
             /* font-family: 'Luckiest Guy', cursive !important; */
         }
     }
