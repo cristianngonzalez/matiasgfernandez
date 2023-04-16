@@ -115,15 +115,15 @@ game_control_right.onmouseup = function() {
 };
 */
 
-game_control_left.addEventListener("onclick" , function() {
+game_control_left.onclick = function() {
     leftArrow = true;
     rightArrow = false;
-})
+}
 
-game_control_right.addEventListener("onclick" , function() {
+game_control_right.onclick = function() {
     leftArrow = false;
     rightArrow = true
-})
+}
 
 
 
