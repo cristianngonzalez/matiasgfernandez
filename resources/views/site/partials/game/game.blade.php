@@ -123,6 +123,7 @@ game_control_left.addEventListener("onclick" , function() {
 game_control_right.addEventListener("onclick" , function() {
     leftArrow = false;
     rightArrow = true
+})
 
 
 
