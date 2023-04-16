@@ -148,6 +148,18 @@
             -webkit-text-stroke: 1px #fff;
             text-shadow: 0px 2px 4px rgb(0, 204, 255); */
         }
+        @media(max-width: 800px){
+            #gamecard{
+                width: 370px;
+                margin-left: calc(50% - 185px);
+                height: auto;
+            }
+                #gamecard-title{
+                    font-size: 15px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                }
+        }
 
     #breakout{
         margin-left: calc(50% - 400px);
