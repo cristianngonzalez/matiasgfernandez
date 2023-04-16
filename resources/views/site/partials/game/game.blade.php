@@ -404,6 +404,7 @@ function levelUp(){
     }
     
     if(isLevelDone){
+        MUSIC_LOOP.pause();
         WIN.play();
         
         if(LEVEL >= MAX_LEVEL){
