@@ -6,7 +6,7 @@
                 <span>{!!$staticcontents[4]->subtitle!!}</span>
                 <h3>{!!$staticcontents[4]->maintitle!!}</h3>
                 <p>{!!$staticcontents[4]->paragraph!!}</p>
-                <a href="{{$socialnetworks[0]->link}}" target="_blank" style="text-decoration: none; color:coral;">Conocer mas <i class="{{$socialnetworks[0]->icon}}"></i> click aquí!</a>
+                <a href="{{$socialnetworks[0]->link}}" target="_blank" style="text-decoration: none; color:coral;">Conocer más <i class="{{$socialnetworks[0]->icon}}"></i> click aquí!</a>
             </div>
             <div class="service_list">
                 <ul>

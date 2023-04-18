@@ -20,7 +20,7 @@
                 <li class="current"><a href="#home">Inicio</a></li>
 				<li><a href="#about">Acerca de mi</a></li>
 				<li><a href="#trayectoria">Testimonios</a></li>
-				<li><a href="#galeria">Mi Galeria</a></li>
+				<li><a href="#galeria">Mi galería</a></li>
 				<li><a href="#blog">Blog</a></li>
 				<li><a href="#contact">Contacto</a></li>
                 <li class="download_cv"><a href="#home" onclick="solicitarCV()"><span>Solicitar CV</span></a></li>
@@ -40,9 +40,9 @@
             <div class="menu">
                 <ul class="anchor_nav">
                     <li class="current"><a href="#home">Inicio</a></li>
-					<li><a href="#about">Acerca de mi</a></li>
+					<li><a href="#about">Acerca de mí</a></li>
 					<li><a href="#trayectoria">Testimonios</a></li>
-					<li><a href="#galeria">Mi Galeria</a></li>
+					<li><a href="#galeria">Mi galería</a></li>
 					<li><a href="#blog">Blog</a></li>
 					<li><a href="#contact">Contacto</a></li>
                     <li class="download_cv"><a href="#home" onclick="solicitarCV()"><span>Solicitar CV</span></a></li>

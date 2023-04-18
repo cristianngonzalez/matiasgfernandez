@@ -34,7 +34,7 @@ inset 0 -3em 3em rgba(0,0,0,0.1),
     </td>
     <td style="padding-left: 10px; padding-right: 10px;">
       <a href="https://www.matiasgfernandez.com#about" target="_blank" style="text-decoration: none; color: black;">
-        Acerca de mi
+        Acerca de mí
       </a>
     </td>
   </tr>

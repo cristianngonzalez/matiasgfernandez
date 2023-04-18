@@ -32,7 +32,7 @@ $thisPath = Request::path();
                 <li class="current">
                     <a href="#home">Inicio</a>
                 </li>
-                <li><a href="{{url('/')}}#about">Acerca de mi</a></li>
+                <li><a href="{{url('/')}}#about">Acerca de mí</a></li>
                 <li><a href="{{url('/')}}#trayectoria">Testimonios</a></li>
                 <li><a href="{{url('/')}}#portfolio">Portfolio</a></li>
                 <li><a href="{{url('/')}}#blog">Blog</a></li>
@@ -54,9 +54,9 @@ $thisPath = Request::path();
             <div class="menu">
                 <ul class="anchor_nav">
                     <li class="current"><a  href="{{url('/')}}#home">Inicio</a></li>
-                    <li><a href="{{url('/')}}#about">Acerca de mi</a></li>
+                    <li><a href="{{url('/')}}#about">Acerca de mí</a></li>
                     <li><a href="{{url('/')}}#trayectoria">Testimonios</a></li>
-                    <li><a href="{{url('/')}}#galeria">Mi Galeria</a></li>
+                    <li><a href="{{url('/')}}#galeria">Mi galería</a></li>
                     <li><a href="{{url('/')}}#blog">Blog</a></li>
                     <li><a href="{{url('/')}}#contact">Contacto</a></li>
                     <li class="download_cv"><a onclick="solicitarCV()"><span>Solicitar CV</span></a></li>
