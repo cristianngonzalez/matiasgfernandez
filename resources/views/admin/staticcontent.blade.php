@@ -38,11 +38,9 @@
                         @csrf
                         @method('POST')
 
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush" id="accordionFlushStaticContent">
 
                             @foreach ($staticcontents as $staticcontent)
-
-                                
 
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
@@ -50,7 +48,7 @@
                                         {{$staticcontent->section}}
                                       </button>
                                     </h2>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushStaticContent">
                                       <div class="accordion-body">
 
                                             <div class="form-floating mb-3">
