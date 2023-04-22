@@ -38,21 +38,46 @@
                         @csrf
                         @method('POST')
 
-                        @foreach ($staticcontents as $staticcontent)
-                            <h2>{{$staticcontent->section}}</h2>
-                            <div class="form-floating mb-3">
-                                <input type="text" value="{{$staticcontent->maintitle}}" class="form-control" name="staticcontent{{$staticcontent->id}}-maintitle" id="staticcontent{{$staticcontent->id}}-maintitle">
-                                <label for="staticcontent{{$staticcontent->id}}-maintitle">Main title</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" value="{{$staticcontent->subtitle}}" class="form-control" name="staticcontent{{$staticcontent->id}}-subtitle" id="staticcontent{{$staticcontent->id}}-subtitle">
-                                <label for="staticcontent{{$staticcontent->id}}-subtitle">Subtitle</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" value="{{$staticcontent->paragraph}}" class="form-control" name="staticcontent{{$staticcontent->id}}-paragraph" id="staticcontent{{$staticcontent->id}}-paragraph" >
-                                <label for="staticcontent{{$staticcontent->id}}-paragraph">Paragraph</label>
-                            </div>
-                        @endforeach
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                            @foreach ($staticcontents as $staticcontent)
+
+                                
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        {{$staticcontent->section}}
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">
+
+                                            <div class="form-floating mb-3">
+                                                <input type="text" value="{{$staticcontent->maintitle}}" class="form-control" name="staticcontent{{$staticcontent->id}}-maintitle" id="staticcontent{{$staticcontent->id}}-maintitle">
+                                                <label for="staticcontent{{$staticcontent->id}}-maintitle">Main title</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" value="{{$staticcontent->subtitle}}" class="form-control" name="staticcontent{{$staticcontent->id}}-subtitle" id="staticcontent{{$staticcontent->id}}-subtitle">
+                                                <label for="staticcontent{{$staticcontent->id}}-subtitle">Subtitle</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" value="{{$staticcontent->paragraph}}" class="form-control" name="staticcontent{{$staticcontent->id}}-paragraph" id="staticcontent{{$staticcontent->id}}-paragraph" >
+                                                <label for="staticcontent{{$staticcontent->id}}-paragraph">Paragraph</label>
+                                            </div>
+
+                                      </div>
+                                    </div>
+                                </div>
+
+                            @endforeach
+
+
+
+                        </div>
+
+
+                        
 
                         <input type="submit" value="Save changes" class="btn btn-success">
 
