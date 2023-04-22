@@ -61,3 +61,7 @@
     .admin-card-picture{
         width: 70px;
     }
+
+.tox-notifications-container{
+    display: none;
+}
