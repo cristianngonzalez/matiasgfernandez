@@ -2908,9 +2908,9 @@ input[type=number] {
 		right: 5px;
 	}
 	.dizme_tm_services .service_list ul li .list_inner{padding: 20px 20px 20px 100px;}
-	.dizme_tm_services .service_list .title h3{font-size: 23px;}
-	.dizme_tm_services .service_list .price{font-size: 19px;}
-	.dizme_tm_services .service_list .price span{font-size: 21px;}
+	.dizme_tm_services .service_list .title h3{font-size: 20px;}
+	.dizme_tm_services .service_list .price{font-size: 15px;}
+	.dizme_tm_services .service_list .price span{font-size: 15px;}
 	.dizme_tm_partners ul li{width: 50%;}
 	.dizme_tm_news ul{margin: 0px;}
 	.dizme_tm_news ul li{width: 100%;padding-left: 0px;}
