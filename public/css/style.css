@@ -1771,7 +1771,7 @@ h6 { font-size: 16px; }
 	clear: both;
 	float: left;
 	position: relative;
-	margin-top: 80px;
+	margin-top: 40px;
 }
 .dizme_tm_testimonials .in{
 	width: 100%;
@@ -2934,7 +2934,7 @@ input[type=number] {
 	.dizme_tm_portfolio{padding-top: 113px;margin-bottom: 88px;}
 	.dizme_tm_portfolio .portfolio_filter{padding-top: 53px;padding-bottom: 46px;}
 	.dizme_tm_services{padding-top: 120px;margin-bottom: 98px;}
-	.dizme_tm_testimonials .list_wrapper{margin-top: 65px;}
+	.dizme_tm_testimonials .list_wrapper{margin-top: 20px;}
 	.dizme_tm_testimonials .in{padding: 0px 20px;}
 	.dizme_tm_testimonials{margin-bottom: 127px;}
 	.dizme_tm_testimonials .owl-theme .owl-nav.disabled+.owl-dots{margin-top: 50px;}
