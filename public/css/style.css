@@ -859,6 +859,11 @@ h6 { font-size: 16px; }
 	line-height: 1.3;
 	padding-left: 17px;
 }
+@media(max-width: 1040px){
+	.dizme_tm_about .numbers .wrapper .name{
+		padding: 0px;
+	}
+}
 .dizme_tm_about .right{
 	width: 50%;
 	padding-left: 60px;
