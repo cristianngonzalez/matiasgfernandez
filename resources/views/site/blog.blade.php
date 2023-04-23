@@ -18,6 +18,11 @@
         background-position-x: center !important;
         background-position-y: center !important;
     }
+        @media(max-width: 767px){
+            .blog-picture{
+                height: 250px;
+            }
+        }
     .blog-author img{
         width: 70px;
         border-radius: 50px;
