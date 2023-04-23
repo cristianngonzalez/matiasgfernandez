@@ -1,6 +1,23 @@
 
 <style>
 
+    #mobileStartGameButton{
+        display: none;
+    }
+    #desktopStartGameButton{
+        display: block;
+    }
+
+    @media(max-width: 801px){
+        #mobileStartGameButton{
+            display: block;
+        }
+        #desktopStartGameButton{
+            display: none;
+        }
+    }
+    
+
     #game-controls-container{
         position: absolute;
         width: 370px;
@@ -41,6 +58,11 @@
     }
         #gameContaine h1 , #gameContaine h2 , #gameContaine h3{
             /* font-family: 'Luckiest Guy', cursive !important; */
+        }
+        @media(max-width: 801){
+            #gameContainer{
+                display: none;
+            }
         }
 
     

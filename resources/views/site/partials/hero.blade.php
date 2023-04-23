@@ -31,7 +31,8 @@
 
                     <div class="button">
                         <div class="dizme_tm_button">
-                            <a class="anchor" href="#about" onclick="startGame()"><span>Start Game</span></a>
+                            <a class="anchor" href="#about" id="mobileStartGameButton" onclick="startGame()"><span>Start Game</span></a>
+                            <a class="anchor" href="#about" id="desktopStartGameButton" onclick="startGame()"><span>Start Game</span></a>
                         </div>
                         <div class="social">
                             <ul>
