@@ -1760,6 +1760,11 @@ h6 { font-size: 16px; }
 	position: relative;
 	padding-top: 178px;
 }
+	@media(max-width: 1040px){
+		.dizme_tm_testimonials{
+			padding-top: 120px;
+		}
+	}
 .dizme_tm_testimonials .list_wrapper{
 	width: 100%;
 	height: auto;
