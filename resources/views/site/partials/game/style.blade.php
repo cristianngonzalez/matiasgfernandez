@@ -59,7 +59,7 @@
         #gameContaine h1 , #gameContaine h2 , #gameContaine h3{
             /* font-family: 'Luckiest Guy', cursive !important; */
         }
-        @media(max-width: 801){
+        @media(max-width: 801px){
             #gameContainer{
                 display: none;
             }
