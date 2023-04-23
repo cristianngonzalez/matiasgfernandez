@@ -2884,7 +2884,7 @@ input[type=number] {
 @media (max-width: 768px) {
 	.dizme_tm_hero .avatar img{max-width: 220px;max-height: 220px;}
 	.dizme_tm_hero .job{margin-bottom: 15px;}
-	.dizme_tm_hero .job p{font-size: 18px;}
+	.dizme_tm_hero .job p{font-size: 15px;}
 	.dizme_tm_hero .hello h3{font-size: 21px;}
 	.dizme_tm_hero .text p{font-size: 16px;}
 	.dizme_tm_hero .name h3{font-size: 42px;}
