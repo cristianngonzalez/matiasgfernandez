@@ -20,7 +20,7 @@
                                 </span>
                                 <div class="title">
                                     <h3>{{$academy->institution}}</h3>
-                                    <span class="price">{{$academy->degree}}</span>
+                                    <p class="price">{{$academy->degree}}</p>
                                     <span>{{$academy->date}}</span>
                                 </div>
                             </div>
