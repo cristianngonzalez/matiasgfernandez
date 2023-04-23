@@ -5,15 +5,30 @@
         <div class="container">
             <div class="content">
                 <div class="details">
+
+                    <!--///////////////////////////////////////////////////////////////////////
                     <div class="name">
-                        <!--///////////////////////////////////////////////////////////////////////-->
+                        
                         <h3>{!!$staticcontents[0]->maintitle!!}</h3>
-                        <!--///////////////////////////////////////////////////////////////////////-->
+                        
                     </div>
                     <div class="job">
                         <p>{!!$staticcontents[0]->subtitle!!}</p>
                         <p>{!!$staticcontents[0]->paragraph!!}</p>
                     </div>
+                    ///////////////////////////////////////////////////////////////////////-->
+
+                    <div class="name">
+                        <h3>¡Vamos a hacer cosas increíbles juntos!</h3>
+                    </div>
+
+                    <div class="job">
+
+                        <p>Durante más de 25 años he liderado <span class="greenText">estrategias de marketing y comerciales<span></p>
+
+                        <p>Pero mi actual rol como <span class="orangeText">CGO en TGA ha despertado en mí una pasión aún mayor por el Gaming</span> como fenómeno cultural y sus aplicaciones corporativas. Me apasiona la tecnología y me encanta inspirar y ayudar a otros a pensar en nuevos formatos para evolucionar los negocios. Para mí, compartir ideas y liderar la acción es la clave para transformar la realidad.</p>
+                    </div>
+
                     <div class="button">
                         <div class="dizme_tm_button">
                             <a class="anchor" href="#about" onclick="startGame()"><span>Start Game</span></a>

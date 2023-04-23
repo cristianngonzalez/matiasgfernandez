@@ -17,8 +17,8 @@ class staticcontent_seed extends Seeder{
         Staticcontent::create([
             'section' => 'Hero',
             'maintitle' => 'Matías Fernández',
-            'subtitle' => '25 años diseñando, implementando y liderando <span class="greenText">estrategias de marketing y comerciales</span>.',
-            'paragraph' => 'En los ultimos años me he enfocado en la disrupcion digital, como así también cerca del ecosistema <span class="purpleText">emprendedor & startups</span>.',
+            'subtitle' => 'Durante más de 25 años he liderado <span class="greenText">estrategias de marketing y comerciales<span>',
+            'paragraph' => 'Pero mi actual rol como CGO en TGA ha despertado en mí una pasión aún mayor por el Gaming como fenómeno cultural y sus aplicaciones corporativas. Me apasiona la tecnología y me encanta inspirar y ayudar a otros a pensar en nuevos formatos para evolucionar los negocios. Para mí, compartir ideas y liderar la acción es la clave para transformar la realidad. ¡Vamos a hacer cosas increíbles juntos!',
         ]);
 
         Staticcontent::create([
