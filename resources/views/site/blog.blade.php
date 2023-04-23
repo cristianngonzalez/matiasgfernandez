@@ -9,6 +9,18 @@
 <!-- WRAPPER ALL -->
 
 <style>
+
+    .blogArticleContainer{
+        padding-bottom: 0px; margin-bottom: 0px;
+        margin-top: 150px;
+    }
+    @media(max-width: 767px){
+        .blogArticleContainer{
+            padding-bottom: 0px; margin-bottom: 0px;
+            margin-top: 100px;
+        }
+    }
+
     .blog-picture{
         width: 100%;
         height: 400px;
@@ -100,7 +112,7 @@
 </style>
 
 
-<div class="dizme_tm_all_wrap" data-magic-cursor="show" style="margin-top: 150px; padding-bottom: 0px; margin-bottom: 0px;">
+<div class="dizme_tm_all_wrap blogArticleContainer" data-magic-cursor="show">
 
     <div class="dizme_tm_section" id="blog" style="">
         <div class="dizme_tm_news" style="margin-bottom: 0px; padding-top: 0px; margin-top: 0px;">
