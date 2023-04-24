@@ -49,6 +49,11 @@
                             <label for="picture-file">Picture file</label>
                         </div>
 
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" name="date" id="date" required>
+                            <label for="picture-file">Date</label>
+                        </div>
+
                         <textarea name="blog"></textarea>
                         <!--Tiny script-->
                         <script>

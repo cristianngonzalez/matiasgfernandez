@@ -18,6 +18,8 @@ class CreateBlog extends Migration{
             $table->string('picture' , 255);
             $table->boolean('published');
             $table->integer('category_id');
+            $table->string('date' , 20);
+            $table->date('custom_date');
             $table->timestamps();
         });
     }

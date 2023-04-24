@@ -19,6 +19,10 @@ class BlogController extends Controller{
     }
 
     public function set(Request $req){
+
+        dd($req->input('date'));
+
+        /*
         $file = $req->file('picture-file');
         $file_name = Str::uuid()->toString();
 
@@ -34,6 +38,7 @@ class BlogController extends Controller{
         ]);
 
         return redirect('/admin/blogs?success=A blog has been created');
+        */
     }
 
     public function edit(Request $req){
