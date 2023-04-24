@@ -99,7 +99,13 @@ class SiteController extends Controller{
         //Tomamos tres blogs
         $blogs = Blog::where('id' , '!=' , $req->input('id') )->get()->take(3);
 
-        return view('site.blog')->with(['blog' => $blog , 'blogs' => $blogs , 'comments' => $comments]);
+        if($blog){
+            return view('site.blog')->with(['blog' => $blog , 'blogs' => $blogs , 'comments' => $comments]);
+        }else{
+            $blogs = Blog::all()->reverse()->take(3);
+            return view('site.404')->with(['blogs' => $blogs]);
+        }
+        
     }
 
     public function contact(Request $req){
