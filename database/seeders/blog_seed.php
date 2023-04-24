@@ -33,8 +33,6 @@ class blog_seed extends Seeder
             <p>Son una forma divertida de aprender, ya que implican retos y recompensas que generan una motivaci&oacute;n intr&iacute;nseca en el jugador. Adem&aacute;s, pueden ser dise&ntilde;ados de forma personalizada para adaptarse a las necesidades espec&iacute;ficas de la empresa y de sus colaboradores. B&aacute;sicamente, el &eacute;xito est&aacute; en el juego, y las empresas que lo implementen en sus formaciones de empleados podr&aacute;n cosechar grandes beneficios.&nbsp;Gracias.&nbsp;<a href="https://www.tgacompany.com/">TGA</a></p>',
             
             'picture' =>'blog-seed-picture-1.jpeg',
-            'date' => '',
-            'custom_date' => '2023-03-23',
             'published' => true,
             'category_id' => 1
         ]);
@@ -55,8 +53,6 @@ class blog_seed extends Seeder
             <p class="reader-text-block__paragraph">Ofrecen un ambiente de aprendizaje innovador, atractivo y motivador, acorde con las expectativas de un mercado laboral cada vez mas gamer. En resumen, &iexcl;a jugar se ha dicho!. Gracias.&nbsp;<a href="https://www.tgacompany.com/">TGA</a></p>',
             
             'picture' =>'blog-seed-picture-2.jpeg',
-            'date' => '',
-            'custom_date' => '2023-03-23',
             'published' => true,
             'category_id' => 1,
         ]);
@@ -85,8 +81,6 @@ class blog_seed extends Seeder
             <p class="reader-text-block__paragraph">Si bien la implementaci&oacute;n del Game Based Learning en las empresas puede requerir una inversi&oacute;n inicial, los beneficios a largo plazo son significativos.&nbsp;Gracias.&nbsp;<a href="https://www.tgacompany.com/">TGA</a></p>',
             
             'picture' =>'blog-seed-picture-3.jpeg',
-            'date' => '',
-            'custom_date' => '2023-03-23',
             'published' => true,
             'category_id' => 1,
         ]);
@@ -105,8 +99,6 @@ class blog_seed extends Seeder
             <p class="reader-text-block__paragraph">Si bien es importante tener en cuenta los posibles riesgos asociados con el gaming, es igualmente importante reconocer los beneficios y el potencial positivo que puede tener esta industria en nuestra vida diaria. Gracias.&nbsp;<a href="https://www.tgacompany.com/">TGA</a></p>',
             
             'picture' =>'blog-seed-picture-4.jpeg',
-            'date' => '',
-            'custom_date' => '2023-03-23',
             'published' => true,
             'category_id' => 1,
         ]);
@@ -135,8 +127,6 @@ class blog_seed extends Seeder
             <p class="reader-text-block__paragraph">Si bien la implementaci&oacute;n de la Gamificaci&oacute;n en las empresas puede requerir una inversi&oacute;n inicial, los beneficios a largo plazo son significativos. Gracias.&nbsp;<a href="https://www.tgacompany.com/">TGA</a></p>',
             
             'picture' =>'blog-seed-picture-5.jpg',
-            'date' => '',
-            'custom_date' => '2023-04-16',
             'published' => true,
             'category_id' => 1,
         ]);
@@ -158,8 +148,6 @@ class blog_seed extends Seeder
             <p class="reader-text-block__paragraph">Se crea un ambiente de aprendizaje innovador, atractivo y motivador, acorde con las expectativas de un mercado laboral cada vez mas gamer. Gracias.&nbsp;<a href="https://www.tgacompany.com/">TGA</a></p>',
             
             'picture' =>'blog-seed-picture-6.jpg',
-            'date' => '',
-            'custom_date' => '2023-04-16',
             'published' => true,
             'category_id' => 1,
         ]);
@@ -191,8 +179,6 @@ class blog_seed extends Seeder
             <p class="reader-text-block__paragraph">En resumen, evolucionar el proceso de onboarding, es fortalecer las bases para el crecimiento de la empresa. Gracias. &nbsp;<a href="https://www.tgacompany.com/">TGA</a></p>',
             
             'picture' =>'blog-seed-picture-7.jpg',
-            'date' => '',
-            'custom_date' => '2023-04-18',
             'published' => true,
             'category_id' => 1,
         ]);
@@ -216,8 +202,6 @@ class blog_seed extends Seeder
             <p class="reader-text-block__paragraph">As&iacute; que no esperes m&aacute;s, deja el aburrimiento atr&aacute;s y comienza a disfrutar de los beneficios del Game Based Learning.&nbsp;Gracias.&nbsp;<a href="https://www.tgacompany.com/">TGA</a></p>',
             
             'picture' =>'blog-seed-picture-8.jpg',
-            'date' => '',
-            'custom_date' => '2023-04-18',
             'published' => true,
             'category_id' => 1,
         ]);
@@ -235,8 +219,6 @@ class blog_seed extends Seeder
             <p class="reader-text-block__paragraph">En conclusi&oacute;n, el GBL es una herramienta innovadora que puede mejorar significativamente el proceso de selecci&oacute;n de personal. Al involucrar a los candidatos en actividades divertidas y desafiantes, aumenta el compromiso y la motivaci&oacute;n de los candidatos, haciendo del proceso de selecci&oacute;n un momento memorable y atractivo en el mercado.</p>
             <p class="reader-text-block__paragraph">As&iacute; que si est&aacute;s buscando una forma de mejorar tu proceso de selecci&oacute;n de colaboradores, definitivamente deber&iacute;as considerar el GBL. Gracias.&nbsp;<a href="https://www.tgacompany.com/">TGA</a></p>',
             'picture' =>'blog-seed-picture-9.jpg',
-            'date' => '',
-            'custom_date' => '2023-04-18',
             'published' => true,
             'category_id' => 1,
         ]);

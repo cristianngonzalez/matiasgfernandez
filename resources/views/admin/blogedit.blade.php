@@ -57,6 +57,13 @@
                             <label for="picture-file">Picture file</label>
                         </div>
 
+
+                        <div class="form-floating mb-3">
+                            <input type="date" class="form-control" name="date" id="date" required value="{{$blog->created_at->format('Y')}}-{{$blog->created_at->format('m')}}-{{$blog->created_at->format('d')}}">
+                            <label for="picture-file">Date</label>
+                        </div>
+
+
                         <textarea name="blog">{{$blog->blog}}</textarea>
                         <!--Tiny script-->
                         <script>

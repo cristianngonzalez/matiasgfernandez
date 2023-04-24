@@ -1,12 +1,12 @@
 <li class="wow fadeInUp" data-wow-duration="1s">
     <div class="list_inner">
         <div class="image">
-            <div class="card-blog-picture" style="background: {{env('ASSETS_URL')}}storage/{{$blog->picture}};"></div>
+            <div class="card-blog-picture" style="background: {{env('ASSETS_URL')}}storage/{{$blog->picture}}; background-repeat: no-repeat;"></div>
             <div class="main" data-img-url="{{env('ASSETS_URL')}}storage/{{$blog->picture}}"></div>
             <div class="date">
-                <h3>{{$blog->custom_date[8]}}{{$blog->custom_date[9]}}</h3>
+                <h3>{{$blog->created_at->format('d')}}</h3>
                 <!--Print mont-->
-                @switch($blog->custom_date[5] . $blog->custom_date[6])
+                @switch($blog->created_at->format('m'))
                     @case('01')<span>Ene</span> @break
                     @case('02')<span>Feb</span> @break
                     @case('03')<span>Mar</span> @break
