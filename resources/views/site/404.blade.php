@@ -17,7 +17,7 @@
         <div class="dizme_tm_news" style="margin-bottom: 0px;">
             <div class="container">
                 <div class="dizme_tm_main_title" data-align="center">
-                    <h3>El contenido que buscabas ya no esta disponible, pero puedes ver mas articulos interesantes</h3>
+                    <h3>El contenido que buscabas ya no está disponible, pero puedes ver más artículos interesantes</h3>
                 </div>
                 <div class="news_list">
                     <ul>
