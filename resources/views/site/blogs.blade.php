@@ -11,6 +11,11 @@
     .blog-section-page{
         margin-top: 170px; padding-bottom: 0px; margin-bottom: 0px;
     }
+    @media(max-width: 1040px){
+        .blog-section-page{
+            margin-top: 100px;
+        }
+    }
     @media(max-width: 768px){
         .blog-section-page{
             margin-top: 30px;
