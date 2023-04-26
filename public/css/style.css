@@ -2210,8 +2210,13 @@ h6 { font-size: 16px; }
 }
 .details-home-blog .title{
 	line-height: 1.4;
-	height: 100px;
 }
+@media(min-width: 768px){
+	.details-home-blog .title{
+		height: 100px;
+	}
+}
+
 .details-home-blog .title a{
 	font-size: 18px;
 	color: #000;
