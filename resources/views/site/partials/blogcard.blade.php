@@ -2,6 +2,8 @@
     <div class="list_inner">
         <div class="image">
             <div class="card-blog-picture" style="background: {{env('ASSETS_URL')}}storage/{{$blog->picture}}; background-repeat: no-repeat;"></div>
+
+            
             <div class="main" data-img-url="{{env('ASSETS_URL')}}storage/{{$blog->picture}}"></div>
             <div class="date">
                 <h3>{{$blog->created_at->format('d')}}</h3>
