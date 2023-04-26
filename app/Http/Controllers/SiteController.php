@@ -88,8 +88,9 @@ class SiteController extends Controller{
 
     public function blogs(){
         $blogs = Blog::paginate(9);
+        $staticcontents = Staticcontent::all();
 
-        return view('site.blogs')->with(['blogs' => $blogs]);
+        return view('site.blogs')->with(['blogs' => $blogs , 'staticcontents' => $staticcontents]);
     }
 
     public function blog(Request $req){

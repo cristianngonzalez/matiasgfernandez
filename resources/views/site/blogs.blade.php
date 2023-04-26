@@ -28,9 +28,9 @@
         <div class="dizme_tm_news" style="margin-bottom: 0px;">
             <div class="container">
                 <div class="dizme_tm_main_title" data-align="center">
-                    <span>Mi Blog</span>
-                    <h3>Todos mis aportes</h3>
-                    <p>Aquí verás contenido relacionado al marketing asociado al emprendimiento digital y tecnológico.</p>
+                    <span>{!!$staticcontents[6]->subtitle!!}</span>
+                    <h3>{!!$staticcontents[6]->maintitle!!}</h3>
+                    <p>{!!$staticcontents[6]->paragraph!!}</p>
                 </div>
                 <div class="news_list">
                     <ul>
