@@ -7,8 +7,19 @@
 
 <!-- WRAPPER ALL -->
 
+<style>
+    .blog-section-page{
+        margin-top: 170px; padding-bottom: 0px; margin-bottom: 0px;
+    }
+    @media(max-width: 768px){
+        .blog-section-page{
+            margin-top: 30px;
+        }
+    }
+</style>
 
-<div class="dizme_tm_all_wrap" data-magic-cursor="show" style="margin-top: 170px; padding-bottom: 0px; margin-bottom: 0px;">
+
+<div class="dizme_tm_all_wrap blog-section-page" data-magic-cursor="show" style="">
 
     @include('site.partials.header')
     
